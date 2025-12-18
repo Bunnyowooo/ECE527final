@@ -1,0 +1,4 @@
+2 warnings and 28 errors generated.
+Error while processing D:\xilinx\Project\fp_vitis\fp_vitis\hls_component\hls_component\hls\.autopilot\db\autoencoder.pp.0.cpp.
+clang-tidy applied 134 of 134 suggested fixes.
+Suppressed 2 warnings (2 with check filters).

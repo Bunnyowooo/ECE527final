@@ -1,0 +1,60 @@
+{
+    "0": {
+        "name": "tiny_autoencoder",
+        "file": "autoencoder.cpp",
+        "fileloc": "121",
+        "instructions": "54",
+        "total_instructions": "2916",
+        "calls": "2 1",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "2"
+    },
+    "1": {
+        "name": "compute_decoder",
+        "file": "autoencoder.cpp",
+        "fileloc": "142",
+        "instructions": "1295",
+        "total_instructions": "1295",
+        "calls": "",
+        "basicblocks": "3",
+        "memory_accesses": "154",
+        "control_depth": "0",
+        "def_use_depth": "1",
+        "loads": {
+            "G": "144",
+            "L": "1"
+        },
+        "stores": {
+            "L": "2",
+            "T": "8"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "compute_encoder",
+        "file": "autoencoder.cpp",
+        "fileloc": "38",
+        "instructions": "1567",
+        "total_instructions": "1567",
+        "calls": "",
+        "basicblocks": "3",
+        "memory_accesses": "170",
+        "control_depth": "0",
+        "def_use_depth": "18",
+        "loads": {
+            "G": "128",
+            "L": "17",
+            "T": "8"
+        },
+        "stores": {
+            "L": "34"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

@@ -1,0 +1,20 @@
+---
+MainSourceFile:  'D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/.autopilot/db/autoencoder.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '141:30'
+    FilePath:        autoencoder.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '141:34'
+    FilePath:        autoencoder.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '142:39'
+    FilePath:        autoencoder.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '142:43'
+    FilePath:        autoencoder.cpp
+...

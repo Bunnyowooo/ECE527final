@@ -1,0 +1,737 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Mon Dec 15 00:53:09 2025
+| Host         : Unlucky running 64-bit major release  (build 9200)
+| Command      : report_timing -max_paths 10 -file ./report/tiny_autoencoder_timing_paths_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             2.190ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_0_7_load_reg_7932_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_103_reg_8860_reg[19]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        7.835ns  (logic 4.359ns (55.635%)  route 3.476ns (44.365%))
+  Logic Levels:           11  (CARRY4=7 LUT3=1 LUT4=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7130, unset)         0.973     0.973    bd_0_i/hls_inst/inst/compute_encoder_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_0_7_load_reg_7932_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.518     1.491 r  bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_0_7_load_reg_7932_reg[5]/Q
+                         net (fo=143, unplaced)       1.074     2.565    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U86/p_ZL2W1_0_7_load_reg_7932[0]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.860 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860[2]_i_14/O
+                         net (fo=2, unplaced)         0.650     3.510    bd_0_i/hls_inst/inst/compute_encoder_U0_n_3868
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520     4.030 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[2]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000     4.030    bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[2]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     4.367 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[6]_i_12/O[1]
+                         net (fo=3, unplaced)         0.629     4.996    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U86/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[10]_i_12_0[0]
+                         LUT5 (Prop_lut5_I0_O)        0.306     5.302 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860[10]_i_34/O
+                         net (fo=1, unplaced)         0.000     5.302    bd_0_i/hls_inst/inst/compute_encoder_U0_n_3888
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     5.835 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[10]_i_12/CO[3]
+                         net (fo=1, unplaced)         0.009     5.844    bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[10]_i_12_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331     6.175 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[14]_i_12/O[3]
+                         net (fo=2, unplaced)         0.629     6.804    bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[14]_i_12_n_4
+                         LUT3 (Prop_lut3_I0_O)        0.302     7.106 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860[14]_i_5/O
+                         net (fo=2, unplaced)         0.485     7.591    bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860[14]_i_5_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.355     7.946 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860[14]_i_9/O
+                         net (fo=1, unplaced)         0.000     7.946    bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860[14]_i_9_n_0
+                         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513     8.459 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[14]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     8.459    bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[14]_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     8.576 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[18]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     8.576    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[19][0]
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.232     8.808 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[19]_i_1/O[0]
+                         net (fo=1, unplaced)         0.000     8.808    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_ln59_103_fu_4362_p2[25]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_103_reg_8860_reg[19]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=7130, unset)         0.924    10.924    bd_0_i/hls_inst/inst/compute_encoder_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_103_reg_8860_reg[19]/C
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         FDRE (Setup_fdre_C_D)        0.109    10.998    bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_103_reg_8860_reg[19]
+  -------------------------------------------------------------------
+                         required time                         10.998    
+                         arrival time                          -8.808    
+  -------------------------------------------------------------------
+                         slack                                  2.190    
+
+Slack (MET) :             2.202ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_0_7_load_reg_7932_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_103_reg_8860_reg[16]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        7.823ns  (logic 4.347ns (55.567%)  route 3.476ns (44.433%))
+  Logic Levels:           10  (CARRY4=6 LUT3=1 LUT4=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7130, unset)         0.973     0.973    bd_0_i/hls_inst/inst/compute_encoder_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_0_7_load_reg_7932_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.518     1.491 r  bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_0_7_load_reg_7932_reg[5]/Q
+                         net (fo=143, unplaced)       1.074     2.565    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U86/p_ZL2W1_0_7_load_reg_7932[0]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.860 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860[2]_i_14/O
+                         net (fo=2, unplaced)         0.650     3.510    bd_0_i/hls_inst/inst/compute_encoder_U0_n_3868
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520     4.030 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[2]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000     4.030    bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[2]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     4.367 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[6]_i_12/O[1]
+                         net (fo=3, unplaced)         0.629     4.996    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U86/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[10]_i_12_0[0]
+                         LUT5 (Prop_lut5_I0_O)        0.306     5.302 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860[10]_i_34/O
+                         net (fo=1, unplaced)         0.000     5.302    bd_0_i/hls_inst/inst/compute_encoder_U0_n_3888
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     5.835 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[10]_i_12/CO[3]
+                         net (fo=1, unplaced)         0.009     5.844    bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[10]_i_12_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331     6.175 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[14]_i_12/O[3]
+                         net (fo=2, unplaced)         0.629     6.804    bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[14]_i_12_n_4
+                         LUT3 (Prop_lut3_I0_O)        0.302     7.106 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860[14]_i_5/O
+                         net (fo=2, unplaced)         0.485     7.591    bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860[14]_i_5_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.355     7.946 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860[14]_i_9/O
+                         net (fo=1, unplaced)         0.000     7.946    bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860[14]_i_9_n_0
+                         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513     8.459 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[14]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     8.459    bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[14]_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     8.796 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[18]_i_1/O[1]
+                         net (fo=1, unplaced)         0.000     8.796    bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_103_reg_8860_reg[18]_0[16]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_103_reg_8860_reg[16]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=7130, unset)         0.924    10.924    bd_0_i/hls_inst/inst/compute_encoder_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_103_reg_8860_reg[16]/C
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         FDRE (Setup_fdre_C_D)        0.109    10.998    bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_103_reg_8860_reg[16]
+  -------------------------------------------------------------------
+                         required time                         10.998    
+                         arrival time                          -8.796    
+  -------------------------------------------------------------------
+                         slack                                  2.202    
+
+Slack (MET) :             2.208ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_0_7_load_reg_7932_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_103_reg_8860_reg[18]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        7.817ns  (logic 4.341ns (55.533%)  route 3.476ns (44.467%))
+  Logic Levels:           10  (CARRY4=6 LUT3=1 LUT4=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7130, unset)         0.973     0.973    bd_0_i/hls_inst/inst/compute_encoder_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_0_7_load_reg_7932_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.518     1.491 r  bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_0_7_load_reg_7932_reg[5]/Q
+                         net (fo=143, unplaced)       1.074     2.565    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U86/p_ZL2W1_0_7_load_reg_7932[0]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.860 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860[2]_i_14/O
+                         net (fo=2, unplaced)         0.650     3.510    bd_0_i/hls_inst/inst/compute_encoder_U0_n_3868
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520     4.030 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[2]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000     4.030    bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[2]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     4.367 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[6]_i_12/O[1]
+                         net (fo=3, unplaced)         0.629     4.996    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U86/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[10]_i_12_0[0]
+                         LUT5 (Prop_lut5_I0_O)        0.306     5.302 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860[10]_i_34/O
+                         net (fo=1, unplaced)         0.000     5.302    bd_0_i/hls_inst/inst/compute_encoder_U0_n_3888
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     5.835 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[10]_i_12/CO[3]
+                         net (fo=1, unplaced)         0.009     5.844    bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[10]_i_12_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331     6.175 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[14]_i_12/O[3]
+                         net (fo=2, unplaced)         0.629     6.804    bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[14]_i_12_n_4
+                         LUT3 (Prop_lut3_I0_O)        0.302     7.106 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860[14]_i_5/O
+                         net (fo=2, unplaced)         0.485     7.591    bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860[14]_i_5_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.355     7.946 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860[14]_i_9/O
+                         net (fo=1, unplaced)         0.000     7.946    bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860[14]_i_9_n_0
+                         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513     8.459 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[14]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     8.459    bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[14]_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331     8.790 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[18]_i_1/O[3]
+                         net (fo=1, unplaced)         0.000     8.790    bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_103_reg_8860_reg[18]_0[18]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_103_reg_8860_reg[18]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=7130, unset)         0.924    10.924    bd_0_i/hls_inst/inst/compute_encoder_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_103_reg_8860_reg[18]/C
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         FDRE (Setup_fdre_C_D)        0.109    10.998    bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_103_reg_8860_reg[18]
+  -------------------------------------------------------------------
+                         required time                         10.998    
+                         arrival time                          -8.790    
+  -------------------------------------------------------------------
+                         slack                                  2.208    
+
+Slack (MET) :             2.257ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_4_10_load_reg_8072_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_70_reg_8695_reg[19]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        7.768ns  (logic 4.121ns (53.051%)  route 3.647ns (46.949%))
+  Logic Levels:           10  (CARRY4=7 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7130, unset)         0.973     0.973    bd_0_i/hls_inst/inst/compute_encoder_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_4_10_load_reg_8072_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.518     1.491 r  bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_4_10_load_reg_8072_reg[0]/Q
+                         net (fo=188, unplaced)       1.080     2.571    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U60/p_ZL2W1_4_10_load_reg_8072[0]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.866 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U60/mult_res_70_reg_8695[5]_i_39/O
+                         net (fo=2, unplaced)         0.650     3.516    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U60/mult_res_70_reg_8695[5]_i_39_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520     4.036 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U60/mult_res_70_reg_8695_reg[5]_i_13/CO[3]
+                         net (fo=1, unplaced)         0.000     4.036    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U60/mult_res_70_reg_8695_reg[5]_i_13_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     4.373 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U60/mult_res_70_reg_8695_reg[5]_i_12/O[1]
+                         net (fo=3, unplaced)         0.629     5.002    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U60/mult_res_70_reg_8695_reg[5]_i_12_n_6
+                         LUT5 (Prop_lut5_I0_O)        0.306     5.308 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U60/mult_res_70_reg_8695[9]_i_34/O
+                         net (fo=1, unplaced)         0.000     5.308    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U60/mult_res_70_reg_8695[9]_i_34_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     5.841 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U60/mult_res_70_reg_8695_reg[9]_i_12/CO[3]
+                         net (fo=1, unplaced)         0.009     5.850    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U60/mult_res_70_reg_8695_reg[9]_i_12_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.967 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U60/mult_res_70_reg_8695_reg[13]_i_12/CO[3]
+                         net (fo=1, unplaced)         0.000     5.967    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U60/mult_res_70_reg_8695_reg[13]_i_12_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331     6.298 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U60/mult_res_70_reg_8695_reg[17]_i_12/O[3]
+                         net (fo=2, unplaced)         0.629     6.927    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U60/mult_res_70_reg_8695_reg[17]_i_12_n_4
+                         LUT3 (Prop_lut3_I0_O)        0.307     7.234 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U60/mult_res_70_reg_8695[17]_i_4/O
+                         net (fo=2, unplaced)         0.650     7.884    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U60/mult_res_70_reg_8695[17]_i_4_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520     8.404 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U60/mult_res_70_reg_8695_reg[17]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     8.404    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U60/mult_res_70_reg_8695_reg[17]_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     8.741 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U60/mult_res_70_reg_8695_reg[19]_i_1/O[1]
+                         net (fo=1, unplaced)         0.000     8.741    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_ln59_70_fu_3868_p2[25]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_70_reg_8695_reg[19]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=7130, unset)         0.924    10.924    bd_0_i/hls_inst/inst/compute_encoder_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_70_reg_8695_reg[19]/C
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         FDRE (Setup_fdre_C_D)        0.109    10.998    bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_70_reg_8695_reg[19]
+  -------------------------------------------------------------------
+                         required time                         10.998    
+                         arrival time                          -8.741    
+  -------------------------------------------------------------------
+                         slack                                  2.257    
+
+Slack (MET) :             2.257ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_7_5_load_reg_7887_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_83_reg_8760_reg[19]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        7.768ns  (logic 4.121ns (53.051%)  route 3.647ns (46.949%))
+  Logic Levels:           10  (CARRY4=7 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7130, unset)         0.973     0.973    bd_0_i/hls_inst/inst/compute_encoder_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_7_5_load_reg_7887_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.518     1.491 r  bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_7_5_load_reg_7887_reg[7]/Q
+                         net (fo=182, unplaced)       1.080     2.571    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U71/p_ZL2W1_7_5_load_reg_7887[0]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.866 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U71/mult_res_83_reg_8760[5]_i_39/O
+                         net (fo=2, unplaced)         0.650     3.516    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U71/mult_res_83_reg_8760[5]_i_39_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520     4.036 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U71/mult_res_83_reg_8760_reg[5]_i_13/CO[3]
+                         net (fo=1, unplaced)         0.000     4.036    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U71/mult_res_83_reg_8760_reg[5]_i_13_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     4.373 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U71/mult_res_83_reg_8760_reg[5]_i_12/O[1]
+                         net (fo=3, unplaced)         0.629     5.002    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U71/mult_res_83_reg_8760_reg[5]_i_12_n_6
+                         LUT5 (Prop_lut5_I0_O)        0.306     5.308 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U71/mult_res_83_reg_8760[9]_i_34/O
+                         net (fo=1, unplaced)         0.000     5.308    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U71/mult_res_83_reg_8760[9]_i_34_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     5.841 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U71/mult_res_83_reg_8760_reg[9]_i_12/CO[3]
+                         net (fo=1, unplaced)         0.009     5.850    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U71/mult_res_83_reg_8760_reg[9]_i_12_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.967 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U71/mult_res_83_reg_8760_reg[13]_i_12/CO[3]
+                         net (fo=1, unplaced)         0.000     5.967    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U71/mult_res_83_reg_8760_reg[13]_i_12_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331     6.298 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U71/mult_res_83_reg_8760_reg[17]_i_12/O[3]
+                         net (fo=2, unplaced)         0.629     6.927    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U71/mult_res_83_reg_8760_reg[17]_i_12_n_4
+                         LUT3 (Prop_lut3_I0_O)        0.307     7.234 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U71/mult_res_83_reg_8760[17]_i_4/O
+                         net (fo=2, unplaced)         0.650     7.884    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U71/mult_res_83_reg_8760[17]_i_4_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520     8.404 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U71/mult_res_83_reg_8760_reg[17]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     8.404    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U71/mult_res_83_reg_8760_reg[17]_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     8.741 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U71/mult_res_83_reg_8760_reg[19]_i_1/O[1]
+                         net (fo=1, unplaced)         0.000     8.741    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_ln59_83_fu_4077_p2[25]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_83_reg_8760_reg[19]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=7130, unset)         0.924    10.924    bd_0_i/hls_inst/inst/compute_encoder_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_83_reg_8760_reg[19]/C
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         FDRE (Setup_fdre_C_D)        0.109    10.998    bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_83_reg_8760_reg[19]
+  -------------------------------------------------------------------
+                         required time                         10.998    
+                         arrival time                          -8.741    
+  -------------------------------------------------------------------
+                         slack                                  2.257    
+
+Slack (MET) :             2.258ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_6_7_load_reg_7962_reg[9]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_14_reg_8415_reg[19]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        7.767ns  (logic 4.121ns (53.058%)  route 3.646ns (46.942%))
+  Logic Levels:           10  (CARRY4=7 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7130, unset)         0.973     0.973    bd_0_i/hls_inst/inst/compute_encoder_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_6_7_load_reg_7962_reg[9]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.518     1.491 r  bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_6_7_load_reg_7962_reg[9]/Q
+                         net (fo=175, unplaced)       1.079     2.570    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U13/p_ZL2W1_6_7_load_reg_7962[1]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.865 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U13/mult_res_14_reg_8415[5]_i_39/O
+                         net (fo=2, unplaced)         0.650     3.515    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U13/mult_res_14_reg_8415[5]_i_39_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520     4.035 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U13/mult_res_14_reg_8415_reg[5]_i_13/CO[3]
+                         net (fo=1, unplaced)         0.000     4.035    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U13/mult_res_14_reg_8415_reg[5]_i_13_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     4.372 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U13/mult_res_14_reg_8415_reg[5]_i_12/O[1]
+                         net (fo=3, unplaced)         0.629     5.001    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U13/mult_res_14_reg_8415_reg[5]_i_12_n_6
+                         LUT5 (Prop_lut5_I0_O)        0.306     5.307 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U13/mult_res_14_reg_8415[9]_i_34/O
+                         net (fo=1, unplaced)         0.000     5.307    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U13/mult_res_14_reg_8415[9]_i_34_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     5.840 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U13/mult_res_14_reg_8415_reg[9]_i_12/CO[3]
+                         net (fo=1, unplaced)         0.009     5.849    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U13/mult_res_14_reg_8415_reg[9]_i_12_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.966 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U13/mult_res_14_reg_8415_reg[13]_i_12/CO[3]
+                         net (fo=1, unplaced)         0.000     5.966    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U13/mult_res_14_reg_8415_reg[13]_i_12_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331     6.297 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U13/mult_res_14_reg_8415_reg[17]_i_12/O[3]
+                         net (fo=2, unplaced)         0.629     6.926    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U13/mult_res_14_reg_8415_reg[17]_i_12_n_4
+                         LUT3 (Prop_lut3_I0_O)        0.307     7.233 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U13/mult_res_14_reg_8415[17]_i_4/O
+                         net (fo=2, unplaced)         0.650     7.883    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U13/mult_res_14_reg_8415[17]_i_4_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520     8.403 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U13/mult_res_14_reg_8415_reg[17]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     8.403    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U13/mult_res_14_reg_8415_reg[17]_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     8.740 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U13/mult_res_14_reg_8415_reg[19]_i_1/O[1]
+                         net (fo=1, unplaced)         0.000     8.740    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_ln59_14_fu_2975_p2[25]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_14_reg_8415_reg[19]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=7130, unset)         0.924    10.924    bd_0_i/hls_inst/inst/compute_encoder_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_14_reg_8415_reg[19]/C
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         FDRE (Setup_fdre_C_D)        0.109    10.998    bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_14_reg_8415_reg[19]
+  -------------------------------------------------------------------
+                         required time                         10.998    
+                         arrival time                          -8.740    
+  -------------------------------------------------------------------
+                         slack                                  2.258    
+
+Slack (MET) :             2.258ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_3_13_load_reg_8187_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_63_reg_8660_reg[19]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        7.767ns  (logic 4.121ns (53.058%)  route 3.646ns (46.942%))
+  Logic Levels:           10  (CARRY4=7 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7130, unset)         0.973     0.973    bd_0_i/hls_inst/inst/compute_encoder_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_3_13_load_reg_8187_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.518     1.491 r  bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_3_13_load_reg_8187_reg[7]/Q
+                         net (fo=181, unplaced)       1.079     2.570    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U54/p_ZL2W1_3_13_load_reg_8187[0]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.865 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U54/mult_res_63_reg_8660[5]_i_39/O
+                         net (fo=2, unplaced)         0.650     3.515    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U54/mult_res_63_reg_8660[5]_i_39_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520     4.035 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U54/mult_res_63_reg_8660_reg[5]_i_13/CO[3]
+                         net (fo=1, unplaced)         0.000     4.035    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U54/mult_res_63_reg_8660_reg[5]_i_13_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     4.372 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U54/mult_res_63_reg_8660_reg[5]_i_12/O[1]
+                         net (fo=3, unplaced)         0.629     5.001    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U54/mult_res_63_reg_8660_reg[5]_i_12_n_6
+                         LUT5 (Prop_lut5_I0_O)        0.306     5.307 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U54/mult_res_63_reg_8660[9]_i_34/O
+                         net (fo=1, unplaced)         0.000     5.307    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U54/mult_res_63_reg_8660[9]_i_34_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     5.840 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U54/mult_res_63_reg_8660_reg[9]_i_12/CO[3]
+                         net (fo=1, unplaced)         0.009     5.849    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U54/mult_res_63_reg_8660_reg[9]_i_12_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.966 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U54/mult_res_63_reg_8660_reg[13]_i_12/CO[3]
+                         net (fo=1, unplaced)         0.000     5.966    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U54/mult_res_63_reg_8660_reg[13]_i_12_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331     6.297 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U54/mult_res_63_reg_8660_reg[17]_i_12/O[3]
+                         net (fo=2, unplaced)         0.629     6.926    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U54/mult_res_63_reg_8660_reg[17]_i_12_n_4
+                         LUT3 (Prop_lut3_I0_O)        0.307     7.233 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U54/mult_res_63_reg_8660[17]_i_4/O
+                         net (fo=2, unplaced)         0.650     7.883    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U54/mult_res_63_reg_8660[17]_i_4_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520     8.403 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U54/mult_res_63_reg_8660_reg[17]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     8.403    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U54/mult_res_63_reg_8660_reg[17]_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     8.740 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U54/mult_res_63_reg_8660_reg[19]_i_1/O[1]
+                         net (fo=1, unplaced)         0.000     8.740    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_ln59_63_fu_3754_p2[25]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_63_reg_8660_reg[19]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=7130, unset)         0.924    10.924    bd_0_i/hls_inst/inst/compute_encoder_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_63_reg_8660_reg[19]/C
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         FDRE (Setup_fdre_C_D)        0.109    10.998    bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_63_reg_8660_reg[19]
+  -------------------------------------------------------------------
+                         required time                         10.998    
+                         arrival time                          -8.740    
+  -------------------------------------------------------------------
+                         slack                                  2.258    
+
+Slack (MET) :             2.260ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_3_0_load_reg_7667_reg[9]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_106_reg_8875_reg[19]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        7.765ns  (logic 4.121ns (53.071%)  route 3.644ns (46.929%))
+  Logic Levels:           10  (CARRY4=7 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7130, unset)         0.973     0.973    bd_0_i/hls_inst/inst/compute_encoder_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_3_0_load_reg_7667_reg[9]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.518     1.491 r  bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_3_0_load_reg_7667_reg[9]/Q
+                         net (fo=163, unplaced)       1.077     2.568    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U89/p_ZL2W1_3_0_load_reg_7667[0]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.863 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U89/mult_res_106_reg_8875[5]_i_39/O
+                         net (fo=2, unplaced)         0.650     3.513    bd_0_i/hls_inst/inst/compute_encoder_U0_n_1262
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520     4.033 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U89/mult_res_106_reg_8875_reg[5]_i_13/CO[3]
+                         net (fo=1, unplaced)         0.000     4.033    bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U89/mult_res_106_reg_8875_reg[5]_i_13_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     4.370 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U89/mult_res_106_reg_8875_reg[5]_i_12/O[1]
+                         net (fo=3, unplaced)         0.629     4.999    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U89/mul_16s_10s_26_1_1_U89/mult_res_106_reg_8875_reg[9]_i_12[0]
+                         LUT5 (Prop_lut5_I0_O)        0.306     5.305 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U89/mult_res_106_reg_8875[9]_i_34/O
+                         net (fo=1, unplaced)         0.000     5.305    bd_0_i/hls_inst/inst/compute_encoder_U0_n_1330
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     5.838 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U89/mult_res_106_reg_8875_reg[9]_i_12/CO[3]
+                         net (fo=1, unplaced)         0.009     5.847    bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U89/mult_res_106_reg_8875_reg[9]_i_12_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.964 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U89/mult_res_106_reg_8875_reg[13]_i_12/CO[3]
+                         net (fo=1, unplaced)         0.000     5.964    bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U89/mult_res_106_reg_8875_reg[13]_i_12_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331     6.295 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U89/mult_res_106_reg_8875_reg[17]_i_12/O[3]
+                         net (fo=2, unplaced)         0.629     6.924    bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U89/mult_res_106_reg_8875_reg[17]_i_12_n_4
+                         LUT3 (Prop_lut3_I0_O)        0.307     7.231 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U89/mult_res_106_reg_8875[17]_i_4/O
+                         net (fo=2, unplaced)         0.650     7.881    bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U89/mult_res_106_reg_8875[17]_i_4_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520     8.401 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U89/mult_res_106_reg_8875_reg[17]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     8.401    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U89/mult_res_106_reg_8875_reg[19][0]
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     8.738 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U89/mult_res_106_reg_8875_reg[19]_i_1/O[1]
+                         net (fo=1, unplaced)         0.000     8.738    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_ln59_106_fu_4419_p2[25]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_106_reg_8875_reg[19]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=7130, unset)         0.924    10.924    bd_0_i/hls_inst/inst/compute_encoder_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_106_reg_8875_reg[19]/C
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         FDRE (Setup_fdre_C_D)        0.109    10.998    bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_106_reg_8875_reg[19]
+  -------------------------------------------------------------------
+                         required time                         10.998    
+                         arrival time                          -8.738    
+  -------------------------------------------------------------------
+                         slack                                  2.260    
+
+Slack (MET) :             2.260ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_0_2_load_reg_7732_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_18_reg_8435_reg[19]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        7.765ns  (logic 4.121ns (53.071%)  route 3.644ns (46.929%))
+  Logic Levels:           10  (CARRY4=7 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7130, unset)         0.973     0.973    bd_0_i/hls_inst/inst/compute_encoder_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_0_2_load_reg_7732_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.518     1.491 r  bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_0_2_load_reg_7732_reg[7]/Q
+                         net (fo=162, unplaced)       1.077     2.568    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U17/p_ZL2W1_2_2_load_reg_7742[0]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.863 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U17/mult_res_18_reg_8435[5]_i_39/O
+                         net (fo=2, unplaced)         0.650     3.513    bd_0_i/hls_inst/inst/compute_encoder_U0_n_4553
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520     4.033 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U17/mult_res_18_reg_8435_reg[5]_i_13/CO[3]
+                         net (fo=1, unplaced)         0.000     4.033    bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U17/mult_res_18_reg_8435_reg[5]_i_13_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     4.370 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U17/mult_res_18_reg_8435_reg[5]_i_12/O[1]
+                         net (fo=3, unplaced)         0.629     4.999    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U17/mul_16s_10s_26_1_1_U17/mult_res_18_reg_8435_reg[9]_i_12[0]
+                         LUT5 (Prop_lut5_I0_O)        0.306     5.305 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U17/mult_res_18_reg_8435[9]_i_34/O
+                         net (fo=1, unplaced)         0.000     5.305    bd_0_i/hls_inst/inst/compute_encoder_U0_n_4621
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     5.838 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U17/mult_res_18_reg_8435_reg[9]_i_12/CO[3]
+                         net (fo=1, unplaced)         0.009     5.847    bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U17/mult_res_18_reg_8435_reg[9]_i_12_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.964 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U17/mult_res_18_reg_8435_reg[13]_i_12/CO[3]
+                         net (fo=1, unplaced)         0.000     5.964    bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U17/mult_res_18_reg_8435_reg[13]_i_12_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331     6.295 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U17/mult_res_18_reg_8435_reg[17]_i_12/O[3]
+                         net (fo=2, unplaced)         0.629     6.924    bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U17/mult_res_18_reg_8435_reg[17]_i_12_n_4
+                         LUT3 (Prop_lut3_I0_O)        0.307     7.231 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U17/mult_res_18_reg_8435[17]_i_4/O
+                         net (fo=2, unplaced)         0.650     7.881    bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U17/mult_res_18_reg_8435[17]_i_4_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520     8.401 r  bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U17/mult_res_18_reg_8435_reg[17]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     8.401    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U17/mult_res_18_reg_8435_reg[19][0]
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     8.738 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U17/mult_res_18_reg_8435_reg[19]_i_1/O[1]
+                         net (fo=1, unplaced)         0.000     8.738    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_ln59_18_fu_3051_p2[25]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_18_reg_8435_reg[19]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=7130, unset)         0.924    10.924    bd_0_i/hls_inst/inst/compute_encoder_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_18_reg_8435_reg[19]/C
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         FDRE (Setup_fdre_C_D)        0.109    10.998    bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_18_reg_8435_reg[19]
+  -------------------------------------------------------------------
+                         required time                         10.998    
+                         arrival time                          -8.738    
+  -------------------------------------------------------------------
+                         slack                                  2.260    
+
+Slack (MET) :             2.260ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_4_0_load_reg_7672_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_75_reg_8720_reg[19]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        7.765ns  (logic 4.121ns (53.071%)  route 3.644ns (46.929%))
+  Logic Levels:           10  (CARRY4=7 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7130, unset)         0.973     0.973    bd_0_i/hls_inst/inst/compute_encoder_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_4_0_load_reg_7672_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.518     1.491 r  bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_4_0_load_reg_7672_reg[1]/Q
+                         net (fo=161, unplaced)       1.077     2.568    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U65/p_ZL2W1_4_0_load_reg_7672[0]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.863 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U65/mult_res_75_reg_8720[5]_i_39/O
+                         net (fo=2, unplaced)         0.650     3.513    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U65/mult_res_75_reg_8720[5]_i_39_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520     4.033 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U65/mult_res_75_reg_8720_reg[5]_i_13/CO[3]
+                         net (fo=1, unplaced)         0.000     4.033    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U65/mult_res_75_reg_8720_reg[5]_i_13_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     4.370 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U65/mult_res_75_reg_8720_reg[5]_i_12/O[1]
+                         net (fo=3, unplaced)         0.629     4.999    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U65/mult_res_75_reg_8720_reg[5]_i_12_n_6
+                         LUT5 (Prop_lut5_I0_O)        0.306     5.305 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U65/mult_res_75_reg_8720[9]_i_34/O
+                         net (fo=1, unplaced)         0.000     5.305    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U65/mult_res_75_reg_8720[9]_i_34_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     5.838 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U65/mult_res_75_reg_8720_reg[9]_i_12/CO[3]
+                         net (fo=1, unplaced)         0.009     5.847    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U65/mult_res_75_reg_8720_reg[9]_i_12_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.964 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U65/mult_res_75_reg_8720_reg[13]_i_12/CO[3]
+                         net (fo=1, unplaced)         0.000     5.964    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U65/mult_res_75_reg_8720_reg[13]_i_12_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331     6.295 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U65/mult_res_75_reg_8720_reg[17]_i_12/O[3]
+                         net (fo=2, unplaced)         0.629     6.924    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U65/mult_res_75_reg_8720_reg[17]_i_12_n_4
+                         LUT3 (Prop_lut3_I0_O)        0.307     7.231 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U65/mult_res_75_reg_8720[17]_i_4/O
+                         net (fo=2, unplaced)         0.650     7.881    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U65/mult_res_75_reg_8720[17]_i_4_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520     8.401 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U65/mult_res_75_reg_8720_reg[17]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     8.401    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U65/mult_res_75_reg_8720_reg[17]_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     8.738 r  bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U65/mult_res_75_reg_8720_reg[19]_i_1/O[1]
+                         net (fo=1, unplaced)         0.000     8.738    bd_0_i/hls_inst/inst/compute_encoder_U0/mul_ln59_75_fu_3963_p2[25]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_75_reg_8720_reg[19]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=7130, unset)         0.924    10.924    bd_0_i/hls_inst/inst/compute_encoder_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_75_reg_8720_reg[19]/C
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         FDRE (Setup_fdre_C_D)        0.109    10.998    bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_75_reg_8720_reg[19]
+  -------------------------------------------------------------------
+                         required time                         10.998    
+                         arrival time                          -8.738    
+  -------------------------------------------------------------------
+                         slack                                  2.260    
+
+
+
+

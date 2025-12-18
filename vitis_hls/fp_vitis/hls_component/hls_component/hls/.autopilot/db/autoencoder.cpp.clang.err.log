@@ -1,0 +1,7 @@
+In file included from autoencoder.cpp:1:
+In file included from ./autoencoder.h:5:
+In file included from D:/xilinx/2025.1/Vitis/common/technology/autopilot\hls_math.h:1057:
+D:/xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_sqrt_apfixed.h:16:34: warning: unknown warning group '-Wmisleading-indentation', ignored [-Wunknown-warning-option]
+#pragma clang diagnostic ignored "-Wmisleading-indentation"
+                                 ^
+1 warning generated.

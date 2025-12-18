@@ -1,0 +1,20 @@
+---
+MainSourceFile:  /home/ubuntu2004/527_final/mini_ae_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '37:63'
+    FilePath:        firmware/myproject.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '37:67'
+    FilePath:        firmware/myproject.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '45:67'
+    FilePath:        firmware/myproject.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '45:71'
+    FilePath:        firmware/myproject.cpp
+...

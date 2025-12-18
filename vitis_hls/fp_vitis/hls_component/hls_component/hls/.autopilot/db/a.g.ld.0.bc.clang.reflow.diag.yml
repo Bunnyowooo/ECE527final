@@ -1,0 +1,1548 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/.autopilot/db\autoencoder.pp.0.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_autoencoder.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init
+    DebugLoc:        { File: ./autoencoder.h, Line: 15, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_autoencoder.pp.0.cpp
+    DebugLoc:        { File: 'D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/.autopilot/db\autoencoder.pp.0.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/.autopilot/db\autoencoder.pp.0.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_autoencoder.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.1
+    DebugLoc:        { File: ./autoencoder.h, Line: 16, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_autoencoder.pp.0.cpp
+    DebugLoc:        { File: 'D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/.autopilot/db\autoencoder.pp.0.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/.autopilot/db\autoencoder.pp.0.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_autoencoder.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.2
+    DebugLoc:        { File: ./autoencoder.h, Line: 19, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_autoencoder.pp.0.cpp
+    DebugLoc:        { File: 'D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/.autopilot/db\autoencoder.pp.0.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/.autopilot/db\autoencoder.pp.0.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_autoencoder.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.3
+    DebugLoc:        { File: ./autoencoder.h, Line: 20, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_autoencoder.pp.0.cpp
+    DebugLoc:        { File: 'D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/.autopilot/db\autoencoder.pp.0.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/.autopilot/db\autoencoder.pp.0.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_autoencoder.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.4
+    DebugLoc:        { File: ./autoencoder.h, Line: 23, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_autoencoder.pp.0.cpp
+    DebugLoc:        { File: 'D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/.autopilot/db\autoencoder.pp.0.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: autoencoder.cpp, Line: 78, Column: 20 }
+Function:        _Z15compute_encoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA16_KS2_PS4_S3_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'relu(ap_fixed<24, 10, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: autoencoder.cpp, Line: 6, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'compute_encoder(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [16], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: autoencoder.cpp, Line: 29, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: autoencoder.cpp, Line: 116, Column: 21 }
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'sigmoid(ap_fixed<24, 10, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: autoencoder.cpp, Line: 11, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'compute_decoder(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [64], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: autoencoder.cpp, Line: 90, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: autoencoder.cpp, Line: 141, Column: 2 }
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - Callee:          'compute_encoder(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [16], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: autoencoder.cpp, Line: 29, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'tiny_autoencoder(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: autoencoder.cpp, Line: 121, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: autoencoder.cpp, Line: 142, Column: 5 }
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - Callee:          'compute_decoder(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [64], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: autoencoder.cpp, Line: 90, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'tiny_autoencoder(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: autoencoder.cpp, Line: 121, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 100, Column: 20 }
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_100_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 105, Column: 20 }
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        Calc_Loop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 107, Column: 20 }
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_107_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 114, Column: 23 }
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        Write_Output
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 44, Column: 19 }
+Function:        _Z15compute_encoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA16_KS2_PS4_S3_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_44_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 49, Column: 25 }
+Function:        _Z15compute_encoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA16_KS2_PS4_S3_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        Update_Neurons
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 55, Column: 30 }
+Function:        _Z15compute_encoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA16_KS2_PS4_S3_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_55_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 90, Column: 0 }
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_100_1
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:100:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_decoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 90, Column: 0 }
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Calc_Loop
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:105:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_decoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 90, Column: 0 }
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_107_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:107:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_decoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 90, Column: 0 }
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_107_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:107:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_decoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 90, Column: 0 }
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_107_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:107:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_decoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 90, Column: 0 }
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_107_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:107:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_decoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 90, Column: 0 }
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_107_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:107:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_decoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 90, Column: 0 }
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_107_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:107:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_decoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 90, Column: 0 }
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_107_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:107:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_decoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 90, Column: 0 }
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_107_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:107:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_decoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 90, Column: 0 }
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_107_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:107:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_decoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 90, Column: 0 }
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_107_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:107:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_decoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 90, Column: 0 }
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_107_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:107:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_decoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 90, Column: 0 }
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_107_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:107:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_decoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 90, Column: 0 }
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_107_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:107:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_decoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 90, Column: 0 }
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_107_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:107:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_decoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 90, Column: 0 }
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_107_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:107:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_decoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 90, Column: 0 }
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_107_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:107:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_decoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 90, Column: 0 }
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Write_Output
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:114:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_decoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 29, Column: 0 }
+Function:        _Z15compute_encoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA16_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Activation
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:76:17'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_encoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 29, Column: 0 }
+Function:        _Z15compute_encoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA16_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_44_1
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:44:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_encoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 29, Column: 0 }
+Function:        _Z15compute_encoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA16_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Update_Neurons
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:49:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_encoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 29, Column: 0 }
+Function:        _Z15compute_encoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA16_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_55_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:55:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_encoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 29, Column: 0 }
+Function:        _Z15compute_encoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA16_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_55_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:55:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_encoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 29, Column: 0 }
+Function:        _Z15compute_encoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA16_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_55_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:55:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_encoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 29, Column: 0 }
+Function:        _Z15compute_encoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA16_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_55_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:55:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_encoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 29, Column: 0 }
+Function:        _Z15compute_encoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA16_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_55_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:55:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_encoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 29, Column: 0 }
+Function:        _Z15compute_encoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA16_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_55_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:55:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_encoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 29, Column: 0 }
+Function:        _Z15compute_encoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA16_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_55_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:55:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_encoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 29, Column: 0 }
+Function:        _Z15compute_encoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA16_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_55_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:55:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_encoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 29, Column: 0 }
+Function:        _Z15compute_encoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA16_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_55_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:55:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_encoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 29, Column: 0 }
+Function:        _Z15compute_encoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA16_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_55_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:55:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_encoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 29, Column: 0 }
+Function:        _Z15compute_encoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA16_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_55_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:55:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_encoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 29, Column: 0 }
+Function:        _Z15compute_encoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA16_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_55_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:55:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_encoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 29, Column: 0 }
+Function:        _Z15compute_encoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA16_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_55_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:55:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_encoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 29, Column: 0 }
+Function:        _Z15compute_encoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA16_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_55_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:55:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_encoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 29, Column: 0 }
+Function:        _Z15compute_encoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA16_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_55_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:55:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_encoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 29, Column: 0 }
+Function:        _Z15compute_encoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA16_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_55_2
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:55:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_encoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: autoencoder.cpp, Line: 29, Column: 0 }
+Function:        _Z15compute_encoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA16_KS2_PS4_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Init_H
+  - String:          ''' ('
+  - LoopLoc:         'autoencoder.cpp:32:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_encoder
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: autoencoder.cpp, Line: 141, Column: 2 }
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - Callee:          'compute_encoder(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [16], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: autoencoder.cpp, Line: 29, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'tiny_autoencoder(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: autoencoder.cpp, Line: 121, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: autoencoder.cpp, Line: 142, Column: 5 }
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - Callee:          'compute_decoder(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [64], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: autoencoder.cpp, Line: 90, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'tiny_autoencoder(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: autoencoder.cpp, Line: 121, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_tiny_autoencoder_ir
+Args:            
+  - Callee:          'tiny_autoencoder(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: autoencoder.cpp, Line: 121, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_tiny_autoencoder_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ./autoencoder.h, Line: 20, Column: 0 }
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZL2B2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '8'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ./autoencoder.h, Line: 19, Column: 0 }
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZL2W2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '8'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ./autoencoder.h, Line: 16, Column: 0 }
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZL2B1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ./autoencoder.h, Line: 15, Column: 0 }
+Function:        _Z15compute_encoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA16_KS2_PS4_S3_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZL2W1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '8'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: autoencoder.cpp, Line: 137, Column: 10 }
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          hidden_layer_buf
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: autoencoder.cpp, Line: 121, Column: 0 }
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          input_data
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '8'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: autoencoder.cpp, Line: 121, Column: 0 }
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          output_data
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '8'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_.53.54
+Args:            
+  - String:          'Automatically partitioning array '''
+  - Value:           _ZL2W2_0
+  - String:          ''' dimension '
+  - Dim:             '1'
+  - String:          ' completely based on constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_.53.54
+Args:            
+  - String:          'Automatically partitioning array '''
+  - Value:           _ZL2W2_1
+  - String:          ''' dimension '
+  - Dim:             '1'
+  - String:          ' completely based on constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_.53.54
+Args:            
+  - String:          'Automatically partitioning array '''
+  - Value:           _ZL2W2_2
+  - String:          ''' dimension '
+  - Dim:             '1'
+  - String:          ' completely based on constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_.53.54
+Args:            
+  - String:          'Automatically partitioning array '''
+  - Value:           _ZL2W2_3
+  - String:          ''' dimension '
+  - Dim:             '1'
+  - String:          ' completely based on constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_.53.54
+Args:            
+  - String:          'Automatically partitioning array '''
+  - Value:           _ZL2W2_4
+  - String:          ''' dimension '
+  - Dim:             '1'
+  - String:          ' completely based on constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_.53.54
+Args:            
+  - String:          'Automatically partitioning array '''
+  - Value:           _ZL2W2_5
+  - String:          ''' dimension '
+  - Dim:             '1'
+  - String:          ' completely based on constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_.53.54
+Args:            
+  - String:          'Automatically partitioning array '''
+  - Value:           _ZL2W2_6
+  - String:          ''' dimension '
+  - Dim:             '1'
+  - String:          ' completely based on constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+Function:        _Z15compute_decoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_KS2_PS4_S3_.53.54
+Args:            
+  - String:          'Automatically partitioning array '''
+  - Value:           _ZL2W2_7
+  - String:          ''' dimension '
+  - Dim:             '1'
+  - String:          ' completely based on constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=_ZL2W2_0'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  tiny_autoencoder
+  - String:          ' '
+  - PragmaSrcLoc:    'autoencoder.cpp:95:9'
+    DebugLoc:        { File: autoencoder.cpp, Line: 95, Column: 9 }
+  - VarName:         _ZL2W2_0
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: autoencoder.cpp, Line: 95, Column: 9 }
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            _ZL2W2_0
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=_ZL2W2_1'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  tiny_autoencoder
+  - String:          ' '
+  - PragmaSrcLoc:    'autoencoder.cpp:95:9'
+    DebugLoc:        { File: autoencoder.cpp, Line: 95, Column: 9 }
+  - VarName:         _ZL2W2_1
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: autoencoder.cpp, Line: 95, Column: 9 }
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            _ZL2W2_1
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=_ZL2W2_2'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  tiny_autoencoder
+  - String:          ' '
+  - PragmaSrcLoc:    'autoencoder.cpp:95:9'
+    DebugLoc:        { File: autoencoder.cpp, Line: 95, Column: 9 }
+  - VarName:         _ZL2W2_2
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: autoencoder.cpp, Line: 95, Column: 9 }
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            _ZL2W2_2
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=_ZL2W2_3'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  tiny_autoencoder
+  - String:          ' '
+  - PragmaSrcLoc:    'autoencoder.cpp:95:9'
+    DebugLoc:        { File: autoencoder.cpp, Line: 95, Column: 9 }
+  - VarName:         _ZL2W2_3
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: autoencoder.cpp, Line: 95, Column: 9 }
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            _ZL2W2_3
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=_ZL2W2_4'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  tiny_autoencoder
+  - String:          ' '
+  - PragmaSrcLoc:    'autoencoder.cpp:95:9'
+    DebugLoc:        { File: autoencoder.cpp, Line: 95, Column: 9 }
+  - VarName:         _ZL2W2_4
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: autoencoder.cpp, Line: 95, Column: 9 }
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            _ZL2W2_4
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=_ZL2W2_5'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  tiny_autoencoder
+  - String:          ' '
+  - PragmaSrcLoc:    'autoencoder.cpp:95:9'
+    DebugLoc:        { File: autoencoder.cpp, Line: 95, Column: 9 }
+  - VarName:         _ZL2W2_5
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: autoencoder.cpp, Line: 95, Column: 9 }
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            _ZL2W2_5
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=_ZL2W2_6'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  tiny_autoencoder
+  - String:          ' '
+  - PragmaSrcLoc:    'autoencoder.cpp:95:9'
+    DebugLoc:        { File: autoencoder.cpp, Line: 95, Column: 9 }
+  - VarName:         _ZL2W2_6
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: autoencoder.cpp, Line: 95, Column: 9 }
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            _ZL2W2_6
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=_ZL2W2_7'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  tiny_autoencoder
+  - String:          ' '
+  - PragmaSrcLoc:    'autoencoder.cpp:95:9'
+    DebugLoc:        { File: autoencoder.cpp, Line: 95, Column: 9 }
+  - VarName:         _ZL2W2_7
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: autoencoder.cpp, Line: 95, Column: 9 }
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            _ZL2W2_7
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZL2W2_7
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZL2W2_6
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZL2W2_5
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZL2W2_4
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZL2W2_3
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZL2W2_2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZL2W2_1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZL2W2_0
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: autoencoder.cpp, Line: 141, Column: 2 }
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - Callee:          'compute_encoder(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [16], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*) (.51.52)'
+    DebugLoc:        { File: autoencoder.cpp, Line: 29, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'tiny_autoencoder(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: autoencoder.cpp, Line: 121, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: autoencoder.cpp, Line: 142, Column: 5 }
+Function:        _Z16tiny_autoencoderP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - Callee:          'compute_decoder(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [64], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*) (.53.54)'
+    DebugLoc:        { File: autoencoder.cpp, Line: 0, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'tiny_autoencoder(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: autoencoder.cpp, Line: 121, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

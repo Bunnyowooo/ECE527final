@@ -1,0 +1,18 @@
+Backend: Vivado
+ClockPeriod: 5
+HLSConfig:
+  Model:
+    BramFactor: 1000000000
+    Precision: ap_fixed<16,6>
+    ReuseFactor: 1
+    Strategy: Latency
+    TraceOutput: false
+IOType: io_parallel
+InputData: null
+KerasModel: !keras_model 'mini_ae_latency_cli/keras_model.h5'
+OutputDir: mini_ae_latency_cli
+OutputPredictions: null
+Part: xc7z020clg400-1
+ProjectName: myproject
+Stamp: FceD5D15
+Version: 1.0.0

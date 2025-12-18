@@ -1,0 +1,65 @@
+--- !Passed
+Pass:            reflow-pragma-conflict-handle
+Name:            FunctionPragmaConflictWarn
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense.h, Line: 38, Column: 0 }
+Function:        _ZN4nnet5denseI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config2EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'In function '''
+  - Function:        'void nnet::dense<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config2::weight_t*, config2::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense.h, Line: 38, 
+                       Column: 0 }
+  - String:          ''', '
+  - String:          'Pragma conflict happens on '''
+  - String:          INLINE
+  - String:          ''' and '
+  - String:          DATAFLOW
+  - String:          ' pragmas: '
+  - String:          Inline into dataflow region may break the canonical form
+...
+--- !Passed
+Pass:            reflow-pragma-conflict-handle
+Name:            FunctionPragmaConflictWarn
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense.h, Line: 38, Column: 0 }
+Function:        _ZN4nnet5denseI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config4EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'In function '''
+  - Function:        'void nnet::dense<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config4::weight_t*, config4::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense.h, Line: 38, 
+                       Column: 0 }
+  - String:          ''', '
+  - String:          'Pragma conflict happens on '''
+  - String:          INLINE
+  - String:          ''' and '
+  - String:          DATAFLOW
+  - String:          ' pragmas: '
+  - String:          Inline into dataflow region may break the canonical form
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, Line: 56, 
+                   Column: 17 }
+Function:        _ZN4nnet25dense_resource_rf_leq_ninI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config2EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'nnet::product::mult<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::product(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_mult.h, Line: 70, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config2::weight_t*, config2::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, 
+                       Line: 15, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_resource.h, Line: 139, 
+                   Column: 17 }
+Function:        _ZN4nnet29dense_resource_rf_gt_nin_rem0I8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_7config4EEvPT_PT0_PNT1_8weight_tEPNSA_6bias_tE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'nnet::product::mult<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::product(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_mult.h, Line: 70, 
+                       Column: 0 }
+  - String:          '

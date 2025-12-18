@@ -1,0 +1,458 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component 
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg
+WARNING: [HLS 200-2001] file not found 'C:/Users/li/Downloads/input_data.dat' see [hls] from D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg(12)
+WARNING: [HLS 200-2001] file not found 'C:/Users/li/Downloads/output_hls.dat' see [hls] from D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg(13)
+WARNING: [HLS 200-2001] file not found 'C:/Users/li/Downloads/output_keras.dat' see [hls] from D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg(14)
+INFO: [HLS 200-1465] Applying config ini 'syn.file=autoencoder.cpp' from D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/autoencoder.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=autoencoder.h' from D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/autoencoder.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/Users/li/Downloads/input_data.dat' from D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg(12)
+WARNING: [HLS 200-40] Cannot find design file 'C:/Users/li/Downloads/input_data.dat'
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/Users/li/Downloads/output_hls.dat' from D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg(13)
+WARNING: [HLS 200-40] Cannot find design file 'C:/Users/li/Downloads/output_hls.dat'
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/Users/li/Downloads/output_keras.dat' from D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg(14)
+WARNING: [HLS 200-40] Cannot find design file 'C:/Users/li/Downloads/output_keras.dat'
+INFO: [HLS 200-1465] Applying config ini 'tb.file=testbench.cpp' from D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file 'D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/testbench.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=data.h' from D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/data.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=tiny_autoencoder' from D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg400-1' from D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying config ini 'clock=7ns' from D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg(15)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 7ns.
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/vitis-comp.json
+WARNING: [HLS 200-40] Cannot find source file C:/Users/li/Downloads/output_keras.dat; skipping it.
+WARNING: [HLS 200-40] Cannot find source file C:/Users/li/Downloads/output_hls.dat; skipping it.
+WARNING: [HLS 200-40] Cannot find source file C:/Users/li/Downloads/input_data.dat; skipping it.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 2 seconds. Elapsed time: 2.309 seconds; current allocated memory: 150.461 MB.
+INFO: [HLS 200-10] Analyzing design file 'autoencoder.cpp' ... 
+WARNING: [HLS 207-1016] unknown warning group '-Wmisleading-indentation', ignored (D:/xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_sqrt_apfixed.h:16:34)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 14.461 seconds; current allocated memory: 157.496 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 4,388 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,630 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,919 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,315 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,139 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 19,740 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,014 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,014 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,014 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,030 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,030 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,014 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,222 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,262 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,290 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,299 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-131] Inlining function 'sigmoid(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'tiny_autoencoder(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (autoencoder.cpp:117:21)
+INFO: [HLS 214-131] Inlining function 'relu(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'tiny_autoencoder(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (autoencoder.cpp:87:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_102_1' is marked as complete unroll implied by the pipeline pragma (autoencoder.cpp:102:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_107_2' is marked as complete unroll implied by the pipeline pragma (autoencoder.cpp:107:27)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_109_3' is marked as complete unroll implied by the pipeline pragma (autoencoder.cpp:109:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_115_4' is marked as complete unroll implied by the pipeline pragma (autoencoder.cpp:115:27)
+INFO: [HLS 214-291] Loop 'Fetch_Input' is marked as complete unroll implied by the pipeline pragma (autoencoder.cpp:61:15)
+INFO: [HLS 214-291] Loop 'Update_Neurons' is marked as complete unroll implied by the pipeline pragma (autoencoder.cpp:66:25)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_102_1' (autoencoder.cpp:102:20) in function 'tiny_autoencoder' completely with a factor of 4 (autoencoder.cpp:19:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_107_2' (autoencoder.cpp:107:27) in function 'tiny_autoencoder' completely with a factor of 16 (autoencoder.cpp:19:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_109_3' (autoencoder.cpp:109:20) in function 'tiny_autoencoder' completely with a factor of 4 (autoencoder.cpp:19:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_115_4' (autoencoder.cpp:115:27) in function 'tiny_autoencoder' completely with a factor of 4 (autoencoder.cpp:19:0)
+INFO: [HLS 214-186] Unrolling loop 'Activation_Loop' (autoencoder.cpp:85:22) in function 'tiny_autoencoder' completely with a factor of 16 (autoencoder.cpp:19:0)
+INFO: [HLS 214-186] Unrolling loop 'Fetch_Input' (autoencoder.cpp:61:15) in function 'tiny_autoencoder' completely with a factor of 8 (autoencoder.cpp:19:0)
+INFO: [HLS 214-186] Unrolling loop 'Update_Neurons' (autoencoder.cpp:66:25) in function 'tiny_autoencoder' completely with a factor of 16 (autoencoder.cpp:19:0)
+INFO: [HLS 214-186] Unrolling loop 'Init_H' (autoencoder.cpp:48:10) in function 'tiny_autoencoder' completely with a factor of 16 (autoencoder.cpp:19:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL2B2': Cyclic partitioning with factor 4 on dimension 1. (./autoencoder.h:19:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL2W2': Cyclic partitioning with factor 4 on dimension 2. (./autoencoder.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL2W1': Cyclic partitioning with factor 8 on dimension 1. Complete partitioning on dimension 2. (./autoencoder.h:14:0)
+INFO: [HLS 214-248] Applying array_partition to 'input_data': Cyclic partitioning with factor 8 on dimension 1. (autoencoder.cpp:19:0)
+INFO: [HLS 214-248] Applying array_partition to 'output_data': Cyclic partitioning with factor 4 on dimension 1. (autoencoder.cpp:19:0)
+INFO: [HLS 214-449] Automatically partitioning array '_ZL2W2_0' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array '_ZL2W2_1' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array '_ZL2W2_2' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array '_ZL2W2_3' dimension 1 completely based on constant index.
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array '_ZL2W2_0' due to pipeline pragma (autoencoder.cpp:97:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array '_ZL2W2_1' due to pipeline pragma (autoencoder.cpp:97:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array '_ZL2W2_2' due to pipeline pragma (autoencoder.cpp:97:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array '_ZL2W2_3' due to pipeline pragma (autoencoder.cpp:97:9)
+INFO: [HLS 214-248] Applying array_partition to '_ZL2W2_3': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZL2W2_2': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZL2W2_1': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZL2W2_0': Complete partitioning on dimension 1.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 9.077 seconds; current allocated memory: 158.516 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 158.516 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.091 seconds; current allocated memory: 167.414 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.115 seconds; current allocated memory: 169.656 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (autoencoder.cpp:97:9) to (autoencoder.cpp:96:19) in function 'tiny_autoencoder'... converting 9 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'tiny_autoencoder' (autoencoder.cpp:5:1)...128 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.291 seconds; current allocated memory: 196.820 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.285 seconds; current allocated memory: 207.867 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'tiny_autoencoder' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'tiny_autoencoder_Pipeline_Encoder_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Encoder_Loop'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 16 bit ('add_ln81_79', autoencoder.cpp:81) to 'store' operation 0 bit ('conv_i_i125_9329_write_ln81', autoencoder.cpp:81) of variable 'add_ln81_79', autoencoder.cpp:81 on local variable 'conv_i_i125_9329' (combination delay: 5.491 ns) to honor II or Latency constraint in region 'Encoder_Loop'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, loop 'Encoder_Loop'
+WARNING: [HLS 200-871] Estimated clock period (5.491 ns) exceeds the target (target clock period: 7.000 ns, clock uncertainty: 1.890 ns, effective delay budget: 5.110 ns).
+Resolution: For help on HLS 200-871 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'tiny_autoencoder_Pipeline_Encoder_Loop' consists of the following:
+	'load' operation 16 bit ('conv_i_i125_15335_load', autoencoder.cpp:81) on local variable 'conv_i_i125_15335' [216]  (0.000 ns)
+	'add' operation 16 bit ('add_ln81_127', autoencoder.cpp:81) [1078]  (3.903 ns)
+	'store' operation 0 bit ('conv_i_i125_15335_write_ln81', autoencoder.cpp:81) of variable 'add_ln81_127', autoencoder.cpp:81 on local variable 'conv_i_i125_15335' [1081]  (1.588 ns)
+
+Resolution: For help on HLS 200-1016 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.22 seconds; current allocated memory: 220.117 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.138 seconds; current allocated memory: 221.285 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'tiny_autoencoder_Pipeline_Decoder_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_63) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_62) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_61) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_60) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_59) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_58) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_57) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_56) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_55) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_54) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_53) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_52) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_51) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_50) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_49) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_48) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_47) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_46) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_45) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_44) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_43) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_42) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_41) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_40) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_39) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_38) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_37) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_36) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_35) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_34) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_33) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_32) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_31) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_30) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_29) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_28) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_27) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_26) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_25) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_24) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_23) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_22) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_21) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_20) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_19) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_18) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_17) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_16) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_15) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_14) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_13) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_12) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_10) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln111) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'Decoder_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 24, loop 'Decoder_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.981 seconds; current allocated memory: 226.004 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.101 seconds; current allocated memory: 226.543 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'tiny_autoencoder' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.118 seconds; current allocated memory: 226.977 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 227.887 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'tiny_autoencoder_Pipeline_Encoder_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'tiny_autoencoder_Pipeline_Encoder_Loop' pipeline 'Encoder_Loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_10s_16s_26_2_1': 71 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9s_16s_25_2_1': 57 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'tiny_autoencoder_Pipeline_Encoder_Loop'.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_0_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_1_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_2_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_3_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_4_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_5_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_6_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_7_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_0_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_1_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_2_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_3_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_4_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_5_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_6_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_7_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_0_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_1_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_2_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_3_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_4_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_5_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_6_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_7_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_0_3_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_1_3_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_2_3_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_3_3_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_4_3_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_5_3_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_6_3_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_7_3_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_0_4_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_1_4_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_2_4_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_3_4_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_4_4_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_5_4_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_6_4_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_7_4_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_0_5_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_1_5_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_2_5_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_3_5_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_4_5_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_5_5_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_6_5_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_7_5_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_0_6_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_1_6_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_2_6_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_3_6_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_4_6_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_5_6_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_6_6_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_7_6_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_0_7_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_1_7_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_2_7_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_3_7_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_4_7_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_5_7_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_6_7_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_7_7_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_0_8_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_1_8_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_2_8_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_3_8_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_4_8_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_5_8_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_6_8_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_7_8_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_0_9_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_1_9_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_2_9_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_3_9_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_4_9_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_5_9_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_6_9_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_7_9_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_0_10_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_1_10_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_2_10_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_3_10_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_4_10_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_5_10_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_6_10_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_7_10_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_0_11_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_1_11_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_2_11_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_3_11_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_4_11_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_5_11_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_6_11_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_7_11_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_0_12_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_1_12_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_2_12_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_3_12_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_4_12_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_5_12_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_6_12_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_7_12_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_0_13_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_1_13_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_2_13_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_3_13_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_4_13_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_5_13_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_6_13_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_7_13_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_0_14_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_1_14_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_2_14_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_3_14_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_4_14_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_5_14_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_6_14_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_7_14_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_0_15_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_1_15_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_2_15_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_3_15_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_4_15_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_5_15_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_6_15_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoder_Loop_p_ZL2W1_7_15_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 7.811 seconds; current allocated memory: 243.039 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'tiny_autoencoder_Pipeline_Decoder_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'tiny_autoencoder_Pipeline_Decoder_Loop' pipeline 'Decoder_Loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_15ns_10s_17s_25_4_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_15ns_10s_25s_26_4_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_15ns_10s_26s_26_4_1': 46 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_15ns_9s_26s_26_4_1': 10 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'tiny_autoencoder_Pipeline_Decoder_Loop'.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2B2_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2B2_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2B2_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2B2_3_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_0_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_1_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_2_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_3_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_0_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_1_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_2_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_3_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_0_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_1_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_2_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_3_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_0_3_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_1_3_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_2_3_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_3_3_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_0_4_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_1_4_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_2_4_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_3_4_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_0_5_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_1_5_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_2_5_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_3_5_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_0_6_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_1_6_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_2_6_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_3_6_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_0_7_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_1_7_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_2_7_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_3_7_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_0_8_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_1_8_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_2_8_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_3_8_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_0_9_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_1_9_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_2_9_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_3_9_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_0_10_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_1_10_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_2_10_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_3_10_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_0_11_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_1_11_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_2_11_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_3_11_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_0_12_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_1_12_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_2_12_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_3_12_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_0_13_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_1_13_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_2_13_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_3_13_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_0_14_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_1_14_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_2_14_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_3_14_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_0_15_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_1_15_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_2_15_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_p_ZL2W2_3_15_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-2168] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_Loop_SIGMOID_TABLE_ROM_AUTO_1R' using auto ROMs with 4 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 5.983 seconds; current allocated memory: 266.520 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'tiny_autoencoder' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'tiny_autoencoder/input_data_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'tiny_autoencoder/input_data_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'tiny_autoencoder/input_data_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'tiny_autoencoder/input_data_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'tiny_autoencoder/input_data_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'tiny_autoencoder/input_data_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'tiny_autoencoder/input_data_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'tiny_autoencoder/input_data_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'tiny_autoencoder/output_data_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'tiny_autoencoder/output_data_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'tiny_autoencoder/output_data_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'tiny_autoencoder/output_data_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'tiny_autoencoder' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'tiny_autoencoder'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.781 seconds; current allocated memory: 280.887 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 9.73 seconds; current allocated memory: 284.969 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 2.661 seconds; current allocated memory: 298.930 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for tiny_autoencoder.
+INFO: [VLOG 209-307] Generating Verilog RTL for tiny_autoencoder.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 182.12 MHz
+INFO: [HLS 200-112] Total CPU user time: 5 seconds. Total CPU system time: 5 seconds. Total elapsed time: 59.109 seconds; peak allocated memory: 298.992 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 1m 3s

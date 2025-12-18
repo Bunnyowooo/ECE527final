@@ -1,0 +1,280 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir D:/ece527/fp_vitis/hls_component/hls_component 
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/ece527/fp_vitis/hls_component/hls_component/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'D:/ece527/fp_vitis/hls_component/hls_component'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file D:/ece527/fp_vitis/hls_component/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=autoencoder.cpp' from D:/ece527/fp_vitis/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'D:/ece527/fp_vitis/hls_component/autoencoder.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=autoencoder.h' from D:/ece527/fp_vitis/hls_component/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'D:/ece527/fp_vitis/hls_component/autoencoder.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/Users/li/Downloads/input_data.dat' from D:/ece527/fp_vitis/hls_component/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'C:/Users/li/Downloads/input_data.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/Users/li/Downloads/output_hls.dat' from D:/ece527/fp_vitis/hls_component/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file 'C:/Users/li/Downloads/output_hls.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/Users/li/Downloads/output_keras.dat' from D:/ece527/fp_vitis/hls_component/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file 'C:/Users/li/Downloads/output_keras.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=testbench.cpp' from D:/ece527/fp_vitis/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file 'D:/ece527/fp_vitis/hls_component/testbench.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=data.h' from D:/ece527/fp_vitis/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'D:/ece527/fp_vitis/hls_component/data.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=tiny_autoencoder' from D:/ece527/fp_vitis/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from D:/ece527/fp_vitis/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg400-1' from D:/ece527/fp_vitis/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from D:/ece527/fp_vitis/hls_component/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/ece527/fp_vitis/hls_component/hls_component/vitis-comp.json
+WARNING: [HLS 200-40] Skipped source file 'output_keras.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_hls.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_data.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_keras.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_hls.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_data.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 2 seconds. Elapsed time: 3.466 seconds; current allocated memory: 150.789 MB.
+INFO: [HLS 200-10] Analyzing design file 'autoencoder.cpp' ... 
+WARNING: [HLS 207-1016] unknown warning group '-Wmisleading-indentation', ignored (C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_sqrt_apfixed.h:16:34)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 23.219 seconds; current allocated memory: 157.723 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 1,485 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (D:/ece527/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,039 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (D:/ece527/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,092 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (D:/ece527/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,090 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (D:/ece527/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,090 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (D:/ece527/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,454 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (D:/ece527/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,117 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (D:/ece527/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,117 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (D:/ece527/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,252 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (D:/ece527/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,075 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (D:/ece527/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,075 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (D:/ece527/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,059 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (D:/ece527/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,329 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (D:/ece527/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,089 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (D:/ece527/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,090 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (D:/ece527/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,083 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (D:/ece527/fp_vitis/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+WARNING: [HLS 214-275] In 'Decoder_Dot', Pragma conflict happens on 'PIPELINE' and 'UNROLL_OFF' pragmas: Pipeline requires unrolling all sub loops (autoencoder.cpp:76:22)
+INFO: [HLS 214-131] Inlining function 'sigmoid(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'tiny_autoencoder(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (autoencoder.cpp:83:26)
+INFO: [HLS 214-131] Inlining function 'relu(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'tiny_autoencoder(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (autoencoder.cpp:67:27)
+INFO: [HLS 214-291] Loop 'Decoder_Dot' is marked as complete unroll implied by the pipeline pragma (autoencoder.cpp:76:22)
+INFO: [HLS 214-291] Loop 'Encoder_Dot' is marked as complete unroll implied by the pipeline pragma (autoencoder.cpp:61:22)
+INFO: [HLS 214-186] Unrolling loop 'Decoder_Dot' (autoencoder.cpp:76:22) in function 'tiny_autoencoder' completely with a factor of 16 (autoencoder.cpp:28:0)
+INFO: [HLS 214-186] Unrolling loop 'Encoder_Dot' (autoencoder.cpp:61:22) in function 'tiny_autoencoder' completely with a factor of 64 (autoencoder.cpp:28:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL2W2': Complete partitioning on dimension 1. (./autoencoder.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL2B2': Complete partitioning on dimension 1. (./autoencoder.h:19:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL2B1': Complete partitioning on dimension 1. (./autoencoder.h:15:0)
+INFO: [HLS 214-248] Applying array_partition to 'hidden_layer': Complete partitioning on dimension 1. (autoencoder.cpp:52:10)
+INFO: [HLS 214-248] Applying array_reshape to '_ZL2W1': Cyclic reshaping with factor 4 on dimension 1. (./autoencoder.h:14:0)
+INFO: [HLS 214-248] Applying array_reshape to 'input_data': Cyclic reshaping with factor 4 on dimension 1. (autoencoder.cpp:28:0)
+INFO: [HLS 214-248] Applying array_reshape to 'output_data': Cyclic reshaping with factor 4 on dimension 1. (autoencoder.cpp:28:0)
+INFO: [HLS 214-449] Automatically partitioning array '_ZL2W1.26' dimension 1 completely based on constant index.
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W1 (.26)' due to pipeline pragma
+INFO: [HLS 214-248] Applying array_partition to '_ZL2W1.26': Complete partitioning on dimension 1.
+WARNING: [HLS 214-414] Cannot apply interface mode 'ap_vld' on function argument 'input_data' since this interface mode only supports scalar types (autoencoder.cpp:28:0)
+WARNING: [HLS 214-414] Cannot apply interface mode 'ap_vld' on function argument 'output_data' since this interface mode only supports scalar types (autoencoder.cpp:28:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 8.873 seconds; current allocated memory: 158.809 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 158.809 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.105 seconds; current allocated memory: 165.289 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] autoencoder.cpp:83: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.056 seconds; current allocated memory: 166.746 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (autoencoder.cpp:72:9) to (autoencoder.cpp:70:14) in function 'tiny_autoencoder'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.217 seconds; current allocated memory: 190.680 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.245 seconds; current allocated memory: 202.676 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'tiny_autoencoder' ...
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'tiny_autoencoder_Pipeline_Encoders' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_63) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_62) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_61) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_60) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_59) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_58) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_57) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_56) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_55) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_54) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_53) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_52) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_51) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_50) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_49) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_48) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_47) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_46) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_45) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_44) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_43) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_42) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_41) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_40) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_39) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_38) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_37) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_36) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_35) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_34) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_33) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_32) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_31) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_30) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_29) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_28) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_27) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_26) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_25) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_24) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_23) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_22) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_21) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_20) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_19) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_18) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_17) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_16) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_15) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_14) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_13) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_12) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_10) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln64) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'Encoders'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 16, Final II = 16, Depth = 68, loop 'Encoders'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.592 seconds; current allocated memory: 211.164 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.164 seconds; current allocated memory: 212.891 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'tiny_autoencoder_Pipeline_Decoder' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln80_15) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln80_14) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln80_13) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln80_12) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln80_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln80_10) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln80_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln80_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln80_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln80_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln80_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln80_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln80_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln80_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln80_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln80) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'Decoder'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 16, Final II = 16, Depth = 23, loop 'Decoder'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.72 seconds; current allocated memory: 214.312 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.065 seconds; current allocated memory: 214.789 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'tiny_autoencoder' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.089 seconds; current allocated memory: 215.629 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.038 seconds; current allocated memory: 216.164 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'tiny_autoencoder_Pipeline_Encoders' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'tiny_autoencoder_Pipeline_Encoders' pipeline 'Encoders' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_10s_26ns_26_4_1': 13 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_17s_26_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_26ns_26_4_1': 47 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_9s_26s_26_4_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_33_4_7_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'tiny_autoencoder_Pipeline_Encoders'.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoders_W1_26_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoders_W1_26_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoders_W1_26_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoders_W1_26_3_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoders_W1_26_4_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoders_W1_26_5_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoders_W1_26_6_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoders_W1_26_7_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoders_W1_26_8_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoders_W1_26_9_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoders_W1_26_10_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoders_W1_26_11_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoders_W1_26_12_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoders_W1_26_13_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoders_W1_26_14_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Encoders_W1_26_15_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.797 seconds; current allocated memory: 226.070 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'tiny_autoencoder_Pipeline_Decoder' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'tiny_autoencoder_Pipeline_Decoder' pipeline 'Decoder' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_10s_17s_25_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_10s_25s_26_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_10s_26ns_26_4_1': 14 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'partset_64ns_64ns_16ns_6ns_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_129_6_7_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'tiny_autoencoder_Pipeline_Decoder'.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_p_ZL2W2_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_p_ZL2W2_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_p_ZL2W2_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_p_ZL2W2_3_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_p_ZL2W2_4_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_p_ZL2W2_5_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_p_ZL2W2_6_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_p_ZL2W2_7_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_p_ZL2W2_8_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_p_ZL2W2_9_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_p_ZL2W2_10_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_p_ZL2W2_11_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_p_ZL2W2_12_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_p_ZL2W2_13_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_p_ZL2W2_14_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_p_ZL2W2_15_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'tiny_autoencoder_tiny_autoencoder_Pipeline_Decoder_SIGMOID_TABLE_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.993 seconds; current allocated memory: 240.520 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'tiny_autoencoder' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'tiny_autoencoder/input_data' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'tiny_autoencoder/output_data' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'tiny_autoencoder' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'tiny_autoencoder'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.281 seconds; current allocated memory: 243.969 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 1.76 seconds; current allocated memory: 247.875 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.89 seconds; current allocated memory: 253.984 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for tiny_autoencoder.
+INFO: [VLOG 209-307] Generating Verilog RTL for tiny_autoencoder.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 160.23 MHz
+INFO: [HLS 200-112] Total CPU user time: 5 seconds. Total CPU system time: 3 seconds. Total elapsed time: 48.616 seconds; peak allocated memory: 254.039 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 53s

@@ -1,0 +1,162 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir D:/ece527/fp_vitis/hls_component/hls_component 
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/ece527/fp_vitis/hls_component/hls_component/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'D:/ece527/fp_vitis/hls_component/hls_component'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file D:/ece527/fp_vitis/hls_component/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=autoencoder.cpp' from D:/ece527/fp_vitis/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'D:/ece527/fp_vitis/hls_component/autoencoder.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=autoencoder.h' from D:/ece527/fp_vitis/hls_component/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'D:/ece527/fp_vitis/hls_component/autoencoder.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/Users/li/Downloads/input_data.dat' from D:/ece527/fp_vitis/hls_component/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'C:/Users/li/Downloads/input_data.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/Users/li/Downloads/output_hls.dat' from D:/ece527/fp_vitis/hls_component/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file 'C:/Users/li/Downloads/output_hls.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/Users/li/Downloads/output_keras.dat' from D:/ece527/fp_vitis/hls_component/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file 'C:/Users/li/Downloads/output_keras.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=testbench.cpp' from D:/ece527/fp_vitis/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file 'D:/ece527/fp_vitis/hls_component/testbench.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=data.h' from D:/ece527/fp_vitis/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'D:/ece527/fp_vitis/hls_component/data.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=tiny_autoencoder' from D:/ece527/fp_vitis/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from D:/ece527/fp_vitis/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg400-1' from D:/ece527/fp_vitis/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from D:/ece527/fp_vitis/hls_component/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/ece527/fp_vitis/hls_component/hls_component/vitis-comp.json
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../testbench.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../testbench.cpp:9:
+In file included from ../../../../autoencoder.h:4:
+In file included from C:/Xilinx/2025.1/Vitis/include/ap_fixed.h:9:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_common.h:677:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_half.h:26:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_fpo.h:140:
+In file included from C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/2025.1/Vitis/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+[Testbench] Reading input_data.dat...
+[Testbench] Reading output_keras.dat...
+==================================================
+  Starting Autoencoder HLS Testbench (50 samples)
+==================================================
+[Sample 0] Mismatch at index 0 | HLS: 0.520508 vs Ref: 0.389656 (Diff: 0.130852)
+Sample  0: FAIL (37 mismatches)
+[Sample 1] Mismatch at index 1 | HLS: 0.37207 vs Ref: 0.451285 (Diff: 0.0792147)
+Sample  1: FAIL (40 mismatches)
+[Sample 2] Mismatch at index 4 | HLS: 0.535156 vs Ref: 0.481835 (Diff: 0.0533212)
+Sample  2: FAIL (19 mismatches)
+[Sample 3] Mismatch at index 0 | HLS: 0.493164 vs Ref: 0.397369 (Diff: 0.0957951)
+Sample  3: FAIL (43 mismatches)
+[Sample 4] Mismatch at index 0 | HLS: 0.490234 vs Ref: 0.428978 (Diff: 0.0612564)
+Sample  4: FAIL (22 mismatches)
+[Sample 5] Mismatch at index 4 | HLS: 0.541992 vs Ref: 0.478281 (Diff: 0.0637112)
+Sample  5: FAIL (24 mismatches)
+[Sample 6] Mismatch at index 0 | HLS: 0.519531 vs Ref: 0.401711 (Diff: 0.11782)
+Sample  6: FAIL (28 mismatches)
+[Sample 7] Mismatch at index 0 | HLS: 0.399414 vs Ref: 0.471587 (Diff: 0.0721729)
+Sample  7: FAIL (30 mismatches)
+[Sample 8] Mismatch at index 0 | HLS: 0.455078 vs Ref: 0.387693 (Diff: 0.0673851)
+Sample  8: FAIL (39 mismatches)
+[Sample 9] Mismatch at index 0 | HLS: 0.53418 vs Ref: 0.329933 (Diff: 0.204247)
+Sample  9: FAIL (34 mismatches)
+[Sample 10] Mismatch at index 0 | HLS: 0.474609 vs Ref: 0.413446 (Diff: 0.0611634)
+Sample 10: FAIL (40 mismatches)
+[Sample 11] Mismatch at index 0 | HLS: 0.463867 vs Ref: 0.403998 (Diff: 0.0598692)
+Sample 11: FAIL (34 mismatches)
+[Sample 12] Mismatch at index 0 | HLS: 0.547852 vs Ref: 0.323349 (Diff: 0.224503)
+Sample 12: FAIL (33 mismatches)
+[Sample 13] Mismatch at index 1 | HLS: 0.388672 vs Ref: 0.51044 (Diff: 0.121768)
+Sample 13: FAIL (37 mismatches)
+[Sample 14] Mismatch at index 0 | HLS: 0.498047 vs Ref: 0.375398 (Diff: 0.122649)
+Sample 14: FAIL (26 mismatches)
+[Sample 15] Mismatch at index 2 | HLS: 0.491211 vs Ref: 0.436544 (Diff: 0.0546669)
+Sample 15: FAIL (34 mismatches)
+[Sample 16] Mismatch at index 0 | HLS: 0.548828 vs Ref: 0.35664 (Diff: 0.192188)
+Sample 16: FAIL (29 mismatches)
+[Sample 17] Mismatch at index 0 | HLS: 0.530273 vs Ref: 0.433648 (Diff: 0.0966254)
+Sample 17: FAIL (36 mismatches)
+[Sample 18] Mismatch at index 1 | HLS: 0.37207 vs Ref: 0.48573 (Diff: 0.11366)
+Sample 18: FAIL (34 mismatches)
+[Sample 19] Mismatch at index 0 | HLS: 0.541016 vs Ref: 0.397935 (Diff: 0.143081)
+Sample 19: FAIL (27 mismatches)
+[Sample 20] Mismatch at index 0 | HLS: 0.464844 vs Ref: 0.333341 (Diff: 0.131503)
+Sample 20: FAIL (30 mismatches)
+[Sample 21] Mismatch at index 5 | HLS: 0.504883 vs Ref: 0.439638 (Diff: 0.0652448)
+Sample 21: FAIL (34 mismatches)
+[Sample 22] Mismatch at index 0 | HLS: 0.46582 vs Ref: 0.398345 (Diff: 0.0674753)
+Sample 22: FAIL (39 mismatches)
+[Sample 23] Mismatch at index 0 | HLS: 0.504883 vs Ref: 0.45346 (Diff: 0.0514228)
+Sample 23: FAIL (35 mismatches)
+[Sample 24] Mismatch at index 23 | HLS: 0.428711 vs Ref: 0.489922 (Diff: 0.061211)
+Sample 24: FAIL (7 mismatches)
+[Sample 25] Mismatch at index 2 | HLS: 0.463867 vs Ref: 0.324682 (Diff: 0.139185)
+Sample 25: FAIL (46 mismatches)
+[Sample 26] Mismatch at index 1 | HLS: 0.4375 vs Ref: 0.51156 (Diff: 0.07406)
+Sample 26: FAIL (28 mismatches)
+[Sample 27] Mismatch at index 0 | HLS: 0.553711 vs Ref: 0.406944 (Diff: 0.146767)
+Sample 27: FAIL (36 mismatches)
+[Sample 28] Mismatch at index 1 | HLS: 0.373047 vs Ref: 0.518915 (Diff: 0.145868)
+Sample 28: FAIL (48 mismatches)
+[Sample 29] Mismatch at index 0 | HLS: 0.572266 vs Ref: 0.468881 (Diff: 0.103385)
+Sample 29: FAIL (26 mismatches)
+[Sample 30] Mismatch at index 3 | HLS: 0.40625 vs Ref: 0.529291 (Diff: 0.123041)
+Sample 30: FAIL (27 mismatches)
+[Sample 31] Mismatch at index 0 | HLS: 0.552734 vs Ref: 0.417652 (Diff: 0.135082)
+Sample 31: FAIL (28 mismatches)
+[Sample 32] Mismatch at index 3 | HLS: 0.40625 vs Ref: 0.490336 (Diff: 0.084086)
+Sample 32: FAIL (28 mismatches)
+[Sample 33] Mismatch at index 10 | HLS: 0.53125 vs Ref: 0.429997 (Diff: 0.101253)
+Sample 33: FAIL (24 mismatches)
+[Sample 34] Mismatch at index 0 | HLS: 0.491211 vs Ref: 0.364926 (Diff: 0.126285)
+Sample 34: FAIL (35 mismatches)
+[Sample 35] Mismatch at index 0 | HLS: 0.470703 vs Ref: 0.396061 (Diff: 0.0746421)
+Sample 35: FAIL (34 mismatches)
+[Sample 36] Mismatch at index 0 | HLS: 0.483398 vs Ref: 0.4178 (Diff: 0.0655984)
+Sample 36: FAIL (39 mismatches)
+[Sample 37] Mismatch at index 0 | HLS: 0.541992 vs Ref: 0.429321 (Diff: 0.112671)
+Sample 37: FAIL (30 mismatches)
+[Sample 38] Mismatch at index 4 | HLS: 0.520508 vs Ref: 0.445801 (Diff: 0.0747068)
+Sample 38: FAIL (32 mismatches)
+[Sample 39] Mismatch at index 0 | HLS: 0.481445 vs Ref: 0.357141 (Diff: 0.124304)
+Sample 39: FAIL (32 mismatches)
+Sample 40: PASS
+[Sample 41] Mismatch at index 1 | HLS: 0.443359 vs Ref: 0.509705 (Diff: 0.0663456)
+Sample 41: FAIL (29 mismatches)
+[Sample 42] Mismatch at index 0 | HLS: 0.53125 vs Ref: 0.337532 (Diff: 0.193718)
+Sample 42: FAIL (37 mismatches)
+[Sample 43] Mismatch at index 6 | HLS: 0.456055 vs Ref: 0.507746 (Diff: 0.0516913)
+Sample 43: FAIL (25 mismatches)
+[Sample 44] Mismatch at index 0 | HLS: 0.539062 vs Ref: 0.476207 (Diff: 0.0628555)
+Sample 44: FAIL (26 mismatches)
+[Sample 45] Mismatch at index 1 | HLS: 0.417969 vs Ref: 0.483077 (Diff: 0.0651082)
+Sample 45: FAIL (29 mismatches)
+[Sample 46] Mismatch at index 0 | HLS: 0.524414 vs Ref: 0.438019 (Diff: 0.0863951)
+Sample 46: FAIL (30 mismatches)
+[Sample 47] Mismatch at index 0 | HLS: 0.499023 vs Ref: 0.425808 (Diff: 0.0732154)
+Sample 47: FAIL (21 mismatches)
+[Sample 48] Mismatch at index 0 | HLS: 0.536133 vs Ref: 0.353508 (Diff: 0.182625)
+Sample 48: FAIL (41 mismatches)
+[Sample 49] Mismatch at index 0 | HLS: 0.536133 vs Ref: 0.400566 (Diff: 0.135567)
+Sample 49: FAIL (33 mismatches)
+[Testbench] HLS results saved to output_hls.dat
+==================================================
+  TESTS FAILED: 49 samples had errors.
+@E Simulation failed: Function 'main' returns nonzero value '1'.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+ERROR: 4
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 11.471 seconds; peak allocated memory: 151.086 MB.

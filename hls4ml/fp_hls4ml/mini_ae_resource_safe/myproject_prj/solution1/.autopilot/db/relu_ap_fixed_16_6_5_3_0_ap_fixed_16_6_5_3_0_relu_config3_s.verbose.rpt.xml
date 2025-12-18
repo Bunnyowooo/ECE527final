@@ -1,0 +1,207 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_s'" level="0">
+<item name = "Date">Sun Dec 14 15:51:28 2025
+</item>
+<item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
+<item name = "Project">myproject_prj</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 6.465 ns, 0.62 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 610, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 153, -</column>
+<column name="Register">-, -, 242, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, 1, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="icmp_ln45_10_fu_328_p2">icmp, 0, 0, 23, 16, 1</column>
+<column name="icmp_ln45_11_fu_346_p2">icmp, 0, 0, 23, 16, 1</column>
+<column name="icmp_ln45_12_fu_364_p2">icmp, 0, 0, 23, 16, 1</column>
+<column name="icmp_ln45_13_fu_382_p2">icmp, 0, 0, 23, 16, 1</column>
+<column name="icmp_ln45_14_fu_400_p2">icmp, 0, 0, 23, 16, 1</column>
+<column name="icmp_ln45_15_fu_418_p2">icmp, 0, 0, 23, 16, 1</column>
+<column name="icmp_ln45_1_fu_166_p2">icmp, 0, 0, 23, 16, 1</column>
+<column name="icmp_ln45_2_fu_184_p2">icmp, 0, 0, 23, 16, 1</column>
+<column name="icmp_ln45_3_fu_202_p2">icmp, 0, 0, 23, 16, 1</column>
+<column name="icmp_ln45_4_fu_220_p2">icmp, 0, 0, 23, 16, 1</column>
+<column name="icmp_ln45_5_fu_238_p2">icmp, 0, 0, 23, 16, 1</column>
+<column name="icmp_ln45_6_fu_256_p2">icmp, 0, 0, 23, 16, 1</column>
+<column name="icmp_ln45_7_fu_274_p2">icmp, 0, 0, 23, 16, 1</column>
+<column name="icmp_ln45_8_fu_292_p2">icmp, 0, 0, 23, 16, 1</column>
+<column name="icmp_ln45_9_fu_310_p2">icmp, 0, 0, 23, 16, 1</column>
+<column name="icmp_ln45_fu_148_p2">icmp, 0, 0, 23, 16, 1</column>
+<column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
+<column name="datareg_10_fu_334_p3">select, 0, 0, 15, 1, 15</column>
+<column name="datareg_11_fu_352_p3">select, 0, 0, 15, 1, 15</column>
+<column name="datareg_12_fu_370_p3">select, 0, 0, 15, 1, 15</column>
+<column name="datareg_13_fu_388_p3">select, 0, 0, 15, 1, 15</column>
+<column name="datareg_14_fu_406_p3">select, 0, 0, 15, 1, 15</column>
+<column name="datareg_15_fu_424_p3">select, 0, 0, 15, 1, 15</column>
+<column name="datareg_1_fu_172_p3">select, 0, 0, 15, 1, 15</column>
+<column name="datareg_2_fu_190_p3">select, 0, 0, 15, 1, 15</column>
+<column name="datareg_3_fu_208_p3">select, 0, 0, 15, 1, 15</column>
+<column name="datareg_4_fu_226_p3">select, 0, 0, 15, 1, 15</column>
+<column name="datareg_5_fu_244_p3">select, 0, 0, 15, 1, 15</column>
+<column name="datareg_6_fu_262_p3">select, 0, 0, 15, 1, 15</column>
+<column name="datareg_7_fu_280_p3">select, 0, 0, 15, 1, 15</column>
+<column name="datareg_8_fu_298_p3">select, 0, 0, 15, 1, 15</column>
+<column name="datareg_9_fu_316_p3">select, 0, 0, 15, 1, 15</column>
+<column name="datareg_fu_154_p3">select, 0, 0, 15, 1, 15</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_done">9, 2, 1, 2</column>
+<column name="ap_return_0">9, 2, 15, 30</column>
+<column name="ap_return_1">9, 2, 15, 30</column>
+<column name="ap_return_10">9, 2, 15, 30</column>
+<column name="ap_return_11">9, 2, 15, 30</column>
+<column name="ap_return_12">9, 2, 15, 30</column>
+<column name="ap_return_13">9, 2, 15, 30</column>
+<column name="ap_return_14">9, 2, 15, 30</column>
+<column name="ap_return_15">9, 2, 15, 30</column>
+<column name="ap_return_2">9, 2, 15, 30</column>
+<column name="ap_return_3">9, 2, 15, 30</column>
+<column name="ap_return_4">9, 2, 15, 30</column>
+<column name="ap_return_5">9, 2, 15, 30</column>
+<column name="ap_return_6">9, 2, 15, 30</column>
+<column name="ap_return_7">9, 2, 15, 30</column>
+<column name="ap_return_8">9, 2, 15, 30</column>
+<column name="ap_return_9">9, 2, 15, 30</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ap_return_0_preg">15, 0, 15, 0</column>
+<column name="ap_return_10_preg">15, 0, 15, 0</column>
+<column name="ap_return_11_preg">15, 0, 15, 0</column>
+<column name="ap_return_12_preg">15, 0, 15, 0</column>
+<column name="ap_return_13_preg">15, 0, 15, 0</column>
+<column name="ap_return_14_preg">15, 0, 15, 0</column>
+<column name="ap_return_15_preg">15, 0, 15, 0</column>
+<column name="ap_return_1_preg">15, 0, 15, 0</column>
+<column name="ap_return_2_preg">15, 0, 15, 0</column>
+<column name="ap_return_3_preg">15, 0, 15, 0</column>
+<column name="ap_return_4_preg">15, 0, 15, 0</column>
+<column name="ap_return_5_preg">15, 0, 15, 0</column>
+<column name="ap_return_6_preg">15, 0, 15, 0</column>
+<column name="ap_return_7_preg">15, 0, 15, 0</column>
+<column name="ap_return_8_preg">15, 0, 15, 0</column>
+<column name="ap_return_9_preg">15, 0, 15, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, relu&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, relu_config3&gt;, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, relu&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, relu_config3&gt;, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, relu&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, relu_config3&gt;, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, relu&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, relu_config3&gt;, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, relu&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, relu_config3&gt;, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, relu&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, relu_config3&gt;, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, relu&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, relu_config3&gt;, return value</column>
+<column name="ap_return_0">out, 15, ap_ctrl_hs, relu&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, relu_config3&gt;, return value</column>
+<column name="ap_return_1">out, 15, ap_ctrl_hs, relu&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, relu_config3&gt;, return value</column>
+<column name="ap_return_2">out, 15, ap_ctrl_hs, relu&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, relu_config3&gt;, return value</column>
+<column name="ap_return_3">out, 15, ap_ctrl_hs, relu&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, relu_config3&gt;, return value</column>
+<column name="ap_return_4">out, 15, ap_ctrl_hs, relu&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, relu_config3&gt;, return value</column>
+<column name="ap_return_5">out, 15, ap_ctrl_hs, relu&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, relu_config3&gt;, return value</column>
+<column name="ap_return_6">out, 15, ap_ctrl_hs, relu&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, relu_config3&gt;, return value</column>
+<column name="ap_return_7">out, 15, ap_ctrl_hs, relu&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, relu_config3&gt;, return value</column>
+<column name="ap_return_8">out, 15, ap_ctrl_hs, relu&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, relu_config3&gt;, return value</column>
+<column name="ap_return_9">out, 15, ap_ctrl_hs, relu&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, relu_config3&gt;, return value</column>
+<column name="ap_return_10">out, 15, ap_ctrl_hs, relu&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, relu_config3&gt;, return value</column>
+<column name="ap_return_11">out, 15, ap_ctrl_hs, relu&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, relu_config3&gt;, return value</column>
+<column name="ap_return_12">out, 15, ap_ctrl_hs, relu&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, relu_config3&gt;, return value</column>
+<column name="ap_return_13">out, 15, ap_ctrl_hs, relu&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, relu_config3&gt;, return value</column>
+<column name="ap_return_14">out, 15, ap_ctrl_hs, relu&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, relu_config3&gt;, return value</column>
+<column name="ap_return_15">out, 15, ap_ctrl_hs, relu&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, relu_config3&gt;, return value</column>
+<column name="p_read">in, 16, ap_none, p_read, scalar</column>
+<column name="p_read1">in, 16, ap_none, p_read1, scalar</column>
+<column name="p_read2">in, 16, ap_none, p_read2, scalar</column>
+<column name="p_read3">in, 16, ap_none, p_read3, scalar</column>
+<column name="p_read4">in, 16, ap_none, p_read4, scalar</column>
+<column name="p_read5">in, 16, ap_none, p_read5, scalar</column>
+<column name="p_read6">in, 16, ap_none, p_read6, scalar</column>
+<column name="p_read7">in, 16, ap_none, p_read7, scalar</column>
+<column name="p_read8">in, 16, ap_none, p_read8, scalar</column>
+<column name="p_read9">in, 16, ap_none, p_read9, scalar</column>
+<column name="p_read10">in, 16, ap_none, p_read10, scalar</column>
+<column name="p_read11">in, 16, ap_none, p_read11, scalar</column>
+<column name="p_read12">in, 16, ap_none, p_read12, scalar</column>
+<column name="p_read13">in, 16, ap_none, p_read13, scalar</column>
+<column name="p_read14">in, 16, ap_none, p_read14, scalar</column>
+<column name="p_read15">in, 16, ap_none, p_read15, scalar</column>
+</table>
+</item>
+</section>
+</profile>

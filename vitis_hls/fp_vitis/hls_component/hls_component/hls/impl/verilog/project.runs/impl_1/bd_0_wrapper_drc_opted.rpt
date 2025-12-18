@@ -1,0 +1,642 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Mon Dec 15 00:54:27 2025
+| Host         : Unlucky running 64-bit major release  (build 9200)
+| Command      : report_drc -file bd_0_wrapper_drc_opted.rpt -pb bd_0_wrapper_drc_opted.pb -rpx bd_0_wrapper_drc_opted.rpx
+| Design       : bd_0_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_bd_0_wrapper
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max checks: <unlimited>
+             Checks found: 121
++--------+----------+--------------------+--------+
+| Rule   | Severity | Description        | Checks |
++--------+----------+--------------------+--------+
+| DPIP-1 | Warning  | Input pipelining   | 120    |
+| ZPS7-1 | Warning  | PS7 block required | 1      |
++--------+----------+--------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_24s_26_4_1_U275/tiny_autoencoder_mac_muladd_16s_10s_24s_26_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_24s_26_4_1_U275/tiny_autoencoder_mac_muladd_16s_10s_24s_26_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_24s_26_4_1_U282/tiny_autoencoder_mac_muladd_16s_10s_24s_26_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_24s_26_4_1_U282/tiny_autoencoder_mac_muladd_16s_10s_24s_26_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_25s_26_4_1_U277/tiny_autoencoder_mac_muladd_16s_10s_25s_26_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_25s_26_4_1_U277/tiny_autoencoder_mac_muladd_16s_10s_25s_26_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_25s_26_4_1_U278/tiny_autoencoder_mac_muladd_16s_10s_25s_26_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_25s_26_4_1_U278/tiny_autoencoder_mac_muladd_16s_10s_25s_26_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_25s_26_4_1_U279/tiny_autoencoder_mac_muladd_16s_10s_25s_26_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_25s_26_4_1_U279/tiny_autoencoder_mac_muladd_16s_10s_25s_26_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_25s_26_4_1_U280/tiny_autoencoder_mac_muladd_16s_10s_25s_26_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_25s_26_4_1_U280/tiny_autoencoder_mac_muladd_16s_10s_25s_26_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_25s_26_4_1_U281/tiny_autoencoder_mac_muladd_16s_10s_25s_26_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_25s_26_4_1_U281/tiny_autoencoder_mac_muladd_16s_10s_25s_26_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_25s_30_4_1_U284/tiny_autoencoder_mac_muladd_16s_10s_25s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_25s_30_4_1_U284/tiny_autoencoder_mac_muladd_16s_10s_25s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_26s_30_4_1_U283/tiny_autoencoder_mac_muladd_16s_10s_26s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_26s_30_4_1_U283/tiny_autoencoder_mac_muladd_16s_10s_26s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_26s_30_4_1_U286/tiny_autoencoder_mac_muladd_16s_10s_26s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_26s_30_4_1_U286/tiny_autoencoder_mac_muladd_16s_10s_26s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_26s_30_4_1_U288/tiny_autoencoder_mac_muladd_16s_10s_26s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_26s_30_4_1_U288/tiny_autoencoder_mac_muladd_16s_10s_26s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_26s_30_4_1_U290/tiny_autoencoder_mac_muladd_16s_10s_26s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_26s_30_4_1_U290/tiny_autoencoder_mac_muladd_16s_10s_26s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U291/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U291/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U292/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U292/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U294/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U294/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U295/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U295/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#17 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U297/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U297/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#18 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U298/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U298/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#19 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U299/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U299/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#20 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U300/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U300/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#21 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U301/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U301/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#22 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U302/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U302/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#23 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U304/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U304/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#24 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U305/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U305/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#25 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U306/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U306/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#26 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U307/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U307/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#27 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U312/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U312/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#28 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U314/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U314/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#29 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U315/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U315/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#30 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U317/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U317/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#31 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U318/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U318/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#32 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U319/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U319/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#33 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U320/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U320/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#34 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U322/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U322/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#35 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U326/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U326/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#36 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U329/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U329/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#37 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U330/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U330/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#38 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U331/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U331/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#39 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U332/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U332/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#40 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U333/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U333/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#41 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U334/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U334/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#42 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U335/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U335/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#43 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U336/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U336/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#44 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U337/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U337/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#45 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U338/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U338/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#46 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U339/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U339/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#47 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U340/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U340/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#48 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U341/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U341/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#49 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U344/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U344/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#50 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U345/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U345/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#51 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U347/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U347/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#52 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U351/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U351/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#53 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U352/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U352/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#54 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U353/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U353/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#55 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U356/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U356/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#56 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U360/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U360/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#57 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U361/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U361/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#58 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U362/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U362/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#59 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U363/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U363/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#60 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U364/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U364/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#61 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U366/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U366/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#62 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U369/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U369/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#63 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U370/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U370/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#64 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U371/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U371/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#65 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U373/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U373/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#66 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U375/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U375/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#67 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U377/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U377/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#68 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U379/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U379/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#69 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U383/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U383/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#70 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U385/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U385/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#71 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U386/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U386/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#72 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U387/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U387/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#73 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U390/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U390/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#74 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U391/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U391/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#75 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U392/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U392/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#76 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U393/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U393/tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#77 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_8ns_30s_30_4_1_U372/tiny_autoencoder_mac_muladd_16s_8ns_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_8ns_30s_30_4_1_U372/tiny_autoencoder_mac_muladd_16s_8ns_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#78 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_8s_30s_30_4_1_U384/tiny_autoencoder_mac_muladd_16s_8s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_8s_30s_30_4_1_U384/tiny_autoencoder_mac_muladd_16s_8s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#79 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_24s_25_4_1_U276/tiny_autoencoder_mac_muladd_16s_9s_24s_25_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_24s_25_4_1_U276/tiny_autoencoder_mac_muladd_16s_9s_24s_25_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#80 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_26s_30_4_1_U285/tiny_autoencoder_mac_muladd_16s_9s_26s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_26s_30_4_1_U285/tiny_autoencoder_mac_muladd_16s_9s_26s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#81 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_26s_30_4_1_U287/tiny_autoencoder_mac_muladd_16s_9s_26s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_26s_30_4_1_U287/tiny_autoencoder_mac_muladd_16s_9s_26s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#82 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_26s_30_4_1_U289/tiny_autoencoder_mac_muladd_16s_9s_26s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_26s_30_4_1_U289/tiny_autoencoder_mac_muladd_16s_9s_26s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#83 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U293/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U293/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#84 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U296/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U296/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#85 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U303/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U303/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#86 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U308/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U308/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#87 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U309/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U309/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#88 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U310/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U310/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#89 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U311/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U311/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#90 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U313/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U313/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#91 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U316/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U316/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#92 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U321/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U321/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#93 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U323/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U323/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#94 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U324/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U324/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#95 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U325/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U325/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#96 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U327/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U327/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#97 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U328/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U328/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#98 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U342/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U342/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#99 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U343/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U343/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#100 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U346/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U346/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#101 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U348/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U348/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#102 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U349/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U349/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#103 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U350/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U350/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#104 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U354/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U354/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#105 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U355/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U355/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#106 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U357/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U357/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#107 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U358/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U358/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#108 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U359/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U359/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#109 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U365/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U365/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#110 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U367/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U367/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#111 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U368/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U368/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#112 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U374/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U374/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#113 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U376/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U376/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#114 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U378/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U378/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#115 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U380/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U380/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#116 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U381/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U381/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#117 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U382/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U382/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#118 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U388/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U388/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#119 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U389/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U389/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#120 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U394/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U394/tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

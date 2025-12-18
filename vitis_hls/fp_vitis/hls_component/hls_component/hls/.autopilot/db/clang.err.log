@@ -1,0 +1,4 @@
+autoencoder.cpp:65:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=mult_res core=Mul_LUT
+        ^
+1 warning generated.

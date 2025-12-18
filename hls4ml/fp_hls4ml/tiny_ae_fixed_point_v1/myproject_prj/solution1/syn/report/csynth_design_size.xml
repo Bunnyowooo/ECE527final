@@ -1,0 +1,55 @@
+<design_size title="Design Size Report">
+    <item name="C-Synthesis has not completed, compilation phases remaining:">
+        <item name="Unroll/Inline"/>
+        <item name="Performance/Pipeline"/>
+        <item name="Optimizations"/>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="3" col0="Function" col1="Location" col2="Compile/Link"/>
+            <rows>
+                <row id="0" col0="myproject" col1="myproject.cpp:6" col2="2412">
+                    <row id="10" col0="dense&lt;ap_fixed&lt;16, 6, AP_TRN, AP_WRAP, 0&gt;, ap_fixed&lt;16, 6, AP_TRN, AP_WRAP, 0&gt;, config2&gt;" col1="nnet_dense.h:36" col2="556">
+                        <row id="5" col0="dense_resource&lt;ap_fixed&lt;16, 6, AP_TRN, AP_WRAP, 0&gt;, ap_fixed&lt;16, 6, AP_TRN, AP_WRAP, 0&gt;, config2&gt;" col1="nnet_dense_resource.h:246" col2="554">
+                            <row id="15" col0="dense_resource_rf_leq_nin&lt;ap_fixed&lt;16, 6, AP_TRN, AP_WRAP, 0&gt;, ap_fixed&lt;16, 6, AP_TRN, AP_WRAP, 0&gt;, config2&gt;" col1="nnet_dense_resource.h:13" col2="552">
+                                <row id="17" col0="product" col1="nnet_mult.h:70" col2="151"/>
+                                <row id="16" col0="cast&lt;ap_fixed&lt;16, 6, AP_TRN, AP_WRAP, 0&gt;, ap_fixed&lt;16, 6, AP_TRN, AP_WRAP, 0&gt;, config2&gt;" col1="nnet_mult.h:110" col2="3"/>
+                            </row>
+                        </row>
+                    </row>
+                    <row id="11" col0="relu&lt;ap_fixed&lt;16, 6, AP_TRN, AP_WRAP, 0&gt;, ap_fixed&lt;16, 6, AP_TRN, AP_WRAP, 0&gt;, relu_config3&gt;" col1="nnet_activation.h:39" col2="199"/>
+                    <row id="8" col0="dense&lt;ap_fixed&lt;16, 6, AP_TRN, AP_WRAP, 0&gt;, ap_fixed&lt;16, 6, AP_TRN, AP_WRAP, 0&gt;, config4&gt;" col1="nnet_dense.h:36" col2="579">
+                        <row id="12" col0="dense_resource&lt;ap_fixed&lt;16, 6, AP_TRN, AP_WRAP, 0&gt;, ap_fixed&lt;16, 6, AP_TRN, AP_WRAP, 0&gt;, config4&gt;" col1="nnet_dense_resource.h:246" col2="577">
+                            <row id="1" col0="dense_resource_rf_gt_nin_rem0&lt;ap_fixed&lt;16, 6, AP_TRN, AP_WRAP, 0&gt;, ap_fixed&lt;16, 6, AP_TRN, AP_WRAP, 0&gt;, config4&gt;" col1="nnet_dense_resource.h:84" col2="575">
+                                <row id="17" col0="product" col1="nnet_mult.h:70" col2="151"/>
+                                <row id="6" col0="cast&lt;ap_fixed&lt;16, 6, AP_TRN, AP_WRAP, 0&gt;, ap_fixed&lt;16, 6, AP_TRN, AP_WRAP, 0&gt;, config4&gt;" col1="nnet_mult.h:110" col2="3"/>
+                            </row>
+                        </row>
+                    </row>
+                    <row id="9" col0="sigmoid&lt;ap_fixed&lt;16, 6, AP_TRN, AP_WRAP, 0&gt;, ap_fixed&lt;16, 6, AP_TRN, AP_WRAP, 0&gt;, sigmoid_config5&gt;" col1="nnet_activation.h:95" col2="983">
+                        <row id="4" col0="init_sigmoid_table&lt;sigmoid_config5, 1024&gt;" col1="nnet_activation.h:81" col2="455">
+                            <row id="2" col0="sigmoid_fcn_float" col1="nnet_activation.h:79" col2="9"/>
+                        </row>
+                    </row>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Description of Compilation Phases">
+        <table>
+            <keys size="2">Compilation Phase, Description</keys>
+            <column name="Compile/Link">All functions are compiled and linked into a single design</column>
+            <column name="Unroll/Inline">After user unroll and inline pragmas are applied</column>
+            <column name="Performance/Pipeline">After performance and pipeline pragmas are applied</column>
+            <column name="Optimizations">After high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+

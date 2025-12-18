@@ -1,0 +1,49 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Instructions per Function for each Compilation Phase
++---------------------------------------+---------------------------+--------------+------------------+----------------------+------------------+
+| Function                              | Location                  | Compile/Link | Unroll/Inline    | Performance/Pipeline | Optimizations    |
++---------------------------------------+---------------------------+--------------+------------------+----------------------+------------------+
+| + myproject                           | myproject.cpp:6           | 2,471        | 5,714            | 5,792                | 5,549            |
+|  + dense<ap_fixed<32, 6, AP_TRN...    | nnet_dense.h:36           |   592        |                  |                      |                  |
+|   + dense_resource<ap_fixed<32, ...   | nnet_dense_resource.h:246 |   590        |                  |                      |                  |
+|    + dense_resource_rf_gt_nin_rem...  | nnet_dense_resource.h:84  |   588        |                  |                      |                  |
+|       product                         | nnet_mult.h:70            |   163        |                  |                      |                  |
+|       cast<ap_fixed<32, 6, AP_TRN,... | nnet_mult.h:110           |     3        |                  |                      |                  |
+|    relu<ap_fixed<32, 6, AP_TRN,...    | nnet_activation.h:39      |   198        |   257            |   113                |   114            |
+|  + dense<ap_fixed<32, 6, AP_TRN...    | nnet_dense.h:36           |   592        |                  |                      |                  |
+|   + dense_resource<ap_fixed<32, ...   | nnet_dense_resource.h:246 |   590        |                  |                      |                  |
+|    + dense_resource_rf_gt_nin_rem...  | nnet_dense_resource.h:84  |   588        |                  |                      |                  |
+|       product                         | nnet_mult.h:70            |   163        |                  |                      |                  |
+|       cast<ap_fixed<32, 6, AP_TRN,... | nnet_mult.h:110           |     3        |                  |                      |                  |
+|  + sigmoid<ap_fixed<32, 6, AP_T...    | nnet_activation.h:95      |   994        | 3,206            | 1,857                | 1,858            |
+|   + init_sigmoid_table<sigmoid_c...   | nnet_activation.h:81      |   455        |                  |                      |                  |
+|      sigmoid_fcn_float                | nnet_activation.h:79      |     9        |                  |                      |                  |
+|  + dense_resource<ap_fixed<32, ...    | nnet_dense_resource.h:246 |              |   764            |   688                |   716            |
+|   + dense_resource_rf_gt_nin_rem...   | nnet_dense_resource.h:84  |              |   762            |   685                |   712            |
+|      cast<ap_fixed<32, 6, AP_TRN,...  | nnet_mult.h:110           |              |    48 (16 calls) |                      |                  |
+|  + dense_resource<ap_fixed<32, ...    | nnet_dense_resource.h:246 |              | 1,436            | 2,724                | 2,627            |
+|   + dense_resource_rf_gt_nin_rem...   | nnet_dense_resource.h:84  |              | 1,434            | 2,706                | 2,608            |
+|      cast<ap_fixed<32, 6, AP_TRN,...  | nnet_mult.h:110           |              |   192 (64 calls) |   128 (64 calls)     |   128 (64 calls) |
++---------------------------------------+---------------------------+--------------+------------------+----------------------+------------------+
+
+* Description of Compilation Phases
++----------------------+------------------------------------------------------------+
+| Compilation Phase    | Description                                                |
++----------------------+------------------------------------------------------------+
+| Compile/Link         | All functions are compiled and linked into a single design |
+| Unroll/Inline        | After user unroll and inline pragmas are applied           |
+| Performance/Pipeline | After performance and pipeline pragmas are applied         |
+| Optimizations        | After high level synthesis optimizations                   |
++----------------------+------------------------------------------------------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

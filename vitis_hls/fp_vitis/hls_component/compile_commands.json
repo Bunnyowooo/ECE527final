@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "D:\\xilinx\\Project\\fp_vitis\\fp_vitis\\hls_component",
+    "arguments": [
+      "D:\\xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=D:\\xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=D:\\xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=tiny_autoencoder",
+      "-c",
+      "D:\\xilinx\\Project\\fp_vitis\\fp_vitis\\hls_component\\autoencoder.cpp"
+    ],
+    "file": "D:\\xilinx\\Project\\fp_vitis\\fp_vitis\\hls_component\\autoencoder.cpp"
+  },
+  {
+    "directory": "D:\\xilinx\\Project\\fp_vitis\\fp_vitis\\hls_component",
+    "arguments": [
+      "D:\\xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=D:\\xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=D:\\xilinx\\2025.1\\Vitis\\include",
+      "-c",
+      "D:\\xilinx\\Project\\fp_vitis\\fp_vitis\\hls_component\\testbench.cpp"
+    ],
+    "file": "D:\\xilinx\\Project\\fp_vitis\\fp_vitis\\hls_component\\testbench.cpp"
+  }
+]

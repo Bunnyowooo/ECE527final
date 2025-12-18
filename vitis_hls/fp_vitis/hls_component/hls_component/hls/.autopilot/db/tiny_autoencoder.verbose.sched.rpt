@@ -1,0 +1,183 @@
+
+
+================================================================
+== Vitis HLS Report for 'tiny_autoencoder'
+================================================================
+* Date:           Sun Dec 14 17:16:13 2025
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        hls_component
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  9.628 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |       45|       45|  0.450 us|  0.450 us|    8|    8|  dataflow|
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 4, States = { 1 2 3 4 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 5 [2/2] (0.00ns)   --->   "%call_ret = call i256 @compute_encoder, i16 %input_data_0, i16 %input_data_1, i16 %input_data_2, i16 %input_data_3, i16 %input_data_4, i16 %input_data_5, i16 %input_data_6, i16 %input_data_7, i9 %p_ZL2W1_0_0, i9 %p_ZL2W1_1_0, i10 %p_ZL2W1_2_0, i10 %p_ZL2W1_3_0, i10 %p_ZL2W1_4_0, i9 %p_ZL2W1_5_0, i10 %p_ZL2W1_6_0, i9 %p_ZL2W1_7_0, i9 %p_ZL2W1_0_1, i9 %p_ZL2W1_1_1, i10 %p_ZL2W1_2_1, i10 %p_ZL2W1_3_1, i9 %p_ZL2W1_4_1, i9 %p_ZL2W1_5_1, i10 %p_ZL2W1_6_1, i9 %p_ZL2W1_7_1, i9 %p_ZL2W1_0_2, i9 %p_ZL2W1_1_2, i10 %p_ZL2W1_2_2, i10 %p_ZL2W1_3_2, i10 %p_ZL2W1_4_2, i9 %p_ZL2W1_5_2, i10 %p_ZL2W1_6_2, i10 %p_ZL2W1_7_2, i9 %p_ZL2W1_0_3, i10 %p_ZL2W1_1_3, i9 %p_ZL2W1_2_3, i9 %p_ZL2W1_3_3, i9 %p_ZL2W1_4_3, i10 %p_ZL2W1_5_3, i10 %p_ZL2W1_6_3, i9 %p_ZL2W1_7_3, i10 %p_ZL2W1_0_4, i10 %p_ZL2W1_1_4, i9 %p_ZL2W1_2_4, i10 %p_ZL2W1_3_4, i9 %p_ZL2W1_4_4, i10 %p_ZL2W1_5_4, i10 %p_ZL2W1_6_4, i10 %p_ZL2W1_7_4, i10 %p_ZL2W1_0_5, i10 %p_ZL2W1_1_5, i9 %p_ZL2W1_2_5, i10 %p_ZL2W1_3_5, i10 %p_ZL2W1_4_5, i10 %p_ZL2W1_5_5, i10 %p_ZL2W1_6_5, i10 %p_ZL2W1_7_5, i9 %p_ZL2W1_0_6, i10 %p_ZL2W1_1_6, i9 %p_ZL2W1_2_6, i9 %p_ZL2W1_3_6, i9 %p_ZL2W1_4_6, i9 %p_ZL2W1_5_6, i10 %p_ZL2W1_6_6, i10 %p_ZL2W1_7_6, i9 %p_ZL2W1_0_7, i10 %p_ZL2W1_1_7, i10 %p_ZL2W1_2_7, i9 %p_ZL2W1_3_7, i10 %p_ZL2W1_4_7, i10 %p_ZL2W1_5_7, i10 %p_ZL2W1_6_7, i10 %p_ZL2W1_7_7, i10 %p_ZL2W1_0_8, i9 %p_ZL2W1_1_8, i10 %p_ZL2W1_2_8, i9 %p_ZL2W1_3_8, i9 %p_ZL2W1_4_8, i9 %p_ZL2W1_5_8, i10 %p_ZL2W1_6_8, i9 %p_ZL2W1_7_8, i10 %p_ZL2W1_0_9, i9 %p_ZL2W1_1_9, i9 %p_ZL2W1_2_9, i10 %p_ZL2W1_3_9, i10 %p_ZL2W1_4_9, i9 %p_ZL2W1_5_9, i10 %p_ZL2W1_6_9, i10 %p_ZL2W1_7_9, i9 %p_ZL2W1_0_10, i10 %p_ZL2W1_1_10, i9 %p_ZL2W1_2_10, i10 %p_ZL2W1_3_10, i9 %p_ZL2W1_4_10, i10 %p_ZL2W1_5_10, i10 %p_ZL2W1_6_10, i9 %p_ZL2W1_7_10, i10 %p_ZL2W1_0_11, i9 %p_ZL2W1_1_11, i10 %p_ZL2W1_2_11, i10 %p_ZL2W1_3_11, i10 %p_ZL2W1_4_11, i9 %p_ZL2W1_5_11, i10 %p_ZL2W1_6_11, i9 %p_ZL2W1_7_11, i10 %p_ZL2W1_0_12, i10 %p_ZL2W1_1_12, i10 %p_ZL2W1_2_12, i10 %p_ZL2W1_3_12, i9 %p_ZL2W1_4_12, i10 %p_ZL2W1_5_12, i9 %p_ZL2W1_6_12, i10 %p_ZL2W1_7_12, i9 %p_ZL2W1_0_13, i9 %p_ZL2W1_1_13, i10 %p_ZL2W1_2_13, i10 %p_ZL2W1_3_13, i10 %p_ZL2W1_4_13, i10 %p_ZL2W1_5_13, i10 %p_ZL2W1_6_13, i9 %p_ZL2W1_7_13, i9 %p_ZL2W1_0_14, i9 %p_ZL2W1_1_14, i9 %p_ZL2W1_2_14, i10 %p_ZL2W1_3_14, i9 %p_ZL2W1_4_14, i10 %p_ZL2W1_5_14, i9 %p_ZL2W1_6_14, i9 %p_ZL2W1_7_14, i10 %p_ZL2W1_0_15, i9 %p_ZL2W1_1_15, i9 %p_ZL2W1_2_15, i10 %p_ZL2W1_3_15, i10 %p_ZL2W1_4_15, i10 %p_ZL2W1_5_15, i9 %p_ZL2W1_6_15, i9 %p_ZL2W1_7_15" [autoencoder.cpp:141]   --->   Operation 5 'call' 'call_ret' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 6.86>
+ST_2 : Operation 6 [1/2] (6.86ns)   --->   "%call_ret = call i256 @compute_encoder, i16 %input_data_0, i16 %input_data_1, i16 %input_data_2, i16 %input_data_3, i16 %input_data_4, i16 %input_data_5, i16 %input_data_6, i16 %input_data_7, i9 %p_ZL2W1_0_0, i9 %p_ZL2W1_1_0, i10 %p_ZL2W1_2_0, i10 %p_ZL2W1_3_0, i10 %p_ZL2W1_4_0, i9 %p_ZL2W1_5_0, i10 %p_ZL2W1_6_0, i9 %p_ZL2W1_7_0, i9 %p_ZL2W1_0_1, i9 %p_ZL2W1_1_1, i10 %p_ZL2W1_2_1, i10 %p_ZL2W1_3_1, i9 %p_ZL2W1_4_1, i9 %p_ZL2W1_5_1, i10 %p_ZL2W1_6_1, i9 %p_ZL2W1_7_1, i9 %p_ZL2W1_0_2, i9 %p_ZL2W1_1_2, i10 %p_ZL2W1_2_2, i10 %p_ZL2W1_3_2, i10 %p_ZL2W1_4_2, i9 %p_ZL2W1_5_2, i10 %p_ZL2W1_6_2, i10 %p_ZL2W1_7_2, i9 %p_ZL2W1_0_3, i10 %p_ZL2W1_1_3, i9 %p_ZL2W1_2_3, i9 %p_ZL2W1_3_3, i9 %p_ZL2W1_4_3, i10 %p_ZL2W1_5_3, i10 %p_ZL2W1_6_3, i9 %p_ZL2W1_7_3, i10 %p_ZL2W1_0_4, i10 %p_ZL2W1_1_4, i9 %p_ZL2W1_2_4, i10 %p_ZL2W1_3_4, i9 %p_ZL2W1_4_4, i10 %p_ZL2W1_5_4, i10 %p_ZL2W1_6_4, i10 %p_ZL2W1_7_4, i10 %p_ZL2W1_0_5, i10 %p_ZL2W1_1_5, i9 %p_ZL2W1_2_5, i10 %p_ZL2W1_3_5, i10 %p_ZL2W1_4_5, i10 %p_ZL2W1_5_5, i10 %p_ZL2W1_6_5, i10 %p_ZL2W1_7_5, i9 %p_ZL2W1_0_6, i10 %p_ZL2W1_1_6, i9 %p_ZL2W1_2_6, i9 %p_ZL2W1_3_6, i9 %p_ZL2W1_4_6, i9 %p_ZL2W1_5_6, i10 %p_ZL2W1_6_6, i10 %p_ZL2W1_7_6, i9 %p_ZL2W1_0_7, i10 %p_ZL2W1_1_7, i10 %p_ZL2W1_2_7, i9 %p_ZL2W1_3_7, i10 %p_ZL2W1_4_7, i10 %p_ZL2W1_5_7, i10 %p_ZL2W1_6_7, i10 %p_ZL2W1_7_7, i10 %p_ZL2W1_0_8, i9 %p_ZL2W1_1_8, i10 %p_ZL2W1_2_8, i9 %p_ZL2W1_3_8, i9 %p_ZL2W1_4_8, i9 %p_ZL2W1_5_8, i10 %p_ZL2W1_6_8, i9 %p_ZL2W1_7_8, i10 %p_ZL2W1_0_9, i9 %p_ZL2W1_1_9, i9 %p_ZL2W1_2_9, i10 %p_ZL2W1_3_9, i10 %p_ZL2W1_4_9, i9 %p_ZL2W1_5_9, i10 %p_ZL2W1_6_9, i10 %p_ZL2W1_7_9, i9 %p_ZL2W1_0_10, i10 %p_ZL2W1_1_10, i9 %p_ZL2W1_2_10, i10 %p_ZL2W1_3_10, i9 %p_ZL2W1_4_10, i10 %p_ZL2W1_5_10, i10 %p_ZL2W1_6_10, i9 %p_ZL2W1_7_10, i10 %p_ZL2W1_0_11, i9 %p_ZL2W1_1_11, i10 %p_ZL2W1_2_11, i10 %p_ZL2W1_3_11, i10 %p_ZL2W1_4_11, i9 %p_ZL2W1_5_11, i10 %p_ZL2W1_6_11, i9 %p_ZL2W1_7_11, i10 %p_ZL2W1_0_12, i10 %p_ZL2W1_1_12, i10 %p_ZL2W1_2_12, i10 %p_ZL2W1_3_12, i9 %p_ZL2W1_4_12, i10 %p_ZL2W1_5_12, i9 %p_ZL2W1_6_12, i10 %p_ZL2W1_7_12, i9 %p_ZL2W1_0_13, i9 %p_ZL2W1_1_13, i10 %p_ZL2W1_2_13, i10 %p_ZL2W1_3_13, i10 %p_ZL2W1_4_13, i10 %p_ZL2W1_5_13, i10 %p_ZL2W1_6_13, i9 %p_ZL2W1_7_13, i9 %p_ZL2W1_0_14, i9 %p_ZL2W1_1_14, i9 %p_ZL2W1_2_14, i10 %p_ZL2W1_3_14, i9 %p_ZL2W1_4_14, i10 %p_ZL2W1_5_14, i9 %p_ZL2W1_6_14, i9 %p_ZL2W1_7_14, i10 %p_ZL2W1_0_15, i9 %p_ZL2W1_1_15, i9 %p_ZL2W1_2_15, i10 %p_ZL2W1_3_15, i10 %p_ZL2W1_4_15, i10 %p_ZL2W1_5_15, i9 %p_ZL2W1_6_15, i9 %p_ZL2W1_7_15" [autoencoder.cpp:141]   --->   Operation 6 'call' 'call_ret' <Predicate = true> <Delay = 6.86> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%hidden_layer_buf = extractvalue i256 %call_ret" [autoencoder.cpp:141]   --->   Operation 7 'extractvalue' 'hidden_layer_buf' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%hidden_layer_buf_1 = extractvalue i256 %call_ret" [autoencoder.cpp:141]   --->   Operation 8 'extractvalue' 'hidden_layer_buf_1' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%hidden_layer_buf_2 = extractvalue i256 %call_ret" [autoencoder.cpp:141]   --->   Operation 9 'extractvalue' 'hidden_layer_buf_2' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%hidden_layer_buf_3 = extractvalue i256 %call_ret" [autoencoder.cpp:141]   --->   Operation 10 'extractvalue' 'hidden_layer_buf_3' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%hidden_layer_buf_4 = extractvalue i256 %call_ret" [autoencoder.cpp:141]   --->   Operation 11 'extractvalue' 'hidden_layer_buf_4' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%hidden_layer_buf_5 = extractvalue i256 %call_ret" [autoencoder.cpp:141]   --->   Operation 12 'extractvalue' 'hidden_layer_buf_5' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%hidden_layer_buf_6 = extractvalue i256 %call_ret" [autoencoder.cpp:141]   --->   Operation 13 'extractvalue' 'hidden_layer_buf_6' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%hidden_layer_buf_7 = extractvalue i256 %call_ret" [autoencoder.cpp:141]   --->   Operation 14 'extractvalue' 'hidden_layer_buf_7' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%hidden_layer_buf_8 = extractvalue i256 %call_ret" [autoencoder.cpp:141]   --->   Operation 15 'extractvalue' 'hidden_layer_buf_8' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%hidden_layer_buf_9 = extractvalue i256 %call_ret" [autoencoder.cpp:141]   --->   Operation 16 'extractvalue' 'hidden_layer_buf_9' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%hidden_layer_buf_10 = extractvalue i256 %call_ret" [autoencoder.cpp:141]   --->   Operation 17 'extractvalue' 'hidden_layer_buf_10' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%hidden_layer_buf_11 = extractvalue i256 %call_ret" [autoencoder.cpp:141]   --->   Operation 18 'extractvalue' 'hidden_layer_buf_11' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%hidden_layer_buf_12 = extractvalue i256 %call_ret" [autoencoder.cpp:141]   --->   Operation 19 'extractvalue' 'hidden_layer_buf_12' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%hidden_layer_buf_13 = extractvalue i256 %call_ret" [autoencoder.cpp:141]   --->   Operation 20 'extractvalue' 'hidden_layer_buf_13' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%hidden_layer_buf_14 = extractvalue i256 %call_ret" [autoencoder.cpp:141]   --->   Operation 21 'extractvalue' 'hidden_layer_buf_14' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%hidden_layer_buf_15 = extractvalue i256 %call_ret" [autoencoder.cpp:141]   --->   Operation 22 'extractvalue' 'hidden_layer_buf_15' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+
+State 3 <SV = 2> <Delay = 3.63>
+ST_3 : Operation 23 [2/2] (3.63ns)   --->   "%call_ln142 = call void @compute_decoder, i16 %hidden_layer_buf, i16 %hidden_layer_buf_1, i16 %hidden_layer_buf_2, i16 %hidden_layer_buf_3, i16 %hidden_layer_buf_4, i16 %hidden_layer_buf_5, i16 %hidden_layer_buf_6, i16 %hidden_layer_buf_7, i16 %hidden_layer_buf_8, i16 %hidden_layer_buf_9, i16 %hidden_layer_buf_10, i16 %hidden_layer_buf_11, i16 %hidden_layer_buf_12, i16 %hidden_layer_buf_13, i16 %hidden_layer_buf_14, i16 %hidden_layer_buf_15, i16 %output_data_0, i16 %output_data_1, i16 %output_data_2, i16 %output_data_3, i16 %output_data_4, i16 %output_data_5, i16 %output_data_6, i16 %output_data_7, i7 %p_ZL2B2_0, i7 %p_ZL2B2_1, i7 %p_ZL2B2_2, i7 %p_ZL2B2_3, i7 %p_ZL2B2_4, i7 %p_ZL2B2_5, i7 %p_ZL2B2_6, i7 %p_ZL2B2_7, i9 %p_ZL2W2_0_0, i9 %p_ZL2W2_1_0, i10 %p_ZL2W2_2_0, i10 %p_ZL2W2_3_0, i10 %p_ZL2W2_4_0, i10 %p_ZL2W2_5_0, i10 %p_ZL2W2_6_0, i9 %p_ZL2W2_7_0, i10 %p_ZL2W2_0_1, i9 %p_ZL2W2_1_1, i10 %p_ZL2W2_2_1, i10 %p_ZL2W2_3_1, i10 %p_ZL2W2_4_1, i10 %p_ZL2W2_5_1, i10 %p_ZL2W2_6_1, i10 %p_ZL2W2_7_1, i10 %p_ZL2W2_0_2, i10 %p_ZL2W2_1_2, i9 %p_ZL2W2_2_2, i10 %p_ZL2W2_3_2, i9 %p_ZL2W2_4_2, i10 %p_ZL2W2_5_2, i9 %p_ZL2W2_6_2, i10 %p_ZL2W2_7_2, i10 %p_ZL2W2_0_3, i10 %p_ZL2W2_1_3, i9 %p_ZL2W2_2_3, i10 %p_ZL2W2_3_3, i10 %p_ZL2W2_4_3, i9 %p_ZL2W2_5_3, i10 %p_ZL2W2_6_3, i10 %p_ZL2W2_7_3, i10 %p_ZL2W2_0_4, i10 %p_ZL2W2_1_4, i10 %p_ZL2W2_2_4, i10 %p_ZL2W2_3_4, i9 %p_ZL2W2_4_4, i10 %p_ZL2W2_5_4, i10 %p_ZL2W2_6_4, i10 %p_ZL2W2_7_4, i10 %p_ZL2W2_0_5, i9 %p_ZL2W2_1_5, i9 %p_ZL2W2_2_5, i9 %p_ZL2W2_3_5, i9 %p_ZL2W2_4_5, i10 %p_ZL2W2_5_5, i9 %p_ZL2W2_6_5, i10 %p_ZL2W2_7_5, i10 %p_ZL2W2_0_6, i9 %p_ZL2W2_1_6, i10 %p_ZL2W2_2_6, i10 %p_ZL2W2_3_6, i10 %p_ZL2W2_4_6, i10 %p_ZL2W2_5_6, i9 %p_ZL2W2_6_6, i10 %p_ZL2W2_7_6, i9 %p_ZL2W2_0_7, i9 %p_ZL2W2_1_7, i9 %p_ZL2W2_2_7, i10 %p_ZL2W2_3_7, i9 %p_ZL2W2_4_7, i9 %p_ZL2W2_5_7, i10 %p_ZL2W2_6_7, i10 %p_ZL2W2_7_7, i10 %p_ZL2W2_0_8, i10 %p_ZL2W2_1_8, i10 %p_ZL2W2_2_8, i10 %p_ZL2W2_3_8, i10 %p_ZL2W2_4_8, i10 %p_ZL2W2_5_8, i10 %p_ZL2W2_6_8, i10 %p_ZL2W2_7_8, i10 %p_ZL2W2_0_9, i10 %p_ZL2W2_1_9, i10 %p_ZL2W2_2_9, i9 %p_ZL2W2_3_9, i9 %p_ZL2W2_4_9, i10 %p_ZL2W2_5_9, i10 %p_ZL2W2_6_9, i9 %p_ZL2W2_7_9, i10 %p_ZL2W2_0_10, i9 %p_ZL2W2_1_10, i9 %p_ZL2W2_2_10, i9 %p_ZL2W2_3_10, i10 %p_ZL2W2_4_10, i10 %p_ZL2W2_5_10, i10 %p_ZL2W2_6_10, i9 %p_ZL2W2_7_10, i9 %p_ZL2W2_0_11, i10 %p_ZL2W2_1_11, i9 %p_ZL2W2_2_11, i9 %p_ZL2W2_3_11, i9 %p_ZL2W2_4_11, i10 %p_ZL2W2_5_11, i10 %p_ZL2W2_6_11, i10 %p_ZL2W2_7_11, i10 %p_ZL2W2_0_12, i10 %p_ZL2W2_1_12, i9 %p_ZL2W2_2_12, i10 %p_ZL2W2_3_12, i9 %p_ZL2W2_4_12, i9 %p_ZL2W2_5_12, i10 %p_ZL2W2_6_12, i10 %p_ZL2W2_7_12, i10 %p_ZL2W2_0_13, i8 %p_ZL2W2_1_13, i10 %p_ZL2W2_2_13, i9 %p_ZL2W2_3_13, i10 %p_ZL2W2_4_13, i9 %p_ZL2W2_5_13, i10 %p_ZL2W2_6_13, i9 %p_ZL2W2_7_13, i10 %p_ZL2W2_0_14, i9 %p_ZL2W2_1_14, i9 %p_ZL2W2_2_14, i9 %p_ZL2W2_3_14, i10 %p_ZL2W2_4_14, i8 %p_ZL2W2_5_14, i10 %p_ZL2W2_6_14, i10 %p_ZL2W2_7_14, i10 %p_ZL2W2_0_15, i9 %p_ZL2W2_1_15, i9 %p_ZL2W2_2_15, i10 %p_ZL2W2_3_15, i10 %p_ZL2W2_4_15, i10 %p_ZL2W2_5_15, i10 %p_ZL2W2_6_15, i9 %p_ZL2W2_7_15, i10 %SIGMOID_TABLE" [autoencoder.cpp:142]   --->   Operation 23 'call' 'call_ln142' <Predicate = true> <Delay = 3.63> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 24 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln140 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_51" [autoencoder.cpp:140]   --->   Operation 24 'specdataflowpipeline' 'specdataflowpipeline_ln140' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 25 [1/1] (0.00ns)   --->   "%spectopmodule_ln121 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_49" [autoencoder.cpp:121]   --->   Operation 25 'spectopmodule' 'spectopmodule_ln121' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 26 [1/1] (0.00ns)   --->   "%specinterface_ln121 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_48, i32 0, i32 0, void @empty_51, i32 0, i32 0, void @empty_51, void @empty_51, void @empty_51, i32 0, i32 0, i32 0, i32 0, void @empty_51, void @empty_51, i32 4294967295, i32 0, i32 0" [autoencoder.cpp:121]   --->   Operation 26 'specinterface' 'specinterface_ln121' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 27 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %input_data_0, void @empty_52, i32 0, i32 0, void @empty_51, i32 4294967295, i32 0, void @empty_51, void @empty_51, void @empty_51, i32 0, i32 0, i32 0, i32 0, void @empty_51, void @empty_51, i32 4294967295, i32 0, i32 0"   --->   Operation 27 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 28 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %input_data_0"   --->   Operation 28 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 29 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %input_data_1, void @empty_52, i32 0, i32 0, void @empty_51, i32 4294967295, i32 0, void @empty_51, void @empty_51, void @empty_51, i32 0, i32 0, i32 0, i32 0, void @empty_51, void @empty_51, i32 4294967295, i32 0, i32 0"   --->   Operation 29 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 30 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %input_data_1"   --->   Operation 30 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 31 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %input_data_2, void @empty_52, i32 0, i32 0, void @empty_51, i32 4294967295, i32 0, void @empty_51, void @empty_51, void @empty_51, i32 0, i32 0, i32 0, i32 0, void @empty_51, void @empty_51, i32 4294967295, i32 0, i32 0"   --->   Operation 31 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 32 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %input_data_2"   --->   Operation 32 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 33 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %input_data_3, void @empty_52, i32 0, i32 0, void @empty_51, i32 4294967295, i32 0, void @empty_51, void @empty_51, void @empty_51, i32 0, i32 0, i32 0, i32 0, void @empty_51, void @empty_51, i32 4294967295, i32 0, i32 0"   --->   Operation 33 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 34 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %input_data_3"   --->   Operation 34 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 35 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %input_data_4, void @empty_52, i32 0, i32 0, void @empty_51, i32 4294967295, i32 0, void @empty_51, void @empty_51, void @empty_51, i32 0, i32 0, i32 0, i32 0, void @empty_51, void @empty_51, i32 4294967295, i32 0, i32 0"   --->   Operation 35 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 36 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %input_data_4"   --->   Operation 36 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 37 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %input_data_5, void @empty_52, i32 0, i32 0, void @empty_51, i32 4294967295, i32 0, void @empty_51, void @empty_51, void @empty_51, i32 0, i32 0, i32 0, i32 0, void @empty_51, void @empty_51, i32 4294967295, i32 0, i32 0"   --->   Operation 37 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 38 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %input_data_5"   --->   Operation 38 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 39 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %input_data_6, void @empty_52, i32 0, i32 0, void @empty_51, i32 4294967295, i32 0, void @empty_51, void @empty_51, void @empty_51, i32 0, i32 0, i32 0, i32 0, void @empty_51, void @empty_51, i32 4294967295, i32 0, i32 0"   --->   Operation 39 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 40 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %input_data_6"   --->   Operation 40 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 41 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %input_data_7, void @empty_52, i32 0, i32 0, void @empty_51, i32 4294967295, i32 0, void @empty_51, void @empty_51, void @empty_51, i32 0, i32 0, i32 0, i32 0, void @empty_51, void @empty_51, i32 4294967295, i32 0, i32 0"   --->   Operation 41 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 42 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %input_data_7"   --->   Operation 42 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 43 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %output_data_0, void @empty_52, i32 0, i32 0, void @empty_51, i32 4294967295, i32 0, void @empty_51, void @empty_51, void @empty_51, i32 0, i32 0, i32 0, i32 0, void @empty_51, void @empty_51, i32 4294967295, i32 0, i32 0"   --->   Operation 43 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 44 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %output_data_0"   --->   Operation 44 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 45 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %output_data_1, void @empty_52, i32 0, i32 0, void @empty_51, i32 4294967295, i32 0, void @empty_51, void @empty_51, void @empty_51, i32 0, i32 0, i32 0, i32 0, void @empty_51, void @empty_51, i32 4294967295, i32 0, i32 0"   --->   Operation 45 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 46 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %output_data_1"   --->   Operation 46 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 47 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %output_data_2, void @empty_52, i32 0, i32 0, void @empty_51, i32 4294967295, i32 0, void @empty_51, void @empty_51, void @empty_51, i32 0, i32 0, i32 0, i32 0, void @empty_51, void @empty_51, i32 4294967295, i32 0, i32 0"   --->   Operation 47 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 48 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %output_data_2"   --->   Operation 48 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 49 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %output_data_3, void @empty_52, i32 0, i32 0, void @empty_51, i32 4294967295, i32 0, void @empty_51, void @empty_51, void @empty_51, i32 0, i32 0, i32 0, i32 0, void @empty_51, void @empty_51, i32 4294967295, i32 0, i32 0"   --->   Operation 49 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 50 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %output_data_3"   --->   Operation 50 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 51 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %output_data_4, void @empty_52, i32 0, i32 0, void @empty_51, i32 4294967295, i32 0, void @empty_51, void @empty_51, void @empty_51, i32 0, i32 0, i32 0, i32 0, void @empty_51, void @empty_51, i32 4294967295, i32 0, i32 0"   --->   Operation 51 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %output_data_4"   --->   Operation 52 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 53 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %output_data_5, void @empty_52, i32 0, i32 0, void @empty_51, i32 4294967295, i32 0, void @empty_51, void @empty_51, void @empty_51, i32 0, i32 0, i32 0, i32 0, void @empty_51, void @empty_51, i32 4294967295, i32 0, i32 0"   --->   Operation 53 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 54 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %output_data_5"   --->   Operation 54 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 55 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %output_data_6, void @empty_52, i32 0, i32 0, void @empty_51, i32 4294967295, i32 0, void @empty_51, void @empty_51, void @empty_51, i32 0, i32 0, i32 0, i32 0, void @empty_51, void @empty_51, i32 4294967295, i32 0, i32 0"   --->   Operation 55 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 56 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %output_data_6"   --->   Operation 56 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 57 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %output_data_7, void @empty_52, i32 0, i32 0, void @empty_51, i32 4294967295, i32 0, void @empty_51, void @empty_51, void @empty_51, i32 0, i32 0, i32 0, i32 0, void @empty_51, void @empty_51, i32 4294967295, i32 0, i32 0"   --->   Operation 57 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 58 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %output_data_7"   --->   Operation 58 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 59 [1/2] (0.00ns)   --->   "%call_ln142 = call void @compute_decoder, i16 %hidden_layer_buf, i16 %hidden_layer_buf_1, i16 %hidden_layer_buf_2, i16 %hidden_layer_buf_3, i16 %hidden_layer_buf_4, i16 %hidden_layer_buf_5, i16 %hidden_layer_buf_6, i16 %hidden_layer_buf_7, i16 %hidden_layer_buf_8, i16 %hidden_layer_buf_9, i16 %hidden_layer_buf_10, i16 %hidden_layer_buf_11, i16 %hidden_layer_buf_12, i16 %hidden_layer_buf_13, i16 %hidden_layer_buf_14, i16 %hidden_layer_buf_15, i16 %output_data_0, i16 %output_data_1, i16 %output_data_2, i16 %output_data_3, i16 %output_data_4, i16 %output_data_5, i16 %output_data_6, i16 %output_data_7, i7 %p_ZL2B2_0, i7 %p_ZL2B2_1, i7 %p_ZL2B2_2, i7 %p_ZL2B2_3, i7 %p_ZL2B2_4, i7 %p_ZL2B2_5, i7 %p_ZL2B2_6, i7 %p_ZL2B2_7, i9 %p_ZL2W2_0_0, i9 %p_ZL2W2_1_0, i10 %p_ZL2W2_2_0, i10 %p_ZL2W2_3_0, i10 %p_ZL2W2_4_0, i10 %p_ZL2W2_5_0, i10 %p_ZL2W2_6_0, i9 %p_ZL2W2_7_0, i10 %p_ZL2W2_0_1, i9 %p_ZL2W2_1_1, i10 %p_ZL2W2_2_1, i10 %p_ZL2W2_3_1, i10 %p_ZL2W2_4_1, i10 %p_ZL2W2_5_1, i10 %p_ZL2W2_6_1, i10 %p_ZL2W2_7_1, i10 %p_ZL2W2_0_2, i10 %p_ZL2W2_1_2, i9 %p_ZL2W2_2_2, i10 %p_ZL2W2_3_2, i9 %p_ZL2W2_4_2, i10 %p_ZL2W2_5_2, i9 %p_ZL2W2_6_2, i10 %p_ZL2W2_7_2, i10 %p_ZL2W2_0_3, i10 %p_ZL2W2_1_3, i9 %p_ZL2W2_2_3, i10 %p_ZL2W2_3_3, i10 %p_ZL2W2_4_3, i9 %p_ZL2W2_5_3, i10 %p_ZL2W2_6_3, i10 %p_ZL2W2_7_3, i10 %p_ZL2W2_0_4, i10 %p_ZL2W2_1_4, i10 %p_ZL2W2_2_4, i10 %p_ZL2W2_3_4, i9 %p_ZL2W2_4_4, i10 %p_ZL2W2_5_4, i10 %p_ZL2W2_6_4, i10 %p_ZL2W2_7_4, i10 %p_ZL2W2_0_5, i9 %p_ZL2W2_1_5, i9 %p_ZL2W2_2_5, i9 %p_ZL2W2_3_5, i9 %p_ZL2W2_4_5, i10 %p_ZL2W2_5_5, i9 %p_ZL2W2_6_5, i10 %p_ZL2W2_7_5, i10 %p_ZL2W2_0_6, i9 %p_ZL2W2_1_6, i10 %p_ZL2W2_2_6, i10 %p_ZL2W2_3_6, i10 %p_ZL2W2_4_6, i10 %p_ZL2W2_5_6, i9 %p_ZL2W2_6_6, i10 %p_ZL2W2_7_6, i9 %p_ZL2W2_0_7, i9 %p_ZL2W2_1_7, i9 %p_ZL2W2_2_7, i10 %p_ZL2W2_3_7, i9 %p_ZL2W2_4_7, i9 %p_ZL2W2_5_7, i10 %p_ZL2W2_6_7, i10 %p_ZL2W2_7_7, i10 %p_ZL2W2_0_8, i10 %p_ZL2W2_1_8, i10 %p_ZL2W2_2_8, i10 %p_ZL2W2_3_8, i10 %p_ZL2W2_4_8, i10 %p_ZL2W2_5_8, i10 %p_ZL2W2_6_8, i10 %p_ZL2W2_7_8, i10 %p_ZL2W2_0_9, i10 %p_ZL2W2_1_9, i10 %p_ZL2W2_2_9, i9 %p_ZL2W2_3_9, i9 %p_ZL2W2_4_9, i10 %p_ZL2W2_5_9, i10 %p_ZL2W2_6_9, i9 %p_ZL2W2_7_9, i10 %p_ZL2W2_0_10, i9 %p_ZL2W2_1_10, i9 %p_ZL2W2_2_10, i9 %p_ZL2W2_3_10, i10 %p_ZL2W2_4_10, i10 %p_ZL2W2_5_10, i10 %p_ZL2W2_6_10, i9 %p_ZL2W2_7_10, i9 %p_ZL2W2_0_11, i10 %p_ZL2W2_1_11, i9 %p_ZL2W2_2_11, i9 %p_ZL2W2_3_11, i9 %p_ZL2W2_4_11, i10 %p_ZL2W2_5_11, i10 %p_ZL2W2_6_11, i10 %p_ZL2W2_7_11, i10 %p_ZL2W2_0_12, i10 %p_ZL2W2_1_12, i9 %p_ZL2W2_2_12, i10 %p_ZL2W2_3_12, i9 %p_ZL2W2_4_12, i9 %p_ZL2W2_5_12, i10 %p_ZL2W2_6_12, i10 %p_ZL2W2_7_12, i10 %p_ZL2W2_0_13, i8 %p_ZL2W2_1_13, i10 %p_ZL2W2_2_13, i9 %p_ZL2W2_3_13, i10 %p_ZL2W2_4_13, i9 %p_ZL2W2_5_13, i10 %p_ZL2W2_6_13, i9 %p_ZL2W2_7_13, i10 %p_ZL2W2_0_14, i9 %p_ZL2W2_1_14, i9 %p_ZL2W2_2_14, i9 %p_ZL2W2_3_14, i10 %p_ZL2W2_4_14, i8 %p_ZL2W2_5_14, i10 %p_ZL2W2_6_14, i10 %p_ZL2W2_7_14, i10 %p_ZL2W2_0_15, i9 %p_ZL2W2_1_15, i9 %p_ZL2W2_2_15, i10 %p_ZL2W2_3_15, i10 %p_ZL2W2_4_15, i10 %p_ZL2W2_5_15, i10 %p_ZL2W2_6_15, i9 %p_ZL2W2_7_15, i10 %SIGMOID_TABLE" [autoencoder.cpp:142]   --->   Operation 59 'call' 'call_ln142' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 60 [1/1] (0.00ns)   --->   "%ret_ln143 = ret" [autoencoder.cpp:143]   --->   Operation 60 'ret' 'ret_ln143' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+ <State 2>: 6.862ns
+The critical path consists of the following:
+	'call' operation 256 bit ('call_ret', autoencoder.cpp:141) to 'compute_encoder' [317]  (6.862 ns)
+
+ <State 3>: 3.634ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln142', autoencoder.cpp:142) to 'compute_decoder' [334]  (3.634 ns)
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

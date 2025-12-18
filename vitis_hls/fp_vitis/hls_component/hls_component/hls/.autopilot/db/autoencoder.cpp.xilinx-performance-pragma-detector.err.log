@@ -1,0 +1,5 @@
+In file included from D:\xilinx\Project\fp_vitis\fp_vitis\hls_component\autoencoder.cpp:1:
+In file included from D:\xilinx\Project\fp_vitis\fp_vitis\hls_component/autoencoder.h:5:
+D:/xilinx/2025.1/Vitis/common/technology/autopilot\hls_math.h:26:10: fatal error: 'cmath' file not found
+#include <cmath>
+         ^~~~~~~

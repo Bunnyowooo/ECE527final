@@ -1,0 +1,18 @@
+Backend: Vivado
+ClockPeriod: 5
+HLSConfig:
+  Model:
+    BramFactor: 1000000000
+    Precision: ap_fixed<32,6>
+    ReuseFactor: 128
+    Strategy: Resource
+    TraceOutput: false
+IOType: io_parallel
+InputData: null
+KerasModel: !keras_model 'tiny_ae_hls_keras/keras_model.h5'
+OutputDir: tiny_ae_hls_keras
+OutputPredictions: null
+Part: xc7z020clg400-1
+ProjectName: myproject
+Stamp: 62FD8fEC
+Version: 1.0.0

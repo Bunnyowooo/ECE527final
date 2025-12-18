@@ -1,0 +1,488 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+  **** SW Build 3854077 on May  4 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source /tools/Xilinx/Vitis_HLS/2023.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2023.1/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'ubuntu2004' on host 'ubuntu2004-virtual-machine' (Linux_x86_64 version 5.15.0-139-generic) on Sun Dec 07 21:53:36 CST 2025
+INFO: [HLS 200-10] On os Ubuntu 20.04.6 LTS
+INFO: [HLS 200-10] In directory '/home/ubuntu2004/527_final/mini_ae_project'
+Sourcing Tcl script 'build_prj.tcl'
+INFO: [HLS 200-1510] Running: open_project myproject_prj 
+INFO: [HLS 200-10] Creating and opening project '/home/ubuntu2004/527_final/mini_ae_project/myproject_prj'.
+INFO: [HLS 200-1510] Running: set_top myproject 
+INFO: [HLS 200-1510] Running: add_files firmware/myproject.cpp -cflags -std=c++0x 
+INFO: [HLS 200-10] Adding design file 'firmware/myproject.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb myproject_test.cpp -cflags -std=c++0x 
+INFO: [HLS 200-10] Adding test bench file 'myproject_test.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb firmware/weights 
+INFO: [HLS 200-10] Adding test bench file 'firmware/weights' to the project
+INFO: [HLS 200-1510] Running: add_files -tb tb_data 
+INFO: [HLS 200-10] Adding test bench file 'tb_data' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 
+INFO: [HLS 200-10] Creating and opening solution '/home/ubuntu2004/527_final/mini_ae_project/myproject_prj/solution1'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: config_array_partition -maximum_size 4096 
+INFO: [XFORM 203-101] Allowed max sub elements number after partition is 4096.
+ERROR: [HLS 200-642] The 'config_array_partition -maximum_size' command is not supported.
+INFO: [HLS 200-1510] Running: config_compile -name_max_length 80 
+INFO: [XFORM 203-1161] The maximum of name length is set to 80.
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [XFORM 203-1161] The maximum of name length is set to 80.
+INFO: [HLS 200-1510] Running: config_schedule -enable_dsp_full_reg=false 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% default 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.625ns.
+***** C/RTL SYNTHESIS *****
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 202.168 MB.
+INFO: [HLS 200-10] Analyzing design file 'firmware/myproject.cpp' ... 
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (firmware/myproject.cpp:37:63)
+Resolution: For help on HLS 214-113 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (firmware/myproject.cpp:37:67)
+Resolution: For help on HLS 214-113 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (firmware/myproject.cpp:45:67)
+Resolution: For help on HLS 214-113 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (firmware/myproject.cpp:45:71)
+Resolution: For help on HLS 214-113 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=214-113.html
+WARNING: [HLS 200-471] Dataflow form checks found 4 issue(s) in file firmware/myproject.cpp
+Resolution: For help on HLS 200-471 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-471.html
+WARNING: [HLS 207-5292] unused parameter 'keep' (firmware/nnet_utils/nnet_helpers.h:285:99)
+WARNING: [HLS 207-5292] unused parameter 'data' (firmware/nnet_utils/nnet_code_gen.h:11:36)
+WARNING: [HLS 207-5292] unused parameter 'buffer' (firmware/nnet_utils/nnet_code_gen.h:12:36)
+WARNING: [HLS 207-5292] unused parameter 'partition' (firmware/nnet_utils/nnet_code_gen.h:13:44)
+WARNING: [HLS 207-5292] unused parameter 'data' (firmware/nnet_utils/nnet_code_gen.h:21:24)
+WARNING: [HLS 207-5292] unused parameter 'buffer' (firmware/nnet_utils/nnet_code_gen.h:22:24)
+WARNING: [HLS 207-5292] unused parameter 'partition' (firmware/nnet_utils/nnet_code_gen.h:23:32)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.6 seconds. CPU system time: 0.5 seconds. Elapsed time: 4.27 seconds; current allocated memory: 207.344 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 2,389 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/ubuntu2004/527_final/mini_ae_project/myproject_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 24,572 instructions in the design after the 'Unroll/Inline' phase of compilation. See the Design Size Report for more details: /home/ubuntu2004/527_final/mini_ae_project/myproject_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,007 instructions in the design after the 'Performance/Pipeline' phase of compilation. See the Design Size Report for more details: /home/ubuntu2004/527_final/mini_ae_project/myproject_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 5,709 instructions in the design after the 'Optimizations' phase of compilation. See the Design Size Report for more details: /home/ubuntu2004/527_final/mini_ae_project/myproject_prj/solution1/syn/report/csynth_design_size.rpt
+WARNING: [HLS 214-273] In function 'void nnet::dense<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config2::weight_t*, config2::bias_t*)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form (firmware/nnet_utils/nnet_dense.h:38:0)
+WARNING: [HLS 214-273] In function 'void nnet::dense<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config4::weight_t*, config4::bias_t*)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form (firmware/nnet_utils/nnet_dense.h:38:0)
+INFO: [HLS 214-131] Inlining function 'nnet::product::mult<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::product(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'void nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config2::weight_t*, config2::bias_t*)' (firmware/nnet_utils/nnet_dense_resource.h:56:17)
+INFO: [HLS 214-131] Inlining function 'nnet::product::mult<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::product(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'void nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config4::weight_t*, config4::bias_t*)' (firmware/nnet_utils/nnet_dense_resource.h:56:17)
+INFO: [HLS 214-131] Inlining function 'void nnet::dense<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config2::weight_t*, config2::bias_t*)' into 'myproject(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (firmware/myproject.cpp:37:2)
+INFO: [HLS 214-131] Inlining function 'void nnet::dense<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config4::weight_t*, config4::bias_t*)' into 'myproject(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (firmware/myproject.cpp:45:2)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_114_1' is marked as complete unroll implied by the pipeline pragma (firmware/nnet_utils/nnet_activation.h:114:23)
+INFO: [HLS 214-291] Loop 'MultLoop' is marked as complete unroll implied by the pipeline pragma (firmware/nnet_utils/nnet_dense_resource.h:52:9)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_43_1' is marked as complete unroll implied by the pipeline pragma (firmware/nnet_utils/nnet_activation.h:43:22)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_114_1' (firmware/nnet_utils/nnet_activation.h:114:23) in function 'nnet::sigmoid<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, sigmoid_config5>' completely with a factor of 64 (firmware/nnet_utils/nnet_activation.h:95:0)
+INFO: [HLS 214-186] Unrolling loop 'Result' (firmware/nnet_utils/nnet_dense_resource.h:77:5) in function 'nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' completely with a factor of 64 (firmware/nnet_utils/nnet_dense_resource.h:15:0)
+INFO: [HLS 214-186] Unrolling loop 'MultLoop' (firmware/nnet_utils/nnet_dense_resource.h:52:9) in function 'nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' completely with a factor of 128 (firmware/nnet_utils/nnet_dense_resource.h:15:0)
+INFO: [HLS 214-186] Unrolling loop 'InitAccum' (firmware/nnet_utils/nnet_dense_resource.h:37:5) in function 'nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' completely with a factor of 64 (firmware/nnet_utils/nnet_dense_resource.h:15:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_43_1' (firmware/nnet_utils/nnet_activation.h:43:22) in function 'nnet::relu<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, relu_config3>' completely with a factor of 16 (firmware/nnet_utils/nnet_activation.h:39:0)
+INFO: [HLS 214-186] Unrolling loop 'Result' (firmware/nnet_utils/nnet_dense_resource.h:77:5) in function 'nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' completely with a factor of 16 (firmware/nnet_utils/nnet_dense_resource.h:15:0)
+INFO: [HLS 214-186] Unrolling loop 'MultLoop' (firmware/nnet_utils/nnet_dense_resource.h:52:9) in function 'nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' completely with a factor of 128 (firmware/nnet_utils/nnet_dense_resource.h:15:0)
+INFO: [HLS 214-186] Unrolling loop 'InitAccum' (firmware/nnet_utils/nnet_dense_resource.h:37:5) in function 'nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' completely with a factor of 16 (firmware/nnet_utils/nnet_dense_resource.h:15:0)
+INFO: [HLS 214-178] Inlining function 'std::enable_if<!(std::is_same<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_uint<1> >::value), ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::type nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>(config2::accum_t)' into 'void nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config2::weight_t*, config2::bias_t*)' (firmware/nnet_utils/nnet_dense_resource.h:15:0)
+INFO: [HLS 214-248] Applying array_partition to 'b4': Complete partitioning on dimension 1. (firmware/weights/b4.h:12:0)
+INFO: [HLS 214-248] Applying array_partition to 'b2': Complete partitioning on dimension 1. (firmware/weights/b2.h:12:0)
+INFO: [HLS 214-248] Applying array_partition to 'layer2_out': Complete partitioning on dimension 1. (firmware/myproject.cpp:35:11)
+INFO: [HLS 214-248] Applying array_partition to 'layer3_out': Complete partitioning on dimension 1. (firmware/myproject.cpp:39:14)
+INFO: [HLS 214-248] Applying array_partition to 'layer4_out': Complete partitioning on dimension 1. (firmware/myproject.cpp:43:14)
+INFO: [HLS 214-248] Applying array_partition to 'layer5_out': Complete partitioning on dimension 1. (firmware/myproject.cpp:9:0)
+INFO: [HLS 214-248] Applying array_reshape to 'w4': Block reshaping with factor 128 on dimension 1. (firmware/weights/w4.h:12:0)
+INFO: [HLS 214-248] Applying array_reshape to 'w2': Block reshaping with factor 128 on dimension 1. (firmware/weights/w2.h:12:0)
+INFO: [HLS 214-248] Applying array_reshape to 'input_1': Complete reshaping on dimension 1. (firmware/myproject.cpp:9:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.44 seconds. CPU system time: 0.64 seconds. Elapsed time: 6.41 seconds; current allocated memory: 208.184 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 208.184 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' (firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.23 seconds; current allocated memory: 214.875 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] firmware/nnet_utils/nnet_dense_resource.h:43: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 217.555 MB.
+INFO: [XFORM 203-712] Applying dataflow to function 'myproject' (firmware/myproject.cpp:35:1), detected/extracted 4 process function(s): 
+	 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>'
+	 'nnet::relu<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, relu_config3>'
+	 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>'
+	 'nnet::sigmoid<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, sigmoid_config5>'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (firmware/nnet_utils/nnet_activation.h:109:9) to (firmware/nnet_utils/nnet_activation.h:123:1) in function 'nnet::sigmoid<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, sigmoid_config5>'... converting 129 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' (firmware/nnet_utils/nnet_mult.h:43:11)...128 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.52 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.55 seconds; current allocated memory: 255.750 MB.
+INFO: [XFORM 203-531] Rewinding loop 'ReuseLoop' (firmware/nnet_utils/nnet_dense_resource.h:43) in function 'dense_resource<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config4>'.
+INFO: [XFORM 203-531] Rewinding loop 'ReuseLoop' (firmware/nnet_utils/nnet_dense_resource.h:43) in function 'dense_resource<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config2>'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.4 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.42 seconds; current allocated memory: 302.750 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'myproject' ...
+WARNING: [SYN 201-103] Legalizing function name 'dense_resource<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config2>' to 'dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s'.
+WARNING: [SYN 201-103] Legalizing function name 'relu<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, relu_config3>' to 'relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_s'.
+WARNING: [SYN 201-103] Legalizing function name 'dense_resource<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config4>' to 'dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s'.
+WARNING: [SYN 201-103] Legalizing function name 'sigmoid<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, sigmoid_config5>' to 'sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config5_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'ReuseLoop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 12, loop 'ReuseLoop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.75 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.82 seconds; current allocated memory: 310.719 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.17 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 310.719 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'relu<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, relu_config3>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, function 'relu<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, relu_config3>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.21 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 311.891 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 311.891 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'ReuseLoop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'ReuseLoop'
+WARNING: [HLS 200-871] Estimated clock period (4.842 ns) exceeds the target (target clock period: 5.000 ns, clock uncertainty: 0.625 ns, effective delay budget: 4.375 ns).
+Resolution: For help on HLS 200-871 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s' consists of the following:
+	multiplexor before 'phi' operation ('w_index') with incoming values : ('w_index', firmware/nnet_utils/nnet_dense_resource.h:43->firmware/nnet_utils/nnet_dense_resource.h:253) [101]  (1.588 ns)
+	'phi' operation ('w_index') with incoming values : ('w_index', firmware/nnet_utils/nnet_dense_resource.h:43->firmware/nnet_utils/nnet_dense_resource.h:253) [101]  (0.000 ns)
+	'getelementptr' operation ('w4_84_addr', firmware/nnet_utils/nnet_dense_resource.h:56->firmware/nnet_utils/nnet_dense_resource.h:253) [143]  (0.000 ns)
+	'load' operation ('w4_84_load', firmware/nnet_utils/nnet_dense_resource.h:56->firmware/nnet_utils/nnet_dense_resource.h:253) on array 'w4_84' [144]  (3.254 ns)
+
+Resolution: For help on HLS 200-1016 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.7 seconds. CPU system time: 0 seconds. Elapsed time: 0.72 seconds; current allocated memory: 321.918 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.16 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 321.918 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config5_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'sigmoid<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, sigmoid_config5>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, function 'sigmoid<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, sigmoid_config5>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.53 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.56 seconds; current allocated memory: 332.934 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 332.934 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'myproject' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 332.934 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.17 seconds. CPU system time: 0 seconds. Elapsed time: 0.17 seconds; current allocated memory: 333.188 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_w2_85_ROM_AUTO_1R' to 'dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_w2_85_ROM_AUbkb' due to the length limit 80
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s' pipeline 'ReuseLoop' pipeline type 'rewind pipeline'
+INFO: [HLS 200-1552] Enabling free running pipeline (frp) architecture on pipeline 'ReuseLoop' in module 'dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s'. Estimated max control fanout for pipeline is 62511.
+INFO: [RTGEN 206-104] Estimated max fanout for 'dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s' is 8192 from HDL expression: ((1'b0 == ap_block_pp0_stage0) & (frp_pipeline_valid_U_valid_out[4'd1] == 1'b1))
+INFO: [RTGEN 206-100] Generating core module 'lshr_1024ns_10ns_1024_6_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'lshr_1024ns_7ns_1024_6_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'lshr_1024ns_8ns_1024_6_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'lshr_1024ns_9ns_1024_6_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_16s_26_2_1': 127 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_9s_25_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s'.
+INFO: [RTMG 210-279] Implementing memory 'myproject_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_w2_85_ROM_AUbkb' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.44 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.47 seconds; current allocated memory: 344.234 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_s' pipeline 'relu<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, relu_config3>' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config3_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.51 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.55 seconds; current allocated memory: 361.340 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s_w4_84_ROM_AUTO_1R' to 'dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s_w4_84_ROM_AUcud' due to the length limit 80
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s' pipeline 'ReuseLoop' pipeline type 'rewind pipeline'
+INFO: [HLS 200-1552] Enabling free running pipeline (frp) architecture on pipeline 'ReuseLoop' in module 'dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s'. Estimated max control fanout for pipeline is 14478.
+INFO: [RTGEN 206-100] Generating core module 'mul_15ns_9s_24_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_15ns_26_2_1': 127 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_8_3_15_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s'.
+INFO: [RTMG 210-279] Implementing memory 'myproject_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s_w4_84_ROM_AUcud' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.31 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.32 seconds; current allocated memory: 388.375 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config5_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config5_s_sigmoid_table_ROM_AUTO_1R' to 'sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config5_s_sigmoid_tabdEe' due to the length limit 80
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config5_s' pipeline 'sigmoid<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, sigmoid_config5>' pipeline type 'function pipeline'
+INFO: [HLS 200-1552] Enabling free running pipeline (frp) architecture on pipeline 'sigmoid<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, sigmoid_config5>' in module 'sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config5_s'. Estimated max control fanout for pipeline is 6144.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config5_s'.
+INFO: [RTMG 210-279] Implementing memory 'myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config5_s_sigmoid_tabdEe' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.74 seconds. CPU system time: 0.08 seconds. Elapsed time: 0.84 seconds; current allocated memory: 415.816 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'myproject' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/input_1' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_0' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_1' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_2' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_3' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_4' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_5' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_6' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_7' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_8' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_9' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_10' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_11' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_12' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_13' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_14' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_15' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_16' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_17' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_18' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_19' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_20' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_21' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_22' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_23' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_24' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_25' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_26' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_27' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_28' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_29' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_30' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_31' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_32' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_33' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_34' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_35' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_36' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_37' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_38' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_39' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_40' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_41' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_42' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_43' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_44' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_45' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_46' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_47' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_48' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_49' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_50' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_51' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_52' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_53' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_54' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_55' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_56' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_57' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_58' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_59' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_60' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_61' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_62' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer5_out_63' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'myproject' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'myproject'.
+INFO: [RTMG 210-285] Implementing FIFO 'layer2_out_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer2_out_1_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer2_out_2_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer2_out_3_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer2_out_4_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer2_out_5_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer2_out_6_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer2_out_7_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer2_out_8_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer2_out_9_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer2_out_10_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer2_out_11_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer2_out_12_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer2_out_13_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer2_out_14_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer2_out_15_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer3_out_U(myproject_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer3_out_1_U(myproject_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer3_out_2_U(myproject_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer3_out_3_U(myproject_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer3_out_4_U(myproject_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer3_out_5_U(myproject_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer3_out_6_U(myproject_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer3_out_7_U(myproject_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer3_out_8_U(myproject_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer3_out_9_U(myproject_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer3_out_10_U(myproject_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer3_out_11_U(myproject_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer3_out_12_U(myproject_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer3_out_13_U(myproject_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer3_out_14_U(myproject_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer3_out_15_U(myproject_fifo_w15_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_1_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_2_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_3_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_4_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_5_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_6_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_7_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_8_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_9_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_10_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_11_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_12_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_13_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_14_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_15_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_16_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_17_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_18_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_19_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_20_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_21_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_22_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_23_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_24_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_25_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_26_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_27_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_28_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_29_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_30_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_31_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_32_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_33_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_34_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_35_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_36_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_37_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_38_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_39_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_40_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_41_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_42_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_43_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_44_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_45_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_46_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_47_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_48_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_49_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_50_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_51_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_52_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_53_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_54_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_55_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_56_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_57_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_58_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_59_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_60_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_61_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_62_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_63_U(myproject_fifo_w16_d2_S)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.53 seconds. CPU system time: 0.12 seconds. Elapsed time: 1.68 seconds; current allocated memory: 446.387 MB.
+INFO: [RTMG 210-286] Generating pipelined shifter : 'myproject_lshr_1024ns_7ns_1024_6_1'
+INFO: [RTMG 210-286] Generating pipelined shifter : 'myproject_lshr_1024ns_8ns_1024_6_1'
+INFO: [RTMG 210-286] Generating pipelined shifter : 'myproject_lshr_1024ns_9ns_1024_6_1'
+INFO: [RTMG 210-286] Generating pipelined shifter : 'myproject_lshr_1024ns_10ns_1024_6_1'
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 3.43 seconds. CPU system time: 0.04 seconds. Elapsed time: 3.51 seconds; current allocated memory: 451.574 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1.16 seconds. CPU system time: 0.03 seconds. Elapsed time: 1.22 seconds; current allocated memory: 469.727 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for myproject.
+INFO: [VLOG 209-307] Generating Verilog RTL for myproject.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 206.53 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 20.37 seconds. CPU system time: 1.59 seconds. Elapsed time: 24.79 seconds; current allocated memory: 267.906 MB.
+***** C/RTL SYNTHESIS COMPLETED IN 0h0m24s *****
+INFO: [HLS 200-112] Total CPU user time: 21.25 seconds. Total CPU system time: 1.87 seconds. Total elapsed time: 26.23 seconds; peak allocated memory: 470.074 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Sun Dec  7 21:54:02 2025...

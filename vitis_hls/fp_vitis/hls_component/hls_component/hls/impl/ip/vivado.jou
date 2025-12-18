@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Mon Dec 15 00:45:21 2025
+# Process ID         : 16204
+# Current directory  : D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/impl/ip
+# Command line       : vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file           : D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/impl/ip/vivado.log
+# Journal file       : D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/impl/ip\vivado.jou
+# Running On         : Unlucky
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 34033 MB
+# Swap memory        : 7247 MB
+# Total Virtual      : 41281 MB
+# Available Virtual  : 13394 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

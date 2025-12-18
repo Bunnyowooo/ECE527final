@@ -1,0 +1,50 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component 
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg
+WARNING: [HLS 200-2001] file not found 'C:/Users/li/Downloads/input_data.dat' see [hls] from D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg(12)
+WARNING: [HLS 200-2001] file not found 'C:/Users/li/Downloads/output_hls.dat' see [hls] from D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg(13)
+WARNING: [HLS 200-2001] file not found 'C:/Users/li/Downloads/output_keras.dat' see [hls] from D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg(14)
+INFO: [HLS 200-1465] Applying config ini 'syn.file=autoencoder.cpp' from D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/autoencoder.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=autoencoder.h' from D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/autoencoder.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/Users/li/Downloads/input_data.dat' from D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg(12)
+WARNING: [HLS 200-40] Cannot find design file 'C:/Users/li/Downloads/input_data.dat'
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/Users/li/Downloads/output_hls.dat' from D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg(13)
+WARNING: [HLS 200-40] Cannot find design file 'C:/Users/li/Downloads/output_hls.dat'
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/Users/li/Downloads/output_keras.dat' from D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg(14)
+WARNING: [HLS 200-40] Cannot find design file 'C:/Users/li/Downloads/output_keras.dat'
+INFO: [HLS 200-1465] Applying config ini 'tb.file=testbench.cpp' from D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file 'D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/testbench.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=data.h' from D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/data.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=tiny_autoencoder' from D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg400-1' from D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying config ini 'clock=10ns' from D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg(15)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/vitis-comp.json
+WARNING: [HLS 200-40] Cannot find source file C:/Users/li/Downloads/output_keras.dat; skipping it.
+WARNING: [HLS 200-40] Cannot find source file C:/Users/li/Downloads/output_hls.dat; skipping it.
+WARNING: [HLS 200-40] Cannot find source file C:/Users/li/Downloads/input_data.dat; skipping it.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 3 seconds. Elapsed time: 5.297 seconds; current allocated memory: 151.254 MB.
+INFO: [HLS 200-10] Analyzing design file 'autoencoder.cpp' ... 
+WARNING: [HLS 207-1016] unknown warning group '-Wmisleading-indentation', ignored (D:/xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_sqrt_apfixed.h:16:34)
+ERROR: [HLS 207-3339] no matching function for call to 'compute_encoder' (autoencoder.cpp:134:2)
+INFO: [HLS 207-4378] candidate function not viable: no known conversion from 'const model_t [64][16]' to 'model_t (*)[16]' for 2nd argument (autoencoder.cpp:27:6)
+ERROR: [HLS 207-3339] no matching function for call to 'compute_decoder' (autoencoder.cpp:135:5)
+INFO: [HLS 207-4378] candidate function not viable: no known conversion from 'const model_t [16][64]' to 'model_t (*)[64]' for 2nd argument (autoencoder.cpp:74:6)
+WARNING: [HLS 207-5169] shift count is negative (D:/xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:993:13)
+INFO: [HLS 207-4526] in instantiation of member function 'ap_fixed_base<48, 38, true, AP_TRN, AP_WRAP, 0>::to_ap_int_base' requested here (D:/xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_int_base.h:365:18)
+INFO: [HLS 207-4235] in instantiation of function template specialization 'ap_int_base<24, true>::ap_int_base<48, 38, true, AP_TRN, AP_WRAP, 0>' requested here (D:/xilinx/2025.1/Vitis/common/technology/autopilot\ap_int.h:79:9)
+INFO: [HLS 207-4235] in instantiation of function template specialization 'ap_int<24>::ap_int<48, 38, AP_TRN, AP_WRAP, 0>' requested here (autoencoder.cpp:15:29)
+ERROR:  
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 3 seconds. Total elapsed time: 9.861 seconds; peak allocated memory: 152.797 MB.

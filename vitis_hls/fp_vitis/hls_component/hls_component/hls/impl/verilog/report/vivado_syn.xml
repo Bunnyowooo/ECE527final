@@ -1,0 +1,1163 @@
+<profile>
+<RunData>
+  <RUN_TYPE>synth</RUN_TYPE>
+  <VIVADO_VERSION>v.2025.1</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>10.000</TargetClockPeriod>
+  <AchievedClockPeriod>7.810</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>7.810</CP_FINAL>
+  <CP_ROUTE>NA</CP_ROUTE>
+  <CP_SYNTH>7.810</CP_SYNTH>
+  <CP_TARGET>10.000</CP_TARGET>
+  <SLACK_FINAL>2.190</SLACK_FINAL>
+  <SLACK_ROUTE></SLACK_ROUTE>
+  <SLACK_SYNTH>2.190</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>NA</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>2.190</WNS_FINAL>
+  <WNS_ROUTE>NA</WNS_ROUTE>
+  <WNS_SYNTH>2.190</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>4</BRAM>
+    <CLB>0</CLB>
+    <DSP>128</DSP>
+    <FF>6796</FF>
+    <LATCH>0</LATCH>
+    <LUT>24020</LUT>
+    <SRL>199</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>280</BRAM>
+    <CLB>0</CLB>
+    <DSP>220</DSP>
+    <FF>106400</FF>
+    <LUT>53200</LUT>
+    <URAM>0</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="tiny_autoencoder" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="18">compute_decoder_U0 compute_encoder_U0 hidden_layer_buf_10_U hidden_layer_buf_11_U hidden_layer_buf_12_U hidden_layer_buf_13_U hidden_layer_buf_14_U hidden_layer_buf_15_U hidden_layer_buf_1_U hidden_layer_buf_2_U hidden_layer_buf_3_U hidden_layer_buf_4_U hidden_layer_buf_5_U hidden_layer_buf_6_U hidden_layer_buf_7_U hidden_layer_buf_8_U hidden_layer_buf_9_U hidden_layer_buf_U</SubModules>
+    <Resources BRAM="4" DSP="128" FF="6796" LUT="24020" LogicLUT="23821" RAMB18="4" SRL="199"/>
+    <LocalResources FF="1" LUT="1990" LogicLUT="1990"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0" DEPTH="1" FILE_NAME="tiny_autoencoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder">
+    <SubModules count="179">SIGMOID_TABLE_U flow_control_loop_pipe_U mac_muladd_16s_10s_17s_25_4_1_U269 mac_muladd_16s_10s_17s_25_4_1_U270 mac_muladd_16s_10s_17s_25_4_1_U271 mac_muladd_16s_10s_17s_25_4_1_U272 mac_muladd_16s_10s_17s_25_4_1_U273 mac_muladd_16s_10s_24s_26_4_1_U275 mac_muladd_16s_10s_24s_26_4_1_U282 mac_muladd_16s_10s_25s_26_4_1_U277 mac_muladd_16s_10s_25s_26_4_1_U278 mac_muladd_16s_10s_25s_26_4_1_U279 mac_muladd_16s_10s_25s_26_4_1_U280 mac_muladd_16s_10s_25s_26_4_1_U281 mac_muladd_16s_10s_25s_30_4_1_U284 mac_muladd_16s_10s_26s_30_4_1_U283 mac_muladd_16s_10s_26s_30_4_1_U286 mac_muladd_16s_10s_26s_30_4_1_U288 mac_muladd_16s_10s_26s_30_4_1_U290 mac_muladd_16s_10s_30s_30_4_1_U291 mac_muladd_16s_10s_30s_30_4_1_U292 mac_muladd_16s_10s_30s_30_4_1_U294 mac_muladd_16s_10s_30s_30_4_1_U295 mac_muladd_16s_10s_30s_30_4_1_U297 mac_muladd_16s_10s_30s_30_4_1_U298 mac_muladd_16s_10s_30s_30_4_1_U299 mac_muladd_16s_10s_30s_30_4_1_U300 mac_muladd_16s_10s_30s_30_4_1_U301 mac_muladd_16s_10s_30s_30_4_1_U302 mac_muladd_16s_10s_30s_30_4_1_U304 mac_muladd_16s_10s_30s_30_4_1_U305 mac_muladd_16s_10s_30s_30_4_1_U306 mac_muladd_16s_10s_30s_30_4_1_U307 mac_muladd_16s_10s_30s_30_4_1_U312 mac_muladd_16s_10s_30s_30_4_1_U314 mac_muladd_16s_10s_30s_30_4_1_U315 mac_muladd_16s_10s_30s_30_4_1_U317 mac_muladd_16s_10s_30s_30_4_1_U318 mac_muladd_16s_10s_30s_30_4_1_U319 mac_muladd_16s_10s_30s_30_4_1_U320 mac_muladd_16s_10s_30s_30_4_1_U322 mac_muladd_16s_10s_30s_30_4_1_U326 mac_muladd_16s_10s_30s_30_4_1_U329 mac_muladd_16s_10s_30s_30_4_1_U330 mac_muladd_16s_10s_30s_30_4_1_U331 mac_muladd_16s_10s_30s_30_4_1_U332 mac_muladd_16s_10s_30s_30_4_1_U333 mac_muladd_16s_10s_30s_30_4_1_U334 mac_muladd_16s_10s_30s_30_4_1_U335 mac_muladd_16s_10s_30s_30_4_1_U336 mac_muladd_16s_10s_30s_30_4_1_U337 mac_muladd_16s_10s_30s_30_4_1_U338 mac_muladd_16s_10s_30s_30_4_1_U339 mac_muladd_16s_10s_30s_30_4_1_U340 mac_muladd_16s_10s_30s_30_4_1_U341 mac_muladd_16s_10s_30s_30_4_1_U344 mac_muladd_16s_10s_30s_30_4_1_U345 mac_muladd_16s_10s_30s_30_4_1_U347 mac_muladd_16s_10s_30s_30_4_1_U351 mac_muladd_16s_10s_30s_30_4_1_U352 mac_muladd_16s_10s_30s_30_4_1_U353 mac_muladd_16s_10s_30s_30_4_1_U356 mac_muladd_16s_10s_30s_30_4_1_U360 mac_muladd_16s_10s_30s_30_4_1_U361 mac_muladd_16s_10s_30s_30_4_1_U362 mac_muladd_16s_10s_30s_30_4_1_U363 mac_muladd_16s_10s_30s_30_4_1_U364 mac_muladd_16s_10s_30s_30_4_1_U366 mac_muladd_16s_10s_30s_30_4_1_U369 mac_muladd_16s_10s_30s_30_4_1_U370 mac_muladd_16s_10s_30s_30_4_1_U371 mac_muladd_16s_10s_30s_30_4_1_U373 mac_muladd_16s_10s_30s_30_4_1_U375 mac_muladd_16s_10s_30s_30_4_1_U377 mac_muladd_16s_10s_30s_30_4_1_U379 mac_muladd_16s_10s_30s_30_4_1_U383 mac_muladd_16s_10s_30s_30_4_1_U385 mac_muladd_16s_10s_30s_30_4_1_U386 mac_muladd_16s_10s_30s_30_4_1_U387 mac_muladd_16s_10s_30s_30_4_1_U390 mac_muladd_16s_10s_30s_30_4_1_U391 mac_muladd_16s_10s_30s_30_4_1_U392 mac_muladd_16s_10s_30s_30_4_1_U393 mac_muladd_16s_8ns_30s_30_4_1_U372 mac_muladd_16s_8s_30s_30_4_1_U384 mac_muladd_16s_9s_17s_24_4_1_U267 mac_muladd_16s_9s_17s_24_4_1_U268 mac_muladd_16s_9s_17s_24_4_1_U274 mac_muladd_16s_9s_24s_25_4_1_U276 mac_muladd_16s_9s_26s_30_4_1_U285 mac_muladd_16s_9s_26s_30_4_1_U287 mac_muladd_16s_9s_26s_30_4_1_U289 mac_muladd_16s_9s_30s_30_4_1_U293 mac_muladd_16s_9s_30s_30_4_1_U296 mac_muladd_16s_9s_30s_30_4_1_U303 mac_muladd_16s_9s_30s_30_4_1_U308 mac_muladd_16s_9s_30s_30_4_1_U309 mac_muladd_16s_9s_30s_30_4_1_U310 mac_muladd_16s_9s_30s_30_4_1_U311 mac_muladd_16s_9s_30s_30_4_1_U313 mac_muladd_16s_9s_30s_30_4_1_U316 mac_muladd_16s_9s_30s_30_4_1_U321 mac_muladd_16s_9s_30s_30_4_1_U323 mac_muladd_16s_9s_30s_30_4_1_U324 mac_muladd_16s_9s_30s_30_4_1_U325 mac_muladd_16s_9s_30s_30_4_1_U327 mac_muladd_16s_9s_30s_30_4_1_U328 mac_muladd_16s_9s_30s_30_4_1_U342 mac_muladd_16s_9s_30s_30_4_1_U343 mac_muladd_16s_9s_30s_30_4_1_U346 mac_muladd_16s_9s_30s_30_4_1_U348 mac_muladd_16s_9s_30s_30_4_1_U349 mac_muladd_16s_9s_30s_30_4_1_U350 mac_muladd_16s_9s_30s_30_4_1_U354 mac_muladd_16s_9s_30s_30_4_1_U355 mac_muladd_16s_9s_30s_30_4_1_U357 mac_muladd_16s_9s_30s_30_4_1_U358 mac_muladd_16s_9s_30s_30_4_1_U359 mac_muladd_16s_9s_30s_30_4_1_U365 mac_muladd_16s_9s_30s_30_4_1_U367 mac_muladd_16s_9s_30s_30_4_1_U368 mac_muladd_16s_9s_30s_30_4_1_U374 mac_muladd_16s_9s_30s_30_4_1_U376 mac_muladd_16s_9s_30s_30_4_1_U378 mac_muladd_16s_9s_30s_30_4_1_U380 mac_muladd_16s_9s_30s_30_4_1_U381 mac_muladd_16s_9s_30s_30_4_1_U382 mac_muladd_16s_9s_30s_30_4_1_U388 mac_muladd_16s_9s_30s_30_4_1_U389 mac_muladd_16s_9s_30s_30_4_1_U394 p_ZL2W2_0_10_U p_ZL2W2_0_12_U p_ZL2W2_0_2_U p_ZL2W2_0_3_U p_ZL2W2_0_6_U p_ZL2W2_1_14_U p_ZL2W2_1_3_U p_ZL2W2_1_4_U p_ZL2W2_1_8_U p_ZL2W2_1_9_U p_ZL2W2_2_11_U p_ZL2W2_2_14_U p_ZL2W2_2_1_U p_ZL2W2_2_4_U p_ZL2W2_3_0_U p_ZL2W2_3_12_U p_ZL2W2_3_14_U p_ZL2W2_3_15_U p_ZL2W2_3_2_U p_ZL2W2_3_3_U p_ZL2W2_3_5_U p_ZL2W2_3_6_U p_ZL2W2_3_7_U p_ZL2W2_4_13_U p_ZL2W2_4_3_U p_ZL2W2_4_4_U p_ZL2W2_5_0_U p_ZL2W2_5_11_U p_ZL2W2_5_2_U p_ZL2W2_5_3_U p_ZL2W2_5_4_U p_ZL2W2_5_5_U p_ZL2W2_5_6_U p_ZL2W2_5_7_U p_ZL2W2_5_9_U p_ZL2W2_6_13_U p_ZL2W2_6_14_U p_ZL2W2_6_15_U p_ZL2W2_6_3_U p_ZL2W2_6_4_U p_ZL2W2_6_9_U p_ZL2W2_7_12_U p_ZL2W2_7_13_U p_ZL2W2_7_14_U p_ZL2W2_7_2_U p_ZL2W2_7_4_U p_ZL2W2_7_5_U p_ZL2W2_7_8_U p_ZL2W2_7_9_U</SubModules>
+    <Resources BRAM="4" DSP="128" FF="846" LUT="1296" LogicLUT="1097" RAMB18="4" SRL="199"/>
+    <LocalResources FF="450" LUT="205" LogicLUT="6" SRL="199"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/SIGMOID_TABLE_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_SIGMOID_TABLE_ROM_AUTO_1R">
+    <Resources BRAM="4" LUT="88" LogicLUT="88" RAMB18="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/flow_control_loop_pipe_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_flow_control_loop_pipe">
+    <Resources FF="1" LUT="63" LogicLUT="63"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_17s_25_4_1_U269" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_17s_25_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_17s_25_4_1_U270" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_17s_25_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_17s_25_4_1_U271" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_17s_25_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_17s_25_4_1_U272" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_17s_25_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_17s_25_4_1_U273" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_17s_25_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_24s_26_4_1_U275" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_24s_26_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_24s_26_4_1_U282" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_24s_26_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_25s_26_4_1_U277" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_25s_26_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_25s_26_4_1_U278" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_25s_26_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_25s_26_4_1_U279" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_25s_26_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_25s_26_4_1_U280" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_25s_26_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_25s_26_4_1_U281" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_25s_26_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_25s_30_4_1_U284" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_25s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_26s_30_4_1_U283" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_26s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_26s_30_4_1_U286" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_26s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_26s_30_4_1_U288" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_26s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_26s_30_4_1_U290" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_26s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U291" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U292" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U294" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U295" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U297" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U298" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U299" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U300" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U301" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U302" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U304" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U305" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U306" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U307" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U312" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U314" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U315" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U317" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U318" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U319" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U320" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U322" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U326" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U329" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U330" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U331" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U332" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U333" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U334" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U335" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U336" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U337" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U338" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U339" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U340" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U341" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U344" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U345" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U347" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U351" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U352" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U353" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U356" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U360" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U361" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U362" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U363" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U364" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U366" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U369" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U370" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U371" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U373" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U375" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U377" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U379" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U383" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U385" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U386" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U387" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U390" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U391" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U392" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_10s_30s_30_4_1_U393" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_10s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_8ns_30s_30_4_1_U372" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_8ns_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_8s_30s_30_4_1_U384" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_8s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_17s_24_4_1_U267" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_17s_24_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_17s_24_4_1_U268" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_17s_24_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_17s_24_4_1_U274" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_17s_24_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_24s_25_4_1_U276" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_24s_25_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_26s_30_4_1_U285" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_26s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_26s_30_4_1_U287" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_26s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_26s_30_4_1_U289" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_26s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U293" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U296" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U303" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U308" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U309" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U310" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U311" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U313" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U316" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U321" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U323" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U324" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U325" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U327" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U328" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U342" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U343" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U346" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U348" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U349" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U350" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U354" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U355" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U357" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U358" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U359" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U365" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U367" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U368" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U374" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U376" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U378" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U380" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U381" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U382" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U388" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U389" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/mac_muladd_16s_9s_30s_30_4_1_U394" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_mac_muladd_16s_9s_30s_30_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_0_10_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_0_10_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_0_12_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_0_12_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_0_2_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_0_2_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_0_3_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_0_3_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_0_6_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_0_6_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_1_14_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_1_14_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_1_3_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_1_3_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_1_4_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_1_4_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_1_8_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_1_8_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_1_9_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_1_9_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_2_11_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_2_11_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_2_14_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_2_14_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_2_1_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_2_1_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_2_4_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_2_4_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_3_0_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_3_0_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_3_12_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_3_12_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_3_14_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_3_14_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_3_15_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_3_15_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_3_2_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_3_2_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_3_3_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_3_3_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_3_5_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_3_5_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_3_6_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_3_6_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_3_7_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_3_7_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_4_13_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_4_13_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_4_3_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_4_3_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_4_4_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_4_4_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_5_0_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_5_0_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_5_11_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_5_11_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_5_2_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_5_2_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_5_3_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_5_3_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_5_4_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_5_4_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_5_5_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_5_5_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_5_6_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_5_6_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_5_7_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_5_7_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_5_9_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_5_9_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_6_13_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_6_13_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_6_14_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_6_14_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_6_15_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_6_15_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_6_3_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_6_3_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_6_4_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_6_4_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_6_9_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_6_9_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_7_12_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_7_12_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_7_13_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_7_13_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_7_14_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_7_14_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_7_2_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_7_2_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_7_4_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_7_4_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_7_5_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_7_5_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_7_8_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_7_8_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_decoder_U0/p_ZL2W2_7_9_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_decoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_decoder_p_ZL2W2_7_9_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0" DEPTH="1" FILE_NAME="tiny_autoencoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder">
+    <SubModules count="249">mul_16s_10s_26_1_1_U10 mul_16s_10s_26_1_1_U100 mul_16s_10s_26_1_1_U101 mul_16s_10s_26_1_1_U108 mul_16s_10s_26_1_1_U109 mul_16s_10s_26_1_1_U110 mul_16s_10s_26_1_1_U111 mul_16s_10s_26_1_1_U115 mul_16s_10s_26_1_1_U117 mul_16s_10s_26_1_1_U118 mul_16s_10s_26_1_1_U119 mul_16s_10s_26_1_1_U120 mul_16s_10s_26_1_1_U121 mul_16s_10s_26_1_1_U122 mul_16s_10s_26_1_1_U126 mul_16s_10s_26_1_1_U128 mul_16s_10s_26_1_1_U13 mul_16s_10s_26_1_1_U17 mul_16s_10s_26_1_1_U18 mul_16s_10s_26_1_1_U19 mul_16s_10s_26_1_1_U21 mul_16s_10s_26_1_1_U22 mul_16s_10s_26_1_1_U23 mul_16s_10s_26_1_1_U26 mul_16s_10s_26_1_1_U27 mul_16s_10s_26_1_1_U29 mul_16s_10s_26_1_1_U3 mul_16s_10s_26_1_1_U30 mul_16s_10s_26_1_1_U32 mul_16s_10s_26_1_1_U34 mul_16s_10s_26_1_1_U35 mul_16s_10s_26_1_1_U36 mul_16s_10s_26_1_1_U38 mul_16s_10s_26_1_1_U39 mul_16s_10s_26_1_1_U4 mul_16s_10s_26_1_1_U40 mul_16s_10s_26_1_1_U41 mul_16s_10s_26_1_1_U45 mul_16s_10s_26_1_1_U46 mul_16s_10s_26_1_1_U48 mul_16s_10s_26_1_1_U49 mul_16s_10s_26_1_1_U5 mul_16s_10s_26_1_1_U51 mul_16s_10s_26_1_1_U52 mul_16s_10s_26_1_1_U53 mul_16s_10s_26_1_1_U54 mul_16s_10s_26_1_1_U55 mul_16s_10s_26_1_1_U56 mul_16s_10s_26_1_1_U60 mul_16s_10s_26_1_1_U62 mul_16s_10s_26_1_1_U65 mul_16s_10s_26_1_1_U66 mul_16s_10s_26_1_1_U68 mul_16s_10s_26_1_1_U69 mul_16s_10s_26_1_1_U7 mul_16s_10s_26_1_1_U71 mul_16s_10s_26_1_1_U73 mul_16s_10s_26_1_1_U74 mul_16s_10s_26_1_1_U77 mul_16s_10s_26_1_1_U78 mul_16s_10s_26_1_1_U81 mul_16s_10s_26_1_1_U82 mul_16s_10s_26_1_1_U83 mul_16s_10s_26_1_1_U86 mul_16s_10s_26_1_1_U89 mul_16s_10s_26_1_1_U9 mul_16s_10s_26_1_1_U90 mul_16s_10s_26_1_1_U91 mul_16s_10s_26_1_1_U92 mul_16s_10s_26_1_1_U94 mul_16s_10s_26_1_1_U96 mul_16s_9s_25_1_1_U1 mul_16s_9s_25_1_1_U102 mul_16s_9s_25_1_1_U103 mul_16s_9s_25_1_1_U104 mul_16s_9s_25_1_1_U105 mul_16s_9s_25_1_1_U106 mul_16s_9s_25_1_1_U107 mul_16s_9s_25_1_1_U11 mul_16s_9s_25_1_1_U112 mul_16s_9s_25_1_1_U113 mul_16s_9s_25_1_1_U114 mul_16s_9s_25_1_1_U116 mul_16s_9s_25_1_1_U12 mul_16s_9s_25_1_1_U123 mul_16s_9s_25_1_1_U124 mul_16s_9s_25_1_1_U125 mul_16s_9s_25_1_1_U127 mul_16s_9s_25_1_1_U14 mul_16s_9s_25_1_1_U15 mul_16s_9s_25_1_1_U16 mul_16s_9s_25_1_1_U2 mul_16s_9s_25_1_1_U20 mul_16s_9s_25_1_1_U24 mul_16s_9s_25_1_1_U25 mul_16s_9s_25_1_1_U28 mul_16s_9s_25_1_1_U31 mul_16s_9s_25_1_1_U33 mul_16s_9s_25_1_1_U37 mul_16s_9s_25_1_1_U42 mul_16s_9s_25_1_1_U43 mul_16s_9s_25_1_1_U44 mul_16s_9s_25_1_1_U47 mul_16s_9s_25_1_1_U50 mul_16s_9s_25_1_1_U57 mul_16s_9s_25_1_1_U58 mul_16s_9s_25_1_1_U59 mul_16s_9s_25_1_1_U6 mul_16s_9s_25_1_1_U61 mul_16s_9s_25_1_1_U63 mul_16s_9s_25_1_1_U64 mul_16s_9s_25_1_1_U67 mul_16s_9s_25_1_1_U70 mul_16s_9s_25_1_1_U72 mul_16s_9s_25_1_1_U75 mul_16s_9s_25_1_1_U76 mul_16s_9s_25_1_1_U79 mul_16s_9s_25_1_1_U8 mul_16s_9s_25_1_1_U80 mul_16s_9s_25_1_1_U84 mul_16s_9s_25_1_1_U85 mul_16s_9s_25_1_1_U87 mul_16s_9s_25_1_1_U88 mul_16s_9s_25_1_1_U93 mul_16s_9s_25_1_1_U95 mul_16s_9s_25_1_1_U97 mul_16s_9s_25_1_1_U98 mul_16s_9s_25_1_1_U99 p_ZL2W1_0_0_U p_ZL2W1_0_10_U p_ZL2W1_0_11_U p_ZL2W1_0_12_U p_ZL2W1_0_13_U p_ZL2W1_0_14_U p_ZL2W1_0_15_U p_ZL2W1_0_1_U p_ZL2W1_0_2_U p_ZL2W1_0_3_U p_ZL2W1_0_4_U p_ZL2W1_0_5_U p_ZL2W1_0_6_U p_ZL2W1_0_7_U p_ZL2W1_0_9_U p_ZL2W1_1_0_U p_ZL2W1_1_10_U p_ZL2W1_1_11_U p_ZL2W1_1_12_U p_ZL2W1_1_13_U p_ZL2W1_1_14_U p_ZL2W1_1_15_U p_ZL2W1_1_1_U p_ZL2W1_1_2_U p_ZL2W1_1_3_U p_ZL2W1_1_4_U p_ZL2W1_1_5_U p_ZL2W1_1_6_U p_ZL2W1_1_7_U p_ZL2W1_1_8_U p_ZL2W1_1_9_U p_ZL2W1_2_0_U p_ZL2W1_2_10_U p_ZL2W1_2_11_U p_ZL2W1_2_13_U p_ZL2W1_2_14_U p_ZL2W1_2_15_U p_ZL2W1_2_1_U p_ZL2W1_2_2_U p_ZL2W1_2_3_U p_ZL2W1_2_4_U p_ZL2W1_2_6_U p_ZL2W1_2_7_U p_ZL2W1_2_8_U p_ZL2W1_2_9_U p_ZL2W1_3_0_U p_ZL2W1_3_10_U p_ZL2W1_3_11_U p_ZL2W1_3_12_U p_ZL2W1_3_13_U p_ZL2W1_3_14_U p_ZL2W1_3_15_U p_ZL2W1_3_1_U p_ZL2W1_3_2_U p_ZL2W1_3_3_U p_ZL2W1_3_4_U p_ZL2W1_3_5_U p_ZL2W1_3_6_U p_ZL2W1_3_7_U p_ZL2W1_3_8_U p_ZL2W1_3_9_U p_ZL2W1_4_0_U p_ZL2W1_4_10_U p_ZL2W1_4_11_U p_ZL2W1_4_12_U p_ZL2W1_4_13_U p_ZL2W1_4_14_U p_ZL2W1_4_15_U p_ZL2W1_4_2_U p_ZL2W1_4_4_U p_ZL2W1_4_5_U p_ZL2W1_4_6_U p_ZL2W1_4_7_U p_ZL2W1_4_8_U p_ZL2W1_4_9_U p_ZL2W1_5_0_U p_ZL2W1_5_10_U p_ZL2W1_5_11_U p_ZL2W1_5_12_U p_ZL2W1_5_13_U p_ZL2W1_5_14_U p_ZL2W1_5_15_U p_ZL2W1_5_1_U p_ZL2W1_5_2_U p_ZL2W1_5_3_U p_ZL2W1_5_4_U p_ZL2W1_5_5_U p_ZL2W1_5_6_U p_ZL2W1_5_7_U p_ZL2W1_5_8_U p_ZL2W1_5_9_U p_ZL2W1_6_0_U p_ZL2W1_6_10_U p_ZL2W1_6_11_U p_ZL2W1_6_12_U p_ZL2W1_6_13_U p_ZL2W1_6_14_U p_ZL2W1_6_15_U p_ZL2W1_6_1_U p_ZL2W1_6_2_U p_ZL2W1_6_3_U p_ZL2W1_6_4_U p_ZL2W1_6_5_U p_ZL2W1_6_6_U p_ZL2W1_6_7_U p_ZL2W1_6_9_U p_ZL2W1_7_0_U p_ZL2W1_7_10_U p_ZL2W1_7_11_U p_ZL2W1_7_12_U p_ZL2W1_7_13_U p_ZL2W1_7_14_U p_ZL2W1_7_15_U p_ZL2W1_7_1_U p_ZL2W1_7_2_U p_ZL2W1_7_4_U p_ZL2W1_7_5_U p_ZL2W1_7_6_U p_ZL2W1_7_7_U p_ZL2W1_7_8_U p_ZL2W1_7_9_U</SubModules>
+    <Resources FF="5373" LUT="20487" LogicLUT="20487"/>
+    <LocalResources FF="4781" LUT="1976" LogicLUT="1976"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U10" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="155" LogicLUT="155"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U100" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="137" LogicLUT="137"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U101" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="136" LogicLUT="136"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U108" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="137" LogicLUT="137"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U109" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="137" LogicLUT="137"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U110" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="128" LogicLUT="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U111" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="137" LogicLUT="137"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U115" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="137" LogicLUT="137"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U117" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="137" LogicLUT="137"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U118" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="114" LogicLUT="114"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U119" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="128" LogicLUT="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U120" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U121" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U122" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="123" LogicLUT="123"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U126" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="136" LogicLUT="136"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U128" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="137" LogicLUT="137"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U13" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="159" LogicLUT="159"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U17" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="137" LogicLUT="137"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U18" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="131" LogicLUT="131"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U19" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="133" LogicLUT="133"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U21" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="133" LogicLUT="133"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U22" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="160" LogicLUT="160"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U23" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="135" LogicLUT="135"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U26" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U27" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="162" LogicLUT="162"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U29" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="155" LogicLUT="155"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U3" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="159" LogicLUT="159"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U30" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U32" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="157" LogicLUT="157"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U34" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U35" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="137" LogicLUT="137"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U36" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="137" LogicLUT="137"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U38" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="137" LogicLUT="137"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U39" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U4" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="155" LogicLUT="155"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U40" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="162" LogicLUT="162"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U41" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U45" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U46" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="160" LogicLUT="160"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U48" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="152" LogicLUT="152"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U49" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="133" LogicLUT="133"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U5" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="160" LogicLUT="160"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U51" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="157" LogicLUT="157"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U52" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U53" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="152" LogicLUT="152"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U54" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="156" LogicLUT="156"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U55" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U56" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="152" LogicLUT="152"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U60" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="152" LogicLUT="152"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U62" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="155" LogicLUT="155"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U65" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="159" LogicLUT="159"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U66" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U68" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="136" LogicLUT="136"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U69" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U7" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U71" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="160" LogicLUT="160"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U73" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U74" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U77" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="123" LogicLUT="123"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U78" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="137" LogicLUT="137"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U81" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U82" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="156" LogicLUT="156"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U83" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U86" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="116" LogicLUT="116"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U89" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="133" LogicLUT="133"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U9" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="148" LogicLUT="148"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U90" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="130" LogicLUT="130"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U91" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="137" LogicLUT="137"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U92" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="137" LogicLUT="137"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U94" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="127" LogicLUT="127"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_10s_26_1_1_U96" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_10s_26_1_1">
+    <Resources LUT="137" LogicLUT="137"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U1" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="155" LogicLUT="155"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U102" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="121" LogicLUT="121"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U103" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="114" LogicLUT="114"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U104" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="121" LogicLUT="121"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U105" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="121" LogicLUT="121"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U106" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U107" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U11" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="155" LogicLUT="155"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U112" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U113" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U114" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="121" LogicLUT="121"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U116" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="121" LogicLUT="121"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U12" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U123" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="121" LogicLUT="121"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U124" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="121" LogicLUT="121"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U125" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="121" LogicLUT="121"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U127" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="120" LogicLUT="120"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U14" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U15" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U16" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U2" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U20" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U24" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U25" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="159" LogicLUT="159"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U28" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="152" LogicLUT="152"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U31" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="121" LogicLUT="121"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U33" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="121" LogicLUT="121"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U37" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U42" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U43" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="119" LogicLUT="119"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U44" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U47" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U50" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U57" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="120" LogicLUT="120"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U58" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U59" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="155" LogicLUT="155"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U6" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="155" LogicLUT="155"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U61" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="161" LogicLUT="161"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U63" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="121" LogicLUT="121"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U64" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="121" LogicLUT="121"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U67" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="121" LogicLUT="121"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U70" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="112" LogicLUT="112"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U72" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="121" LogicLUT="121"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U75" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="111" LogicLUT="111"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U76" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="121" LogicLUT="121"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U79" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="121" LogicLUT="121"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U8" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="155" LogicLUT="155"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U80" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="121" LogicLUT="121"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U84" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="121" LogicLUT="121"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U85" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="121" LogicLUT="121"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U87" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="121" LogicLUT="121"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U88" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="121" LogicLUT="121"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U93" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="121" LogicLUT="121"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U95" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="115" LogicLUT="115"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U97" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="119" LogicLUT="119"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U98" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="115" LogicLUT="115"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/mul_16s_9s_25_1_1_U99" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_mul_16s_9s_25_1_1">
+    <Resources LUT="120" LogicLUT="120"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_0_0_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_0_0_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_0_10_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_0_10_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_0_11_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_0_11_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_0_12_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_0_12_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_0_13_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_0_13_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_0_14_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_0_14_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_0_15_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_0_15_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_0_1_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_0_1_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_0_2_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_0_2_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_0_3_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_0_3_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_0_4_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_0_4_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_0_5_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_0_5_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_0_6_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_0_6_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_0_7_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_0_7_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_0_9_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_0_9_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_1_0_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_1_0_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_1_10_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_1_10_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_1_11_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_1_11_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_1_12_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_1_12_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_1_13_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_1_13_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_1_14_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_1_14_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_1_15_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_1_15_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_1_1_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_1_1_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_1_2_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_1_2_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_1_3_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_1_3_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_1_4_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_1_4_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_1_5_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_1_5_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_1_6_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_1_6_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_1_7_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_1_7_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_1_8_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_1_8_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_1_9_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_1_9_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_2_0_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_2_0_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_2_10_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_2_10_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_2_11_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_2_11_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_2_13_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_2_13_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_2_14_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_2_14_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_2_15_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_2_15_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_2_1_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_2_1_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_2_2_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_2_2_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_2_3_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_2_3_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_2_4_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_2_4_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_2_6_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_2_6_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_2_7_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_2_7_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_2_8_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_2_8_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_2_9_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_2_9_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_3_0_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_3_0_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_3_10_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_3_10_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_3_11_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_3_11_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_3_12_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_3_12_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_3_13_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_3_13_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_3_14_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_3_14_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_3_15_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_3_15_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_3_1_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_3_1_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_3_2_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_3_2_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_3_3_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_3_3_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_3_4_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_3_4_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_3_5_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_3_5_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_3_6_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_3_6_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_3_7_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_3_7_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_3_8_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_3_8_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_3_9_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_3_9_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_4_0_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_4_0_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_4_10_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_4_10_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_4_11_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_4_11_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_4_12_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_4_12_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_4_13_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_4_13_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_4_14_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_4_14_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_4_15_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_4_15_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_4_2_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_4_2_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_4_4_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_4_4_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_4_5_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_4_5_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_4_6_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_4_6_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_4_7_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_4_7_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_4_8_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_4_8_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_4_9_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_4_9_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_5_0_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_5_0_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_5_10_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_5_10_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_5_11_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_5_11_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_5_12_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_5_12_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_5_13_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_5_13_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_5_14_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_5_14_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_5_15_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_5_15_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_5_1_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_5_1_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_5_2_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_5_2_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_5_3_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_5_3_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_5_4_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_5_4_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_5_5_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_5_5_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_5_6_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_5_6_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_5_7_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_5_7_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_5_8_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_5_8_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_5_9_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_5_9_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_6_0_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_6_0_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_6_10_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_6_10_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_6_11_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_6_11_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_6_12_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_6_12_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_6_13_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_6_13_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_6_14_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_6_14_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_6_15_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_6_15_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_6_1_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_6_1_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_6_2_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_6_2_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_6_3_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_6_3_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_6_4_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_6_4_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_6_5_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_6_5_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_6_6_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_6_6_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_6_7_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_6_7_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_6_9_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_6_9_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_7_0_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_7_0_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_7_10_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_7_10_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_7_11_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_7_11_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_7_12_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_7_12_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_7_13_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_7_13_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_7_14_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_7_14_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_7_15_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_7_15_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_7_1_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_7_1_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_7_2_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_7_2_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_7_4_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_7_4_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_7_5_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_7_5_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_7_6_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_7_6_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_7_7_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_7_7_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_7_8_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_7_8_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/compute_encoder_U0/p_ZL2W1_7_9_U" DEPTH="2" FILE_NAME="tiny_autoencoder_compute_encoder.v" ORIG_REF_NAME="tiny_autoencoder_compute_encoder_p_ZL2W1_7_9_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/hidden_layer_buf_10_U" DEPTH="1" FILE_NAME="tiny_autoencoder.v" ORIG_REF_NAME="tiny_autoencoder_fifo_w16_d2_S">
+  </RtlModule>
+  <RtlModule CELL="inst/hidden_layer_buf_11_U" DEPTH="1" FILE_NAME="tiny_autoencoder.v" ORIG_REF_NAME="tiny_autoencoder_fifo_w16_d2_S">
+  </RtlModule>
+  <RtlModule CELL="inst/hidden_layer_buf_12_U" DEPTH="1" FILE_NAME="tiny_autoencoder.v" ORIG_REF_NAME="tiny_autoencoder_fifo_w16_d2_S">
+  </RtlModule>
+  <RtlModule CELL="inst/hidden_layer_buf_13_U" DEPTH="1" FILE_NAME="tiny_autoencoder.v" ORIG_REF_NAME="tiny_autoencoder_fifo_w16_d2_S">
+  </RtlModule>
+  <RtlModule CELL="inst/hidden_layer_buf_14_U" DEPTH="1" FILE_NAME="tiny_autoencoder.v" ORIG_REF_NAME="tiny_autoencoder_fifo_w16_d2_S">
+  </RtlModule>
+  <RtlModule CELL="inst/hidden_layer_buf_15_U" DEPTH="1" FILE_NAME="tiny_autoencoder.v" ORIG_REF_NAME="tiny_autoencoder_fifo_w16_d2_S">
+  </RtlModule>
+  <RtlModule CELL="inst/hidden_layer_buf_1_U" DEPTH="1" FILE_NAME="tiny_autoencoder.v" ORIG_REF_NAME="tiny_autoencoder_fifo_w16_d2_S">
+  </RtlModule>
+  <RtlModule CELL="inst/hidden_layer_buf_2_U" DEPTH="1" FILE_NAME="tiny_autoencoder.v" ORIG_REF_NAME="tiny_autoencoder_fifo_w16_d2_S">
+  </RtlModule>
+  <RtlModule CELL="inst/hidden_layer_buf_3_U" DEPTH="1" FILE_NAME="tiny_autoencoder.v" ORIG_REF_NAME="tiny_autoencoder_fifo_w16_d2_S">
+  </RtlModule>
+  <RtlModule CELL="inst/hidden_layer_buf_4_U" DEPTH="1" FILE_NAME="tiny_autoencoder.v" ORIG_REF_NAME="tiny_autoencoder_fifo_w16_d2_S">
+  </RtlModule>
+  <RtlModule CELL="inst/hidden_layer_buf_5_U" DEPTH="1" FILE_NAME="tiny_autoencoder.v" ORIG_REF_NAME="tiny_autoencoder_fifo_w16_d2_S">
+  </RtlModule>
+  <RtlModule CELL="inst/hidden_layer_buf_6_U" DEPTH="1" FILE_NAME="tiny_autoencoder.v" ORIG_REF_NAME="tiny_autoencoder_fifo_w16_d2_S">
+  </RtlModule>
+  <RtlModule CELL="inst/hidden_layer_buf_7_U" DEPTH="1" FILE_NAME="tiny_autoencoder.v" ORIG_REF_NAME="tiny_autoencoder_fifo_w16_d2_S">
+  </RtlModule>
+  <RtlModule CELL="inst/hidden_layer_buf_8_U" DEPTH="1" FILE_NAME="tiny_autoencoder.v" ORIG_REF_NAME="tiny_autoencoder_fifo_w16_d2_S">
+  </RtlModule>
+  <RtlModule CELL="inst/hidden_layer_buf_9_U" DEPTH="1" FILE_NAME="tiny_autoencoder.v" ORIG_REF_NAME="tiny_autoencoder_fifo_w16_d2_S">
+  </RtlModule>
+  <RtlModule CELL="inst/hidden_layer_buf_U" DEPTH="1" FILE_NAME="tiny_autoencoder.v" ORIG_REF_NAME="tiny_autoencoder_fifo_w16_d2_S">
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="7.835" DATAPATH_LOGIC_DELAY="4.359" DATAPATH_NET_DELAY="3.476" ENDPOINT_PIN="bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_103_reg_8860_reg[19]/D" LOGIC_LEVELS="11" MAX_FANOUT="143" SLACK="2.190" STARTPOINT_PIN="bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_0_7_load_reg_7932_reg[5]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_0_7_load_reg_7932_reg[5]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="tiny_autoencoder_compute_encoder.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860[2]_i_14" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[2]_i_10" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[6]_i_12" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860[10]_i_34" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[10]_i_12" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[14]_i_12" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860[14]_i_5" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860[14]_i_9" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[14]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[18]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[19]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_103_reg_8860_reg[19]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="tiny_autoencoder_compute_encoder.v" LINE_NUMBER="4796"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="7.823" DATAPATH_LOGIC_DELAY="4.347" DATAPATH_NET_DELAY="3.476" ENDPOINT_PIN="bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_103_reg_8860_reg[16]/D" LOGIC_LEVELS="10" MAX_FANOUT="143" SLACK="2.202" STARTPOINT_PIN="bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_0_7_load_reg_7932_reg[5]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_0_7_load_reg_7932_reg[5]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="tiny_autoencoder_compute_encoder.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860[2]_i_14" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[2]_i_10" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[6]_i_12" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860[10]_i_34" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[10]_i_12" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[14]_i_12" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860[14]_i_5" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860[14]_i_9" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[14]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[18]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_103_reg_8860_reg[16]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="tiny_autoencoder_compute_encoder.v" LINE_NUMBER="4796"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="7.817" DATAPATH_LOGIC_DELAY="4.341" DATAPATH_NET_DELAY="3.476" ENDPOINT_PIN="bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_103_reg_8860_reg[18]/D" LOGIC_LEVELS="10" MAX_FANOUT="143" SLACK="2.208" STARTPOINT_PIN="bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_0_7_load_reg_7932_reg[5]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_0_7_load_reg_7932_reg[5]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="tiny_autoencoder_compute_encoder.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860[2]_i_14" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[2]_i_10" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[6]_i_12" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860[10]_i_34" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[10]_i_12" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[14]_i_12" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860[14]_i_5" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860[14]_i_9" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[14]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_16s_10s_26_1_1_U86/mult_res_103_reg_8860_reg[18]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_103_reg_8860_reg[18]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="tiny_autoencoder_compute_encoder.v" LINE_NUMBER="4796"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="7.768" DATAPATH_LOGIC_DELAY="4.121" DATAPATH_NET_DELAY="3.647" ENDPOINT_PIN="bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_70_reg_8695_reg[19]/D" LOGIC_LEVELS="10" MAX_FANOUT="188" SLACK="2.257" STARTPOINT_PIN="bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_4_10_load_reg_8072_reg[0]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_4_10_load_reg_8072_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="tiny_autoencoder_compute_encoder.v" LINE_NUMBER="1503"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U60/mult_res_70_reg_8695[5]_i_39" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U60/mult_res_70_reg_8695_reg[5]_i_13" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U60/mult_res_70_reg_8695_reg[5]_i_12" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U60/mult_res_70_reg_8695[9]_i_34" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U60/mult_res_70_reg_8695_reg[9]_i_12" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U60/mult_res_70_reg_8695_reg[13]_i_12" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U60/mult_res_70_reg_8695_reg[17]_i_12" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U60/mult_res_70_reg_8695[17]_i_4" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U60/mult_res_70_reg_8695_reg[17]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U60/mult_res_70_reg_8695_reg[19]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_70_reg_8695_reg[19]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="tiny_autoencoder_compute_encoder.v" LINE_NUMBER="4893"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="7.768" DATAPATH_LOGIC_DELAY="4.121" DATAPATH_NET_DELAY="3.647" ENDPOINT_PIN="bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_83_reg_8760_reg[19]/D" LOGIC_LEVELS="10" MAX_FANOUT="182" SLACK="2.257" STARTPOINT_PIN="bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_7_5_load_reg_7887_reg[7]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/p_ZL2W1_7_5_load_reg_7887_reg[7]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="tiny_autoencoder_compute_encoder.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U71/mult_res_83_reg_8760[5]_i_39" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U71/mult_res_83_reg_8760_reg[5]_i_13" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U71/mult_res_83_reg_8760_reg[5]_i_12" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U71/mult_res_83_reg_8760[9]_i_34" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U71/mult_res_83_reg_8760_reg[9]_i_12" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U71/mult_res_83_reg_8760_reg[13]_i_12" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U71/mult_res_83_reg_8760_reg[17]_i_12" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U71/mult_res_83_reg_8760[17]_i_4" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U71/mult_res_83_reg_8760_reg[17]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mul_16s_10s_26_1_1_U71/mult_res_83_reg_8760_reg[19]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="tiny_autoencoder_mul_16s_10s_26_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/compute_encoder_U0/mult_res_83_reg_8760_reg[19]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="tiny_autoencoder_compute_encoder.v" LINE_NUMBER="4905"/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/tiny_autoencoder_design_analysis_synth.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/tiny_autoencoder_failfast_synth.rpt"/>
+  <ReportFile TYPE="power" PATH="verilog/report/tiny_autoencoder_power_synth.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/tiny_autoencoder_timing_synth.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/tiny_autoencoder_timing_paths_synth.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/tiny_autoencoder_utilization_synth.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/tiny_autoencoder_utilization_hierarchical_synth.rpt"/>
+</VivadoReportFiles>
+</profile>

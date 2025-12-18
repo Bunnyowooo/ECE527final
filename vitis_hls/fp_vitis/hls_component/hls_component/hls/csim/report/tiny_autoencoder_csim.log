@@ -1,0 +1,64 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../testbench.cpp in debug mode
+   Compiling ../../../../autoencoder.cpp in debug mode
+   Generating csim.exe
+[Testbench] Reading input_data.dat...
+[Testbench] Reading output_keras.dat...
+==================================================
+  Starting Autoencoder HLS Testbench (50 samples)
+==================================================
+Sample  0: PASS
+Sample  1: PASS
+Sample  2: PASS
+Sample  3: PASS
+Sample  4: PASS
+Sample  5: PASS
+Sample  6: PASS
+Sample  7: PASS
+Sample  8: PASS
+Sample  9: PASS
+Sample 10: PASS
+Sample 11: PASS
+Sample 12: PASS
+Sample 13: PASS
+Sample 14: PASS
+Sample 15: PASS
+Sample 16: PASS
+Sample 17: PASS
+Sample 18: PASS
+Sample 19: PASS
+Sample 20: PASS
+Sample 21: PASS
+Sample 22: PASS
+Sample 23: PASS
+Sample 24: PASS
+Sample 25: PASS
+Sample 26: PASS
+Sample 27: PASS
+Sample 28: PASS
+Sample 29: PASS
+Sample 30: PASS
+Sample 31: PASS
+Sample 32: PASS
+Sample 33: PASS
+Sample 34: PASS
+Sample 35: PASS
+Sample 36: PASS
+Sample 37: PASS
+Sample 38: PASS
+Sample 39: PASS
+Sample 40: PASS
+Sample 41: PASS
+Sample 42: PASS
+Sample 43: PASS
+Sample 44: PASS
+Sample 45: PASS
+Sample 46: PASS
+Sample 47: PASS
+Sample 48: PASS
+Sample 49: PASS
+==================================================
+  ALL TESTS PASSED!
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

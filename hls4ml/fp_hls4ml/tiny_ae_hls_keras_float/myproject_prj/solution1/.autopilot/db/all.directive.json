@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "myproject",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "myproject"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/ubuntu2004/527_final/tiny_ae_hls_keras_float/build_prj.tcl",
+    "sourceLine": 183,
+    "success": true
+  }
+]

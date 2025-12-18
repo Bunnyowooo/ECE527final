@@ -1,0 +1,140 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Mon Dec 15 00:45:21 2025
+# Process ID         : 16204
+# Current directory  : D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/impl/ip
+# Command line       : vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file           : D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/impl/ip/vivado.log
+# Journal file       : D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/impl/ip\vivado.jou
+# Running On         : Unlucky
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 34033 MB
+# Swap memory        : 7247 MB
+# Total Virtual      : 41281 MB
+# Available Virtual  : 13394 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/hls_data.json outdir=D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/impl/ip srcdir=D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls ippack_options_dict= ippack_options_dict=
+INFO: Copied 1 ipmisc file(s) to D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/impl/ip/misc
+INFO: Copied 549 verilog file(s) to D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/impl/ip/hdl/verilog
+INFO: Copied 284 vhdl file(s) to D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/impl/ip/hdl/vhdl
+ipx::create_core: Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 509.293 ; gain = 206.953
+INFO: Import ports from HDL: D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/impl/ip/hdl/vhdl/tiny_autoencoder.vhd (tiny_autoencoder)
+INFO: Add data interface input_data_0_address0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/2025.1/Vivado/data/ip'.
+INFO: Add data interface input_data_0_d0
+INFO: Add data interface input_data_0_q0
+INFO: Add data interface input_data_0_address1
+INFO: Add data interface input_data_0_d1
+INFO: Add data interface input_data_0_q1
+INFO: Add data interface input_data_1_address0
+INFO: Add data interface input_data_1_d0
+INFO: Add data interface input_data_1_q0
+INFO: Add data interface input_data_1_address1
+INFO: Add data interface input_data_1_d1
+INFO: Add data interface input_data_1_q1
+INFO: Add data interface input_data_2_address0
+INFO: Add data interface input_data_2_d0
+INFO: Add data interface input_data_2_q0
+INFO: Add data interface input_data_2_address1
+INFO: Add data interface input_data_2_d1
+INFO: Add data interface input_data_2_q1
+INFO: Add data interface input_data_3_address0
+INFO: Add data interface input_data_3_d0
+INFO: Add data interface input_data_3_q0
+INFO: Add data interface input_data_3_address1
+INFO: Add data interface input_data_3_d1
+INFO: Add data interface input_data_3_q1
+INFO: Add data interface input_data_4_address0
+INFO: Add data interface input_data_4_d0
+INFO: Add data interface input_data_4_q0
+INFO: Add data interface input_data_4_address1
+INFO: Add data interface input_data_4_d1
+INFO: Add data interface input_data_4_q1
+INFO: Add data interface input_data_5_address0
+INFO: Add data interface input_data_5_d0
+INFO: Add data interface input_data_5_q0
+INFO: Add data interface input_data_5_address1
+INFO: Add data interface input_data_5_d1
+INFO: Add data interface input_data_5_q1
+INFO: Add data interface input_data_6_address0
+INFO: Add data interface input_data_6_d0
+INFO: Add data interface input_data_6_q0
+INFO: Add data interface input_data_6_address1
+INFO: Add data interface input_data_6_d1
+INFO: Add data interface input_data_6_q1
+INFO: Add data interface input_data_7_address0
+INFO: Add data interface input_data_7_d0
+INFO: Add data interface input_data_7_q0
+INFO: Add data interface input_data_7_address1
+INFO: Add data interface input_data_7_d1
+INFO: Add data interface input_data_7_q1
+INFO: Add data interface output_data_0_address0
+INFO: Add data interface output_data_0_d0
+INFO: Add data interface output_data_0_q0
+INFO: Add data interface output_data_0_address1
+INFO: Add data interface output_data_0_d1
+INFO: Add data interface output_data_0_q1
+INFO: Add data interface output_data_1_address0
+INFO: Add data interface output_data_1_d0
+INFO: Add data interface output_data_1_q0
+INFO: Add data interface output_data_1_address1
+INFO: Add data interface output_data_1_d1
+INFO: Add data interface output_data_1_q1
+INFO: Add data interface output_data_2_address0
+INFO: Add data interface output_data_2_d0
+INFO: Add data interface output_data_2_q0
+INFO: Add data interface output_data_2_address1
+INFO: Add data interface output_data_2_d1
+INFO: Add data interface output_data_2_q1
+INFO: Add data interface output_data_3_address0
+INFO: Add data interface output_data_3_d0
+INFO: Add data interface output_data_3_q0
+INFO: Add data interface output_data_3_address1
+INFO: Add data interface output_data_3_d1
+INFO: Add data interface output_data_3_q1
+INFO: Add data interface output_data_4_address0
+INFO: Add data interface output_data_4_d0
+INFO: Add data interface output_data_4_q0
+INFO: Add data interface output_data_4_address1
+INFO: Add data interface output_data_4_d1
+INFO: Add data interface output_data_4_q1
+INFO: Add data interface output_data_5_address0
+INFO: Add data interface output_data_5_d0
+INFO: Add data interface output_data_5_q0
+INFO: Add data interface output_data_5_address1
+INFO: Add data interface output_data_5_d1
+INFO: Add data interface output_data_5_q1
+INFO: Add data interface output_data_6_address0
+INFO: Add data interface output_data_6_d0
+INFO: Add data interface output_data_6_q0
+INFO: Add data interface output_data_6_address1
+INFO: Add data interface output_data_6_d1
+INFO: Add data interface output_data_6_q1
+INFO: Add data interface output_data_7_address0
+INFO: Add data interface output_data_7_d0
+INFO: Add data interface output_data_7_q0
+INFO: Add data interface output_data_7_address1
+INFO: Add data interface output_data_7_d1
+INFO: Add data interface output_data_7_q1
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst
+INFO: Add ap_ctrl interface ap_ctrl
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+ipx::update_checksums: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 514.211 ; gain = 0.000
+INFO: Created IP D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/impl/ip/component.xml
+ipx::archive_core: Time (s): cpu = 00:00:00 ; elapsed = 00:00:32 . Memory (MB): peak = 514.211 ; gain = 0.000
+INFO: Created IP archive D:/xilinx/Project/fp_vitis/fp_vitis/hls_component/hls_component/hls/impl/ip/xilinx_com_hls_tiny_autoencoder_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 15 00:46:32 2025...

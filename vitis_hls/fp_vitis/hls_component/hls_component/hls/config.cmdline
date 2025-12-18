@@ -1,0 +1,3 @@
+relativeroot=D:/xilinx/Project/fp_vitis/fp_vitis/hls_component
+original_argv=--mode hls --impl --config D:\xilinx\Project\fp_vitis\fp_vitis\hls_component\hls_config.cfg --work_dir hls_component 
+

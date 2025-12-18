@@ -1,0 +1,166 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Mon Dec 15 00:52:43 2025
+| Host         : Unlucky running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 6 -file ./report/tiny_autoencoder_utilization_hierarchical_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++------------------------------------+----------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|              Instance              |                                   Module                                   | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++------------------------------------+----------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| bd_0_wrapper                       |                                                                      (top) |      24020 |      23821 |       0 |  199 | 6796 |      0 |      4 |        128 |
+|   bd_0_i                           |                                                                       bd_0 |      24020 |      23821 |       0 |  199 | 6796 |      0 |      4 |        128 |
+|     hls_inst                       |                                                            bd_0_hls_inst_0 |      24020 |      23821 |       0 |  199 | 6796 |      0 |      4 |        128 |
+|       inst                         |                                           bd_0_hls_inst_0_tiny_autoencoder |      24020 |      23821 |       0 |  199 | 6796 |      0 |      4 |        128 |
+|         (inst)                     |                                           bd_0_hls_inst_0_tiny_autoencoder |       1990 |       1990 |       0 |    0 |    1 |      0 |      0 |          0 |
+|         compute_decoder_U0         |                           bd_0_hls_inst_0_tiny_autoencoder_compute_decoder |       1296 |       1097 |       0 |  199 |  846 |      0 |      4 |        128 |
+|           (compute_decoder_U0)     |                           bd_0_hls_inst_0_tiny_autoencoder_compute_decoder |        205 |          6 |       0 |  199 |  450 |      0 |      0 |          0 |
+|           SIGMOID_TABLE_U          | bd_0_hls_inst_0_tiny_autoencoder_compute_decoder_SIGMOID_TABLE_ROM_AUTO_1R |         88 |         88 |       0 |    0 |    0 |      0 |      4 |          0 |
+|           flow_control_loop_pipe_U |                    bd_0_hls_inst_0_tiny_autoencoder_flow_control_loop_pipe |         63 |         63 |       0 |    0 |    1 |      0 |      0 |          0 |
+|         compute_encoder_U0         |                           bd_0_hls_inst_0_tiny_autoencoder_compute_encoder |      20487 |      20487 |       0 |    0 | 5373 |      0 |      0 |          0 |
+|           (compute_encoder_U0)     |                           bd_0_hls_inst_0_tiny_autoencoder_compute_encoder |       1976 |       1976 |       0 |    0 | 4781 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U10   |                        bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1 |        155 |        155 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U100  |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_30 |        137 |        137 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U101  |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_31 |        136 |        136 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U108  |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_32 |        137 |        137 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U109  |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_33 |        137 |        137 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U110  |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_34 |        128 |        128 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U111  |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_35 |        137 |        137 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U115  |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_36 |        137 |        137 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U117  |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_37 |        137 |        137 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U118  |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_38 |        114 |        114 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U119  |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_39 |        128 |        128 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U120  |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_40 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U121  |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_41 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U122  |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_42 |        123 |        123 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U126  |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_43 |        136 |        136 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U128  |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_44 |        137 |        137 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U13   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_45 |        159 |        159 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U17   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_46 |        137 |        137 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U18   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_47 |        131 |        131 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U19   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_48 |        133 |        133 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U21   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_49 |        133 |        133 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U22   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_50 |        160 |        160 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U23   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_51 |        135 |        135 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U26   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_52 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U27   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_53 |        162 |        162 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U29   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_54 |        155 |        155 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U3    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_55 |        159 |        159 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U30   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_56 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U32   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_57 |        157 |        157 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U34   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_58 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U35   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_59 |        137 |        137 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U36   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_60 |        137 |        137 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U38   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_61 |        137 |        137 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U39   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_62 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U4    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_63 |        155 |        155 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U40   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_64 |        162 |        162 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U41   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_65 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U45   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_66 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U46   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_67 |        160 |        160 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U48   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_68 |        152 |        152 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U49   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_69 |        133 |        133 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U5    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_70 |        160 |        160 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U51   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_71 |        157 |        157 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U52   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_72 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U53   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_73 |        152 |        152 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U54   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_74 |        156 |        156 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U55   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_75 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U56   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_76 |        152 |        152 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U60   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_77 |        152 |        152 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U62   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_78 |        155 |        155 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U65   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_79 |        159 |        159 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U66   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_80 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U68   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_81 |        136 |        136 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U69   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_82 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U7    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_83 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U71   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_84 |        160 |        160 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U73   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_85 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U74   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_86 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U77   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_87 |        123 |        123 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U78   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_88 |        137 |        137 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U81   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_89 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U82   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_90 |        156 |        156 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U83   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_91 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U86   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_92 |        116 |        116 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U89   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_93 |        133 |        133 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U9    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_94 |        148 |        148 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U90   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_95 |        130 |        130 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U91   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_96 |        137 |        137 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U92   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_97 |        137 |        137 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U94   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_98 |        127 |        127 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_10s_26_1_1_U96   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_10s_26_1_1_99 |        137 |        137 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U1     |                         bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1 |        155 |        155 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U102   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_100 |        121 |        121 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U103   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_101 |        114 |        114 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U104   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_102 |        121 |        121 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U105   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_103 |        121 |        121 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U106   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_104 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U107   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_105 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U11    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_106 |        155 |        155 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U112   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_107 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U113   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_108 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U114   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_109 |        121 |        121 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U116   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_110 |        121 |        121 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U12    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_111 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U123   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_112 |        121 |        121 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U124   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_113 |        121 |        121 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U125   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_114 |        121 |        121 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U127   |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_115 |        120 |        120 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U14    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_116 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U15    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_117 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U16    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_118 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U2     |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_119 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U20    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_120 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U24    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_121 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U25    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_122 |        159 |        159 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U28    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_123 |        152 |        152 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U31    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_124 |        121 |        121 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U33    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_125 |        121 |        121 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U37    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_126 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U42    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_127 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U43    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_128 |        119 |        119 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U44    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_129 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U47    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_130 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U50    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_131 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U57    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_132 |        120 |        120 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U58    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_133 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U59    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_134 |        155 |        155 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U6     |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_135 |        155 |        155 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U61    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_136 |        161 |        161 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U63    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_137 |        121 |        121 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U64    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_138 |        121 |        121 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U67    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_139 |        121 |        121 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U70    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_140 |        112 |        112 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U72    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_141 |        121 |        121 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U75    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_142 |        111 |        111 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U76    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_143 |        121 |        121 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U79    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_144 |        121 |        121 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U8     |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_145 |        155 |        155 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U80    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_146 |        121 |        121 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U84    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_147 |        121 |        121 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U85    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_148 |        121 |        121 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U87    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_149 |        121 |        121 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U88    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_150 |        121 |        121 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U93    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_151 |        121 |        121 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U95    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_152 |        115 |        115 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U97    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_153 |        119 |        119 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U98    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_154 |        115 |        115 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           mul_16s_9s_25_1_1_U99    |                     bd_0_hls_inst_0_tiny_autoencoder_mul_16s_9s_25_1_1_155 |        120 |        120 |       0 |    0 |    0 |      0 |      0 |          0 |
++------------------------------------+----------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+
+

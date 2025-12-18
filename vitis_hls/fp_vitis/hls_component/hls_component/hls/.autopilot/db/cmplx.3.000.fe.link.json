@@ -1,0 +1,152 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "5 6",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "autoencoder.cpp",
+    "fileloc": 121,
+    "instructions": 19,
+    "memory_accesses": 0,
+    "name": "tiny_autoencoder",
+    "total_instructions": 2199
+  },
+  "1": {
+    "basicblocks": 5,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "autoencoder.cpp",
+    "fileloc": 11,
+    "instructions": 32,
+    "loads": {
+      "G": 1
+    },
+    "memory_accesses": 0,
+    "name": "sigmoid",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 477
+  },
+  "10": {
+    "basicblocks": 4,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "autoencoder.cpp",
+    "fileloc": 6,
+    "instructions": 9,
+    "memory_accesses": 0,
+    "name": "relu",
+    "total_instructions": 205
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "autoencoder.h",
+    "fileloc": 19,
+    "instructions": 1025,
+    "memory_accesses": 0,
+    "name": "__cxx_global_var_init.2",
+    "total_instructions": 396289
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "autoencoder.h",
+    "fileloc": 23,
+    "instructions": 1025,
+    "memory_accesses": 0,
+    "name": "__cxx_global_var_init.4",
+    "total_instructions": 396289
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "autoencoder.h",
+    "fileloc": 15,
+    "instructions": 1025,
+    "memory_accesses": 0,
+    "name": "__cxx_global_var_init",
+    "total_instructions": 396289
+  },
+  "5": {
+    "basicblocks": 37,
+    "calls": "10",
+    "control_depth": 1,
+    "def_use_depth": 3,
+    "file": "autoencoder.cpp",
+    "fileloc": 26,
+    "instructions": 147,
+    "loads": {
+      "L": 4
+    },
+    "memory_accesses": 15,
+    "name": "compute_encoder",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 1177
+  },
+  "6": {
+    "basicblocks": 31,
+    "calls": "1",
+    "control_depth": 1,
+    "def_use_depth": 2,
+    "file": "autoencoder.cpp",
+    "fileloc": 87,
+    "instructions": 102,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 10,
+    "name": "compute_decoder",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 1003
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "autoencoder.h",
+    "fileloc": 20,
+    "instructions": 65,
+    "memory_accesses": 0,
+    "name": "__cxx_global_var_init.3",
+    "total_instructions": 24769
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "autoencoder.h",
+    "fileloc": 16,
+    "instructions": 17,
+    "memory_accesses": 0,
+    "name": "__cxx_global_var_init.1",
+    "total_instructions": 6193
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "4 8 2 7 3",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "autoencoder.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 6,
+    "memory_accesses": 0,
+    "name": "",
+    "total_instructions": 1219835
+  }
+}
